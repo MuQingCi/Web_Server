@@ -6,7 +6,7 @@ map<string,string> users;
 
 int http_conn::m_epollfd = -1;
 int http_conn:: m_user_count = 0;
-
+const char* doc_root = "/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server";
 
 http_conn::http_conn()
 {
@@ -316,14 +316,113 @@ http_conn::HTTP_CODE http_conn::parse_request_headers(char* text)
         m_content_length = atol(text);
     }
     
-    else if(strncasecmp(text, "HOST:", 5) == 0
- 
-    
+    else if(strncasecmp(text, "HOST:", 5) == 0)
+    {
+        text += 5;
+        text += strspn(text, " \t");
+        m_host = text;
+    }
 
+    else
+    {
+        std::cout<< "oop! unknow header: " << text << std::endl;
+    }
+
+    return NO_REQUEST;
 }
 
 
+http_conn::HTTP_CODE http_conn::parse_content(char* text)
+{
+    if(m_read_idx >= (m_content_length + m_checked_idx))
+    {
+        text[m_content_length] = '\0';
+
+        m_string = text;
+        
+        return GET_REQUEST;
+    }
+    
+    return NO_REQUEST;
+}
 
 
+http_conn::HTTP_CODE http_conn::do_request()
+{
+    strcpy(m_real_file, doc_root);
+    int len = strlen(doc_root);
 
+    const char* p = strrchr(m_url, '/');
+    
+    if(cgi == 1 && (*(p + 1)) == '2' || *(p + 1) == '3')
+    {
 
+    }
+
+    if(*(p + 1) == '0')
+    {
+        char* m_url_real = (char*) malloc(sizeof(char) *256);
+        strcpy(m_url_real, "/register.html");
+
+        strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
+
+        free(m_url_real);
+    }
+
+    else if(*(p + 1) == '1')
+    {
+        char* m_url_real = (char*) malloc(sizeof(char) *256);
+        strcpy(m_url_real, "/log.html");
+
+        strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
+
+        free(m_url_real);
+    }
+    
+    else
+        strncpy(m_real_file + len, m_url, FILENAME_LEN - len -1);
+
+    if(stat(m_real_file, &m_file_stat) < 0)
+        return BAD_REQUEST;
+    
+    if(m_file_stat.st_mode & S_IROTH == 0)
+        return FORBIDDEN_REQUEST;
+
+    if(S_ISDIR(m_file_stat.st_mode))
+        return BAD_REQUEST;
+    
+    int fd = open(m_real_file, O_RDONLY);
+    m_file_address = (char*)mmap(NULL, m_file_stat.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
+
+    close(fd);
+
+    return FILE_REQUEST;
+
+}
+
+bool http_conn::process_write(HTTP_CODE ret)
+{
+
+}
+
+bool http_conn::add_response(const char* format,...)
+{
+    if(m_write_idx >= WRITE_BUFF_SIZE)
+        return false;
+    
+    va_list arg_list;
+    va_start(arg_list, format);
+
+    int len = vsnprintf(m_write_buff + m_write_idx, WRITE_BUFF_SIZE - 1 - m_write_idx, format, arg_list);
+
+    if(len >= (WRITE_BUFF_SIZE - 1 - m_write_idx))
+    {
+        va_end(arg_list);
+        return false;
+    }
+
+    m_write_idx += len;
+    va_end(arg_list);
+    
+    return true;
+}
