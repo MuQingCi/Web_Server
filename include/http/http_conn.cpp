@@ -8,6 +8,16 @@ int http_conn::m_epollfd = -1;
 int http_conn:: m_user_count = 0;
 const char* doc_root = "/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server";
 
+const char* ok_200_title = "OK";
+const char* error_400_title = "Bad Request";
+const char* error_400_form = "Your request has bad syntax or is inherently impossible to statisfy.\n";
+const char* error_403_title = "Forbidden";
+const char* error_403_form = "You do not have permission to get file from this server.\n";
+const char* error_404_title = "Not Found";
+const char* error_404_form = "The Request file was not found on this server.\n";
+const char* error_500_title = "Internal Error";
+const char* error_500_form = "There was an unusual problem serving the request file.\n";
+
 http_conn::http_conn()
 {
 
@@ -159,6 +169,69 @@ bool http_conn::read_once()
     }
 }
 
+bool http_conn::write()
+{
+    int tmp = 0;
+    int file_bytes_send = 0;
+
+    if(bytes_to_send == 0)
+    {
+        mod_fd(m_epollfd, m_sockfd, EPOLLIN, m_TRIGMode);
+        init();
+        return true;
+    }
+
+    while(1)
+    {
+        tmp = writev(m_sockfd, m_iv, m_iv_count);
+        if(tmp > 0)
+        {
+            bytes_have_send += tmp;
+            file_bytes_send = bytes_have_send - m_write_idx;
+        }
+
+        if(tmp <=-1)
+        {
+            if(errno == EAGAIN)
+            {
+                if(bytes_have_send >= m_iv[0].iov_len)
+                {
+                    m_iv[0].iov_len = 0;
+                    m_iv[1].iov_base = m_file_address + file_bytes_send;
+                    m_iv[1].iov_len = bytes_to_send;
+                }
+                else 
+                {
+                    m_iv[0].iov_base = m_write_buff + bytes_have_send;
+                    m_iv[0].iov_len = m_iv[0].iov_len - bytes_have_send;
+                }
+
+                mod_fd(m_epollfd, m_sockfd, EPOLLOUT, m_TRIGMode);
+            }
+
+            unmap();
+            return false;
+        }
+
+        bytes_to_send -= tmp;
+        if(bytes_to_send <= 0)
+        {
+            unmap();
+
+            mod_fd(m_epollfd, m_sockfd, EPOLLIN, m_TRIGMode);
+
+            if(m_linger)
+            {
+                init();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+}
 
 http_conn::HTTP_CODE http_conn::process_read()
 {
@@ -402,7 +475,73 @@ http_conn::HTTP_CODE http_conn::do_request()
 
 bool http_conn::process_write(HTTP_CODE ret)
 {
+    switch (ret)
+    {
+    //内部错误 500
+    case INTERNAL_ERROR:
+        add_status_line(500, error_500_title);
+        add_headers(strlen(error_500_form));
+        if(!add_content(error_500_form))
+            return false;
+        break;
+    
+    //报文错误 404
+    case BAD_REQUEST:
+        add_status_line(404, error_404_title);
+        add_headers(strlen(error_404_form));
+        if(!add_content(error_404_form))
+            return false;
+        break;
 
+    //无访问资源权限 403
+    case FORBIDDEN_REQUEST:
+        add_status_line(403, error_403_title);
+        add_headers(strlen(error_403_form));
+        if(!add_content(error_403_form))
+            return false;
+        break;
+    
+    // 200
+    case FILE_REQUEST:
+        add_status_line(200, ok_200_title);
+        if(m_file_stat.st_size != 0)
+        {
+            add_headers(m_file_stat.st_size);
+
+            m_iv[0].iov_base = m_write_buff;
+            m_iv[0].iov_len = m_write_idx;
+
+            m_iv[1].iov_base = m_file_address;
+            m_iv[1].iov_len = m_file_stat.st_size;
+            m_iv_count = 2;
+
+            bytes_to_send = m_write_idx + m_file_stat.st_size;
+            return true;
+        }
+        else
+        {
+            const char* ok_string = "<html><body></body></html>";
+            add_headers(strlen(ok_string));
+            if(!add_content(ok_string))
+                return false;
+        }
+    default:
+        return false;
+    }
+
+    m_iv[0].iov_base = m_write_buff;
+    m_iv[0].iov_len = m_write_idx;
+    m_iv_count = 1;
+    return true;
+}
+
+void http_conn::unmap()
+{
+    if(m_file_address)
+    {
+        munmap(m_file_address, m_file_stat.st_size);
+        m_file_address = nullptr;
+    }
 }
 
 bool http_conn::add_response(const char* format,...)
@@ -425,4 +564,41 @@ bool http_conn::add_response(const char* format,...)
     va_end(arg_list);
     
     return true;
+}
+
+bool http_conn::add_status_line(int status, const char* title)
+{
+    return add_response("%s %d %s\r\n", "HTTP/1.1", status, title);
+}
+
+bool http_conn::add_headers(int content_length)
+{
+    add_content_length(content_length);
+    add_linger();
+    add_blank_line();
+}
+
+bool http_conn::add_content_type()
+{
+    return add_response("Content-Type:%s\r\n", "text/html");
+}
+
+bool http_conn::add_content_length(int content_length)
+{
+    return add_response("Content-Length:%d\r\n", content_length);
+}
+
+bool http_conn::add_linger()
+{
+    return add_response("Connection:%s\r\n", (m_linger == true)? "keep-alive" : "close");
+}
+
+bool http_conn::add_blank_line()
+{
+    return add_response("%s", "\r\n");
+}
+
+bool http_conn::add_content(const char* content)
+{
+    return add_response("%s", content);
 }
