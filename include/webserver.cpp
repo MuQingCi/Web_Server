@@ -14,7 +14,6 @@ WebServer::WebServer()
     users_timer = new client_data[MAX_FD];
 
     utils.init(TIMESLOT);
-    utils.m_heap_timer = new time_heap(MAX_EVENT_NUMBER);
 }
 
 WebServer::~WebServer()
@@ -171,17 +170,17 @@ void WebServer::timer(int connfd, struct sockaddr_in client_address)
     timer->expire = cur + 3 * TIMESLOT;
 
     users_timer[connfd].timer = timer;
-    utils.m_heap_timer->add_timer(timer);
+    utils.m_time_heap->add_timer(timer);
 }
 
 void WebServer::adjust_timer(heap_timer* timer)
 {
-    utils.m_heap_timer->del_timer(timer);
+    utils.m_time_heap->del_timer(timer);
 
     time_t cur = time(NULL);
     timer->expire = cur + 3 * TIMESLOT;
 
-    utils.m_heap_timer->add_timer(timer);
+    utils.m_time_heap->add_timer(timer);
 
     LOG_INFO("%s", "adjust timer once");
 }
@@ -191,7 +190,7 @@ void WebServer::deal_timer(heap_timer* timer, int sockfd)
     timer->cb_func(timer->user_data);
     if(timer)
     {
-        utils.m_heap_timer->del_timer(timer);
+        utils.m_time_heap->del_timer(timer);
         delete timer;
     }
     LOG_INFO("close fd %d", users_timer[sockfd].sockfd);
