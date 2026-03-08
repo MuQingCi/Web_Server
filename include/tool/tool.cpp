@@ -1,9 +1,12 @@
 #include "tool.h"
 
+int Utils::u_epollfd = 0;
+int* Utils::sig_pipefd = nullptr;
 
 void Utils::init(int timeslot)
 {
     m_TIMESLOT = timeslot;
+    m_time_heap = new time_heap(100);
 }
 
 int Utils::set_nonblock(int fd)
@@ -55,7 +58,7 @@ void Utils::addsig(int sig, void(handler)(int), bool restart)
 
 void Utils::timer_handler()
 {
-    m_heap_timer->tick();
+    m_time_heap->tick();
     alarm(m_TIMESLOT);
 }
 

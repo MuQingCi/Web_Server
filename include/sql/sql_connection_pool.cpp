@@ -33,15 +33,15 @@ void connection_pool::init(string url, string user, string password, string data
 
         if(conn == nullptr)
         {
-            LOG_ERROR("MySQL Error");
+            LOG_ERROR("MySQL init Error");
             exit(1);
         }
 
-        conn = mysql_real_connect(conn,url.c_str(),user.c_str(),password.c_str(),database_name.c_str(),port,NULL,0);
+        conn = mysql_real_connect(conn, url.c_str(), user.c_str(),password.c_str(), database_name.c_str(), port, NULL,0);
 
         if(conn == nullptr)
         {
-            LOG_ERROR("MySQL Error");
+            LOG_ERROR("MySQL connect Error");
             exit(1);
         }
 

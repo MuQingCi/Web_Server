@@ -373,7 +373,7 @@ void WebServer::deal_with_write(int sockfd)
 void WebServer::eventLoop()
 {
     bool timeout = false;
-    bool stop_server = false;
+    bool stop_server = true;
     
     while (stop_server)
     {

@@ -12,12 +12,12 @@
 #include <assert.h>
 
 #include "../hoop_timer/min_heap.h"
-
+class time_heap;
 class Utils
 {
 public:
-    Utils();
-    ~Utils();
+    Utils(){}
+    ~Utils(){}
 
     void init(int timeslot);
 
@@ -34,12 +34,11 @@ public:
     void show_error(int connfd, const char* info);
 
 public:
-    static int *sig_pipefd;
+    static int* sig_pipefd;
     static int u_epollfd;
     int m_TIMESLOT;
-    time_heap* m_heap_timer;
+    time_heap* m_time_heap;
 };
-
 
 int set_nonblock(int fd);
 void add_fd(int epollfd, int fd, bool one_shot, int TRIGMode);

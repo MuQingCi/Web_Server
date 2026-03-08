@@ -643,9 +643,7 @@ bool http_conn::add_status_line(int status, const char* title)
 
 bool http_conn::add_headers(int content_length)
 {
-    add_content_length(content_length);
-    add_linger();
-    add_blank_line();
+    return add_content_length(content_length) & add_linger() & add_blank_line();
 }
 
 bool http_conn::add_content_type()
