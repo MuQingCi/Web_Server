@@ -55,7 +55,6 @@ public:
 private:
     void percolate_down(int hole);
     void resize();
-    bool empty() const{return _cur_size == 0;}
 
 private:
     std::vector<heap_timer*>* _arr;

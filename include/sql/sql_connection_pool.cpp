@@ -56,7 +56,7 @@ void connection_pool::init(string url, string user, string password, string data
 
 MYSQL* connection_pool::GetConnection()
 {
-    if(connList.size() == NULL)
+    if(connList.size() == 0)
         return nullptr;
     
     MYSQL* conn;

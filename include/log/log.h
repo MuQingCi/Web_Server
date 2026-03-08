@@ -17,9 +17,10 @@ public:
 
     bool init(const char *file_name,int close_log, int log_buf_size = 8192,int split_lines = 5000000,int max_queue_size = 0);
     
-    static void *flush_log_thraed(void *argc)
+    static void* flush_log_thraed(void *argc)
     {
         Log::get_instance()->async_write_log();
+        return nullptr;
     }
 
     void write_log(int level,const char *format,...);
@@ -40,6 +41,7 @@ private:
             fputs(single_log.c_str(),m_fp);
             m_mutex.unlock();
         }
+        return nullptr;
     }
 
 private:

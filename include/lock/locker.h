@@ -103,6 +103,7 @@ public:
     {
         int ret = 0;
         ret = pthread_cond_timedwait(&m_cond,m_mutex,&t);
+        return ret;
     }
 
     bool singal()

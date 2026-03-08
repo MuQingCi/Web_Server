@@ -35,8 +35,8 @@ private:
 };
 
 template<typename T>
-threadpool<T>::threadpool(int actor_model, connection_pool *conn_Pool, int thread_number = 8, 
-    int max_requests =  10000):m_actor_model(actor_model), m_thread_number(thread_number),
+threadpool<T>::threadpool(int actor_model, connection_pool *conn_Pool, int thread_number, 
+    int max_requests):m_actor_model(actor_model), m_thread_number(thread_number),
     m_max_requests(max_requests),m_conn_Pool(conn_Pool)
 {
     if(m_thread_number <= 0 || m_max_requests <= 0) 

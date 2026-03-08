@@ -18,10 +18,6 @@ const char* error_404_form = "The Request file was not found on this server.\n";
 const char* error_500_title = "Internal Error";
 const char* error_500_form = "There was an unusual problem serving the request file.\n";
 
-http_conn::http_conn()
-{
-
-}
 
 void http_conn::initmysql_result(connection_pool* connPool)
 {

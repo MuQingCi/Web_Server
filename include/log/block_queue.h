@@ -7,7 +7,7 @@
 #define __BLOCK_QUEUE_H__
 
 #include "../lock/locker.h"
-
+#include <sys/time.h>
 
 template <class T>
 class block_queue
@@ -48,11 +48,11 @@ public:
 
         if(m_size >= m_max_size) 
         {
-            m_mutex.unlock;
+            m_mutex.unlock();
             return true;
         }
 
-        m_mutex.unlock;
+        m_mutex.unlock();
         return false;
     }
 
@@ -77,11 +77,11 @@ public:
             return false;
         }        
         value = m_array[m_front];
-        m_mutex.unlock;
+        m_mutex.unlock();
         return true;
     }
 
-    bool back()(T& value)
+    bool back(T& value)
     {
         m_mutex.lock();
         if(m_size == 0)
@@ -90,7 +90,7 @@ public:
             return false;
         }        
         value = m_array[m_back];
-        m_mutex.unlock;
+        m_mutex.unlock();
         return true;
     }
 
@@ -99,7 +99,7 @@ public:
         int tmp=0;
         m_mutex.lock();
         tmp = m_size;
-        m_mutex.unlock;
+        m_mutex.unlock();
         return tmp;
     }
 
@@ -108,7 +108,7 @@ public:
         int tmp=0;
         m_mutex.lock();
         tmp = m_max_size;
-        m_mutex.unlock;
+        m_mutex.unlock();
         return tmp;
     }
 
@@ -149,7 +149,7 @@ public:
         item = m_array[m_front];
 
         m_size--;
-        m_mutex.unlock()
+        m_mutex.unlock();
         return true;
     }
 
@@ -157,7 +157,7 @@ public:
     bool pop(T *item,int ms_timeout)
     {
         struct timespec t = {0,0};
-        struct timespec now = {0,0};
+        struct timeval now = {0,0};
         gettimeofday(&now,NULL);
 
         m_mutex.lock();
@@ -170,7 +170,7 @@ public:
             */
             t.tv_nsec = (ms_timeout % 1000) * 1000;  
             
-            if(!m_cond.time_wait(&m_mutex.get(), t))
+            if(!m_cond.time_wait(m_mutex.get(), t))
             {
                 m_mutex.unlock();
                 return false;

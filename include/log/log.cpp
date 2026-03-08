@@ -14,7 +14,7 @@ Log::~Log()
     if(m_fp != NULL) fclose(m_fp);
 }
 
-bool Log::init(const char *file_name,int close_log, int log_buf_size = 8192,int split_lines = 5000000,int max_queue_size = 0)
+bool Log::init(const char *file_name,int close_log, int log_buf_size,int split_lines,int max_queue_size)
 {
     //设置了max_queue_size参数，说明是异步
     if(max_queue_size >= 1)
