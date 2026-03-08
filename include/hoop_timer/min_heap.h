@@ -50,7 +50,8 @@ public:
     void del_timer(heap_timer* timer);
     heap_timer* top();
     void pop_timer();
-
+    void tick();
+    bool empty() const{return _cur_size == 0;}  
 private:
     void percolate_down(int hole);
     void resize();
@@ -62,6 +63,6 @@ private:
     int _capacity;   //数组容量
 };
 
-
+void cb_func(client_data* user_data);
 
 #endif

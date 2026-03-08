@@ -11,7 +11,6 @@ void cb_func(client_data* user_data)
     close(user_data->sockfd);
 
     http_conn::m_user_count--;
-
 }
 
 
@@ -115,4 +114,18 @@ void time_heap::resize()
     _capacity *= 2;
     delete []_arr;
     _arr = tmp;
+}
+
+void time_heap::tick()
+{
+    heap_timer* tmp = (*_arr)[0];
+    time_t cur = time(NULL);
+    while(!empty())
+    {
+        if(!tmp) break;
+        if(tmp->expire > cur) break;
+        if(tmp->cb_func) tmp->cb_func(tmp->user_data);
+        pop_timer();
+        tmp = (*_arr)[0];
+    }
 }
