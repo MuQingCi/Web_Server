@@ -5,6 +5,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/mman.h>
+#include <sys/uio.h>
+
 #include <netinet/in.h>
 #include <map>
 #include <errno.h>
@@ -70,7 +72,7 @@ public:
     void close_conn(bool real_close = true);
     void process();
     bool read_once();
-    void write();
+    bool write();
 
     sockaddr_in* get_address()
     {
@@ -99,7 +101,7 @@ private:
     bool add_status_line(int status, const char* title);
     bool add_headers(int content_length);
     bool add_content_type();
-    bool add_content_length();
+    bool add_content_length(int content_length);
     bool add_linger();
     bool add_blank_line();
 

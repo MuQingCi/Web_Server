@@ -1,6 +1,20 @@
 #include "min_heap.h"
 #include <cstddef>
 
+static int epollfd;
+
+void cb_func(client_data* user_data)
+{
+    epoll_ctl(epollfd,EPOLL_CTL_DEL, user_data->sockfd, 0);
+    assert(user_data);
+
+    close(user_data->sockfd);
+
+    http_conn::m_user_count--;
+
+}
+
+
 time_heap::time_heap(int num):_capacity(num),_cur_size(0)
     {
         _arr = new std::vector<heap_timer*>(_capacity, nullptr);
