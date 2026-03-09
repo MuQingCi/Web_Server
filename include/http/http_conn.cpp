@@ -176,73 +176,186 @@ bool http_conn::read_once()
 
 bool http_conn::write()
 {
-    LOG_INFO("%s", "log write!");
+    LOG_INFO("write: total=%d, header=%d, file=%ld", 
+             bytes_to_send, m_write_idx, m_file_stat.st_size);
+    
     int tmp = 0;
     int file_bytes_send = 0;
-
-    if(bytes_to_send == 0)
-    {
-        mod_fd(m_epollfd, m_sockfd, EPOLLIN, m_TRIGMode);
-        init();
-        return true;
-    }
+    int total_sent = 0;
 
     while(1)
     {
         tmp = writev(m_sockfd, m_iv, m_iv_count);
-        if(tmp > 0)
-        {
-            bytes_have_send += tmp;
-            file_bytes_send = bytes_have_send - m_write_idx;
-        }
+        LOG_INFO("writev=%d, total_sent=%d", tmp, total_sent + tmp);
 
-        if(tmp <=-1)
+        if (tmp < 0)
         {
-            if(errno == EAGAIN)
+            if (errno == EAGAIN)
             {
-                if(bytes_have_send >= m_iv[0].iov_len)
-                {
-                    m_iv[0].iov_len = 0;
-                    m_iv[1].iov_base = m_file_address + file_bytes_send;
-                    m_iv[1].iov_len = bytes_to_send;
-                }
-                else 
-                {
-                    m_iv[0].iov_base = m_write_buff + bytes_have_send;
-                    m_iv[0].iov_len = m_iv[0].iov_len - bytes_have_send;
-                }
-
+                LOG_INFO("EAGAIN after %d bytes", total_sent);
                 mod_fd(m_epollfd, m_sockfd, EPOLLOUT, m_TRIGMode);
+                return true;
             }
-
+            LOG_INFO("Error: %d", errno);
             unmap();
             return false;
         }
 
+        total_sent += tmp;
+        bytes_have_send += tmp;
         bytes_to_send -= tmp;
-        if(bytes_to_send <= 0)
+        
+        LOG_INFO("Progress: %d/%d bytes (%.1f%%)", 
+                 total_sent, 
+                 bytes_to_send + total_sent,
+                 (float)total_sent / (bytes_to_send + total_sent) * 100);
+
+        // 更新 iovec
+        if (bytes_have_send >= m_iv[0].iov_len)
         {
+            file_bytes_send = bytes_have_send - m_write_idx;
+            m_iv[0].iov_len = 0;
+            m_iv[1].iov_base = m_file_address + file_bytes_send;
+            m_iv[1].iov_len = bytes_to_send;
+            LOG_INFO("File offset: %d, remaining: %d", file_bytes_send, bytes_to_send);
+        }
+        else
+        {
+            m_iv[0].iov_base = m_write_buff + bytes_have_send;
+            m_iv[0].iov_len = m_iv[0].iov_len - bytes_have_send;
+        }
+
+        if (bytes_to_send <= 0)
+        {
+            LOG_INFO("Transfer complete: %d bytes", total_sent);
             unmap();
-
             mod_fd(m_epollfd, m_sockfd, EPOLLIN, m_TRIGMode);
-
-            if(m_linger)
+            
+            if (m_linger)
             {
-                LOG_INFO("%s", "log have write!");
-                
                 init();
                 return true;
             }
-            else
-            {
-                LOG_INFO("%s", "log have write!");
-
-                return false;
-            }
+            return false;
         }
     }
-    
 }
+
+// bool http_conn::write()
+// {
+//     LOG_INFO("%s", "log write!");
+//     int tmp = 0;
+//     int file_bytes_send = 0;
+
+//     if(bytes_to_send == 0)
+//     {
+//         mod_fd(m_epollfd, m_sockfd, EPOLLIN, m_TRIGMode);
+//         init();
+//         return true;
+//     }
+
+//     while(1)
+//     {
+//         tmp = writev(m_sockfd, m_iv, m_iv_count);
+
+//         if (tmp < 0)
+//         {
+//             if (errno == EAGAIN)
+//             {
+//                 mod_fd(m_epollfd, m_sockfd, EPOLLOUT, m_TRIGMode);
+//                 return true;
+//             }
+//             unmap();
+//             return false;
+//         }
+
+        // if(tmp > 0)
+        // {
+        //     bytes_have_send += tmp;
+        //     file_bytes_send = bytes_have_send - m_write_idx;
+
+        //     LOG_INFO("%s:%d", "file_bytes_send", file_bytes_send);
+        // }
+
+        // if(tmp <=-1)
+        // {
+        //     if(errno == EAGAIN)
+        //     {
+        //         if(bytes_have_send >= m_iv[0].iov_len)
+        //         {
+        //             m_iv[0].iov_len = 0;
+        //             m_iv[1].iov_base = m_file_address + file_bytes_send;
+        //             m_iv[1].iov_len = bytes_to_send;
+        //         }
+        //         else 
+        //         {
+        //             m_iv[0].iov_base = m_write_buff + bytes_have_send;
+        //             m_iv[0].iov_len = m_iv[0].iov_len - bytes_have_send;
+        //         }
+
+        //         mod_fd(m_epollfd, m_sockfd, EPOLLOUT, m_TRIGMode);
+        //     }
+
+        //     unmap();
+        //     return false;
+        // }
+//         bytes_have_send += tmp;
+//         bytes_to_send -= tmp;
+        
+//         // if(bytes_to_send <= 0)
+//         // {
+//         //     unmap();
+
+//         //     mod_fd(m_epollfd, m_sockfd, EPOLLIN, m_TRIGMode);
+
+//         //     if(m_linger)
+//         //     {
+//         //         LOG_INFO("%s", "log have write!");
+                
+//         //         init();
+//         //         return true;
+//         //     }
+//         //     else
+//         //     {
+//         //         LOG_INFO("%s", "log have write!");
+
+//         //         return false;
+//         //     }
+//         // }
+
+//         LOG_INFO("%s:%d", "bytes_to_send", bytes_to_send);
+//         LOG_INFO("%s:%d", "bytes_have_send", bytes_have_send);
+
+//         if (bytes_have_send >= m_iv[0].iov_len)
+//         {
+//             m_iv[0].iov_len = 0;
+//             m_iv[1].iov_base = m_file_address + (bytes_have_send - m_write_idx);
+//             m_iv[1].iov_len = bytes_to_send;
+//         }
+//         else
+//         {
+//             m_iv[0].iov_base = m_write_buff + bytes_have_send;
+//             m_iv[0].iov_len = m_iv[0].iov_len - bytes_have_send;
+//         }
+
+//         if (bytes_to_send <= 0)
+//         {
+//             unmap();
+//             mod_fd(m_epollfd, m_sockfd, EPOLLIN, m_TRIGMode);
+
+//             if (m_linger)
+//             {
+//                 init();
+//                 return true;
+//             }
+//             else
+//             {
+//                 return false;
+//             }
+//         }
+//     }
+    
+// }
 
 http_conn::HTTP_CODE http_conn::process_read()
 {
@@ -477,6 +590,9 @@ http_conn::HTTP_CODE http_conn::do_request()
 
     if(cgi == 1 && ((*(p + 1)) == '2' || *(p + 1) == '3'))
     {
+
+        LOG_INFO("%s", "into cgi = 1");
+
         char flag = m_url[1];
 
         char* m_url_real = (char*)malloc(sizeof(char) * 256);
@@ -491,9 +607,13 @@ http_conn::HTTP_CODE http_conn::do_request()
             name[i-5] = m_string[i];
         name[i-5] = '\0';
 
-        for(i = i + 10;m_string[i] != '\0';i++)
-            passwd[i-10] = m_string[i];
-        passwd[i-10] = '\0';
+        int j = 0;
+        for(i = i + 10;m_string[i] != '\0';i++,j++)
+            passwd[j] = m_string[i];
+        passwd[j] = '\0';
+
+        LOG_INFO("%s", name);
+        LOG_INFO("%s", passwd);
 
         if(*(p + 1) == '3')
         {
@@ -591,6 +711,8 @@ http_conn::HTTP_CODE http_conn::do_request()
 
     close(fd);
 
+    LOG_INFO("File size: %ld bytes", m_file_stat.st_size);
+    
     LOG_INFO("%s", "log have do_request");
 
     return FILE_REQUEST;
