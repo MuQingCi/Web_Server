@@ -84,7 +84,7 @@ void time_heap::add_timer(heap_timer* timer)
 void time_heap::del_timer(heap_timer* timer)
 {
     if(!timer) return;
-    timer->m_cb_func = nullptr;
+    timer->cb_func = nullptr;
 }
 
 heap_timer* time_heap::top()
@@ -124,7 +124,7 @@ void time_heap::percolate_down(int hole)
         
         if((child < _cur_size-1) && ((*_arr)[child+1]->expire < (*_arr)[child]->expire)) ++child;
 
-        if((*_arr)[child]->expire < tm->expire)
+        if((*_arr)[child]->expire < timer->expire)
         {
             (*_arr)[hole] = (*_arr)[child];
             hole = child;

@@ -6,7 +6,7 @@ WebServer::WebServer()
 
     char server_path[200];
     getcwd(server_path, 200);
-    char root[6] = "/root";
+    char root[8] = "/source";
     m_root = (char*)malloc(strlen(server_path) + strlen(root) + 1);
     strcpy(m_root, server_path);
     strcat(m_root, root);

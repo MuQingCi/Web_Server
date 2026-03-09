@@ -6,7 +6,6 @@ map<string,string> users;
 
 int http_conn::m_epollfd = -1;
 int http_conn:: m_user_count = 0;
-const char* doc_root = "/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server";
 
 const char* ok_200_title = "OK";
 const char* error_400_title = "Bad Request";
@@ -62,6 +61,7 @@ void http_conn::init(int sockfd, const sockaddr_in &addr, char *root, int TRIGMo
 
 void http_conn::init()
 {
+    LOG_INFO("%s", "log_init!");
     improv = 0;
     timer_flag = 0;
 
@@ -90,11 +90,14 @@ void http_conn::init()
     memset(m_read_buff, '\0', READ_BUFF_SIZE);
     memset(m_write_buff, '\0', WRITE_BUFF_SIZE);
     memset(m_read_buff, '\0', FILENAME_LEN);
+
+    LOG_INFO("%s", "log_have init!");
 }
 
 
 void http_conn::close_conn(bool real_close)
 {
+    LOG_INFO("%s", "log_close_conn!");
     if(real_close && (m_sockfd != -1))
     {
         printf("close %d\n", m_sockfd);
@@ -107,6 +110,7 @@ void http_conn::close_conn(bool real_close)
 
 void http_conn::process()
 {
+    LOG_INFO("%s", "log process!");
     HTTP_CODE read_ret = process_read();
     if(read_ret == NO_REQUEST)
     {
@@ -119,11 +123,13 @@ void http_conn::process()
     {
         close_conn();
     }
-    mod_fd(m_epollfd, m_sockfd, EPOLLOUT,m_TRIGMode);
+    mod_fd(m_epollfd, m_sockfd, EPOLLOUT,m_TRIGMode);\
+    LOG_INFO("%s", "log have process!");
 }
 
 bool http_conn::read_once()
 {
+    LOG_INFO("%s", "log read once!");
     if(m_read_idx >= READ_BUFF_SIZE)
     {
         return false;
@@ -161,12 +167,16 @@ bool http_conn::read_once()
                 return false;
             m_read_idx += byte_read;
         }
+        LOG_INFO("%s", "log have read once!");
+        
         return true;
     }
+    
 }
 
 bool http_conn::write()
 {
+    LOG_INFO("%s", "log write!");
     int tmp = 0;
     int file_bytes_send = 0;
 
@@ -218,19 +228,25 @@ bool http_conn::write()
 
             if(m_linger)
             {
+                LOG_INFO("%s", "log have write!");
+                
                 init();
                 return true;
             }
             else
             {
+                LOG_INFO("%s", "log have write!");
+
                 return false;
             }
         }
     }
+    
 }
 
 http_conn::HTTP_CODE http_conn::process_read()
 {
+    LOG_INFO("%s", "log process_read");
     LINE_STATUS line_status = LINE_OK;
     HTTP_CODE ret = NO_REQUEST;
     char* text = nullptr;
@@ -248,6 +264,7 @@ http_conn::HTTP_CODE http_conn::process_read()
             if(ret == BAD_REQUEST)
                 return BAD_REQUEST;
             break;
+
         case CHECK_STATE_HEADER:
             ret = parse_request_headers(text);
             if(ret == BAD_REQUEST)
@@ -268,11 +285,18 @@ http_conn::HTTP_CODE http_conn::process_read()
             return INTERNAL_ERROR;
         }
     }
+
+    LOG_INFO("%s", "log have process_read");
+    
     return NO_REQUEST;
+
+    
 }
 
 http_conn::LINE_STATUS http_conn::parse_line()
 {
+    LOG_INFO("%s", "log parse_line");
+
     char tmp;
     for(;m_checked_idx < m_read_idx;++m_checked_idx)
     {
@@ -300,7 +324,12 @@ http_conn::LINE_STATUS http_conn::parse_line()
             return LINE_BAD;
         }
     }
+
+    LOG_INFO("%s", "log have parse_line");
+    
     return LINE_OPEN;
+
+    
 }
 
 
@@ -308,7 +337,9 @@ http_conn::LINE_STATUS http_conn::parse_line()
 
 http_conn::HTTP_CODE http_conn::parse_request_line(char *text)
 {
-    m_url = strpbrk(text, "\t");
+    LOG_INFO("%s", "log parse_request_line");
+
+    m_url = strpbrk(text, " \t");
     if(m_url == nullptr)
         return BAD_REQUEST;
     *m_url++ = '\0';
@@ -355,11 +386,18 @@ http_conn::HTTP_CODE http_conn::parse_request_line(char *text)
         strcat(m_url, "judge.html");
 
     m_check_state = CHECK_STATE_HEADER;
+
+    LOG_INFO("%s", "log have parse_request_line");
+    
     return NO_REQUEST;
+
+    
 }
 
 http_conn::HTTP_CODE http_conn::parse_request_headers(char* text)
 {
+    LOG_INFO("%s", "log parse_request_headers");
+
     if(text[0] == '\0')
     {
         if(m_content_length != 0)
@@ -367,6 +405,7 @@ http_conn::HTTP_CODE http_conn::parse_request_headers(char* text)
             m_check_state = CHECK_STATE_CONTENT;
             return NO_REQUEST;
         }
+
         return GET_REQUEST;
     }
     else if(strncasecmp(text, "Connection:", 11) == 0)
@@ -397,12 +436,17 @@ http_conn::HTTP_CODE http_conn::parse_request_headers(char* text)
         std::cout<< "oop! unknow header: " << text << std::endl;
     }
 
+    LOG_INFO("%s", "log have parse_request_headers");
+
     return NO_REQUEST;
+
 }
 
 
 http_conn::HTTP_CODE http_conn::parse_content(char* text)
 {
+    LOG_INFO("%s", "log parse_content");
+
     if(m_read_idx >= (m_content_length + m_checked_idx))
     {
         text[m_content_length] = '\0';
@@ -411,19 +455,27 @@ http_conn::HTTP_CODE http_conn::parse_content(char* text)
         
         return GET_REQUEST;
     }
-    
+
+    LOG_INFO("%s", "log have parse_content");
+
     return NO_REQUEST;
+
+    
 }
 
 
 http_conn::HTTP_CODE http_conn::do_request()
 {
+    LOG_INFO("%s", "log do_request");
+
     strcpy(m_real_file, doc_root);
     int len = strlen(doc_root);
 
     const char* p = strrchr(m_url, '/');
     
-    if(cgi == 1 && (*(p + 1)) == '2' || *(p + 1) == '3')
+    LOG_INFO("do_request: final path=%s", m_real_file);
+
+    if(cgi == 1 && ((*(p + 1)) == '2' || *(p + 1) == '3'))
     {
         char flag = m_url[1];
 
@@ -528,7 +580,7 @@ http_conn::HTTP_CODE http_conn::do_request()
     if(stat(m_real_file, &m_file_stat) < 0)
         return BAD_REQUEST;
     
-    if(m_file_stat.st_mode & S_IROTH == 0)
+    if((m_file_stat.st_mode & S_IROTH) == 0)
         return FORBIDDEN_REQUEST;
 
     if(S_ISDIR(m_file_stat.st_mode))
@@ -539,16 +591,21 @@ http_conn::HTTP_CODE http_conn::do_request()
 
     close(fd);
 
+    LOG_INFO("%s", "log have do_request");
+
     return FILE_REQUEST;
 
 }
 
 bool http_conn::process_write(HTTP_CODE ret)
 {
+    LOG_INFO("%s", "log process_write");
+
     switch (ret)
     {
     //内部错误 500
     case INTERNAL_ERROR:
+        LOG_INFO("%s", "INTERNAL_ERROR");
         add_status_line(500, error_500_title);
         add_headers(strlen(error_500_form));
         if(!add_content(error_500_form))
@@ -557,6 +614,7 @@ bool http_conn::process_write(HTTP_CODE ret)
     
     //报文错误 404
     case BAD_REQUEST:
+        LOG_INFO("%s", "BAD_REQUEST");
         add_status_line(404, error_404_title);
         add_headers(strlen(error_404_form));
         if(!add_content(error_404_form))
@@ -565,6 +623,7 @@ bool http_conn::process_write(HTTP_CODE ret)
 
     //无访问资源权限 403
     case FORBIDDEN_REQUEST:
+        LOG_INFO("%s", "FORBIDDEN_REQUEST");
         add_status_line(403, error_403_title);
         add_headers(strlen(error_403_form));
         if(!add_content(error_403_form))
@@ -573,6 +632,7 @@ bool http_conn::process_write(HTTP_CODE ret)
     
     // 200
     case FILE_REQUEST:
+        LOG_INFO("%s", "FILE_REQUEST");
         add_status_line(200, ok_200_title);
         if(m_file_stat.st_size != 0)
         {
@@ -602,6 +662,9 @@ bool http_conn::process_write(HTTP_CODE ret)
     m_iv[0].iov_base = m_write_buff;
     m_iv[0].iov_len = m_write_idx;
     m_iv_count = 1;
+
+    LOG_INFO("%s", "log have process_write");
+
     return true;
 }
 
