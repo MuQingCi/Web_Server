@@ -46,16 +46,21 @@ public:
     ~time_heap();
 
 public:
+
     void add_timer(heap_timer* timer);
     void del_timer(heap_timer* timer);
     heap_timer* top();
     void pop_timer();
     void tick();
-    bool empty() const{return _cur_size == 0;}  
+    bool empty() const{return _cur_size == 0;}
+    void adjust_timer(heap_timer* timer, time_t new_expire);
+
 private:
     void percolate_down(int hole);
     void resize();
-
+    void percolate_up(int hole);
+    int find_timer_pos(heap_timer* timer);
+    
 private:
     std::vector<heap_timer*>* _arr;
     int _cur_size;   //当前包含定时器个数

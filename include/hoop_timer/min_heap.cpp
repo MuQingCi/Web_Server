@@ -39,32 +39,52 @@ time_heap::time_heap(heap_timer** init_arr, int size, int capacity)
     }
 
 time_heap::~time_heap()
+{
+    for(auto ptr : *_arr)
     {
-        for(auto ptr : *_arr)
-        {
-            delete ptr;
-        }
-        delete [] _arr;
+        delete ptr;
     }
+    delete _arr;
+}
 
 
 void time_heap::add_timer(heap_timer* timer)
 {
-    int hole = ++_cur_size;
-    int parent = 0;
-    for(;hole >= 0; hole = parent)
+    if(timer == nullptr) return;
+    
+    // 检查是否需要扩容
+    if(_cur_size >= _capacity) resize();
+    
+    int hole = _cur_size;
+    
+    // 上浮调整 
+    while (hole > 0)  // hole > 0 才需要比较父节点
     {
-        parent = (_cur_size-1)/2;
-        if((*_arr)[parent]->expire <= timer->expire) break;
+        int parent = (hole - 1) / 2;
+        
+        //确保父节点索引有效
+        if (parent < 0 || parent >= _cur_size) break;
+        
+        //确保父节点指针不为空
+        if (!(*_arr)[parent]) {
+            fprintf(stderr, "Warning: null parent timer at %d\n", parent);
+            break;
+        }
+
+        if ((*_arr)[parent]->expire <= timer->expire) {
+            break;
+        }
+
         (*_arr)[hole] = (*_arr)[parent];
     }
+
     (*_arr)[hole] = timer;
 }
 
 void time_heap::del_timer(heap_timer* timer)
 {
     if(!timer) return;
-    timer->cb_func = nullptr;
+    timer->m_cb_func = nullptr;
 }
 
 heap_timer* time_heap::top()
@@ -86,23 +106,36 @@ void time_heap::pop_timer()
 
 void time_heap::percolate_down(int hole)
 {
-    heap_timer* tm = (*_arr)[hole];
-    int child = 0;
-    for(;(hole *2 +1) <= (_cur_size-1);hole = child)
+    if (hole < 0 || hole >= _cur_size) {
+        return;
+    }
+    
+    heap_timer* timer = (*_arr)[hole];
+    if (!timer) {
+        return;
+    }
+    
+    int child;
+    int size = _cur_size;
+    
+    while ((hole * 2 + 1) < size)  // 有左子节点
     {
         child = hole * 2 + 1;
         
-        if((child < _cur_size-1) && ((*_arr)[child+1]->expire < (*_arr)[child+1]->expire)) ++child;
+        if((child < _cur_size-1) && ((*_arr)[child+1]->expire < (*_arr)[child]->expire)) ++child;
 
         if((*_arr)[child]->expire < tm->expire)
         {
             (*_arr)[hole] = (*_arr)[child];
+            hole = child;
         }
-
-        else break;
+        else
+        {
+            break;
+        }
     }
     
-    (*_arr)[hole] = tm;
+    (*_arr)[hole] = timer;
 }
 
 
@@ -128,4 +161,76 @@ void time_heap::tick()
         pop_timer();
         tmp = (*_arr)[0];
     }
+}
+
+void time_heap::percolate_up(int hole)
+{
+    if (hole < 0 || hole >= _cur_size) return;
+    
+    heap_timer* timer = (*_arr)[hole];
+    
+    while (hole > 0) {
+        int parent = (hole - 1) / 2;
+        
+        // 如果父节点小于等于当前节点，停止上浮
+        if ((*_arr)[parent]->expire <= timer->expire) {
+            break;
+        }
+        
+        // 父节点下移
+        (*_arr)[hole] = (*_arr)[parent];
+        hole = parent;
+    }
+
+    (*_arr)[hole] = timer;
+}
+
+
+void time_heap::adjust_timer(heap_timer* timer, time_t new_expire)
+{
+    if (!timer) {
+        return;
+    }
+    
+    // 1. 找到定时器在堆中的位置
+    int pos = find_timer_pos(timer);
+    
+    if (pos == -1) {
+        // 定时器不在堆中，直接添加
+        timer->expire = new_expire;
+        add_timer(timer);
+        return;
+    }
+    
+    // 2. 记录旧值
+    time_t old_expire = timer->expire;
+    
+    // 3. 如果新旧值相同，不需要调整
+    if (old_expire == new_expire) {
+        return;
+    }
+    
+    // 4. 更新过期时间
+    timer->expire = new_expire;
+    
+    // 5. 根据大小关系调整位置
+    if (new_expire < old_expire) {
+        // 过期时间变小了，需要上滤
+        percolate_up(pos);
+    } else {
+        // 过期时间变大了，需要下滤
+        percolate_down(pos);
+    }
+}
+
+int time_heap::find_timer_pos(heap_timer* timer)
+{
+    if (!timer) return -1;
+    
+    for (int i = 0; i < _cur_size; i++) {
+        if ((*_arr)[i] == timer) {
+            return i;
+        }
+    }
+    return -1;
 }
