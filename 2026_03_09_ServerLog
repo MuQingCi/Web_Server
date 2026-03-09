@@ -5551,3 +5551,2339 @@
 2026-03-09 20:29:02.706792 [info]timer tick
 2026-03-09 20:29:07.707007 [info]timer tick
 2026-03-09 20:29:12.707268 [info]timer tick
+2026-03-09 20:31:02.945141 [info]log read once!
+2026-03-09 20:31:02.955104 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:02.955152 [info]adjust timer once
+2026-03-09 20:31:02.955169 [info]log process!
+2026-03-09 20:31:02.955230 [info]log process_read
+2026-03-09 20:31:02.955238 [info]log parse_line
+2026-03-09 20:31:02.955245 [info]log parse_request_line
+2026-03-09 20:31:02.955262 [info]log have parse_request_line
+2026-03-09 20:31:02.955269 [info]log parse_line
+2026-03-09 20:31:02.955276 [info]log parse_request_headers
+2026-03-09 20:31:02.955283 [info]log have parse_request_headers
+2026-03-09 20:31:02.955291 [info]log parse_line
+2026-03-09 20:31:02.955299 [info]log parse_request_headers
+2026-03-09 20:31:02.955308 [info]log have parse_request_headers
+2026-03-09 20:31:02.955316 [info]log parse_line
+2026-03-09 20:31:02.955325 [info]log parse_request_headers
+2026-03-09 20:31:02.955367 [info]log have parse_request_headers
+2026-03-09 20:31:02.955377 [info]log parse_line
+2026-03-09 20:31:02.955385 [info]log parse_request_headers
+2026-03-09 20:31:02.955404 [info]log have parse_request_headers
+2026-03-09 20:31:02.955414 [info]log parse_line
+2026-03-09 20:31:02.955422 [info]log parse_request_headers
+2026-03-09 20:31:02.955437 [info]log have parse_request_headers
+2026-03-09 20:31:02.955445 [info]log parse_line
+2026-03-09 20:31:02.955454 [info]log parse_request_headers
+2026-03-09 20:31:02.955470 [info]log have parse_request_headers
+2026-03-09 20:31:02.955477 [info]log parse_line
+2026-03-09 20:31:02.955486 [info]log parse_request_headers
+2026-03-09 20:31:02.955504 [info]log have parse_request_headers
+2026-03-09 20:31:02.955512 [info]log parse_line
+2026-03-09 20:31:02.955519 [info]log parse_request_headers
+2026-03-09 20:31:02.955537 [info]log have parse_request_headers
+2026-03-09 20:31:02.955545 [info]log parse_line
+2026-03-09 20:31:02.955553 [info]log parse_request_headers
+2026-03-09 20:31:02.955569 [info]log have parse_request_headers
+2026-03-09 20:31:02.955577 [info]log parse_line
+2026-03-09 20:31:02.955595 [info]log parse_request_headers
+2026-03-09 20:31:02.955612 [info]log have parse_request_headers
+2026-03-09 20:31:02.955618 [info]log parse_line
+2026-03-09 20:31:02.955624 [info]log parse_request_headers
+2026-03-09 20:31:02.955640 [info]log have parse_request_headers
+2026-03-09 20:31:02.955647 [info]log parse_line
+2026-03-09 20:31:02.955652 [info]log parse_request_headers
+2026-03-09 20:31:02.955668 [info]log have parse_request_headers
+2026-03-09 20:31:02.955674 [info]log parse_line
+2026-03-09 20:31:02.955680 [info]log parse_request_headers
+2026-03-09 20:31:02.955696 [info]log have parse_request_headers
+2026-03-09 20:31:02.955702 [info]log parse_line
+2026-03-09 20:31:02.955708 [info]log parse_request_headers
+2026-03-09 20:31:02.955724 [info]log have parse_request_headers
+2026-03-09 20:31:02.955730 [info]log parse_line
+2026-03-09 20:31:02.955736 [info]log parse_request_headers
+2026-03-09 20:31:02.955752 [info]log have parse_request_headers
+2026-03-09 20:31:02.955758 [info]log parse_line
+2026-03-09 20:31:02.955764 [info]log parse_request_headers
+2026-03-09 20:31:02.955770 [info]log do_request
+2026-03-09 20:31:02.955778 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:31:02.955808 [info]File size: 586 bytes
+2026-03-09 20:31:02.955814 [info]log have do_request
+2026-03-09 20:31:02.955820 [info]log process_write
+2026-03-09 20:31:02.955825 [info]FILE_REQUEST
+2026-03-09 20:31:02.955843 [info]log have process!
+2026-03-09 20:31:02.955853 [info]write: total=648, header=62, file=586
+2026-03-09 20:31:02.956120 [info]writev=648, total_sent=648
+2026-03-09 20:31:02.956142 [info]Progress: 648/648 bytes (100.0%)
+2026-03-09 20:31:02.956152 [info]File offset: 586, remaining: 0
+2026-03-09 20:31:02.956157 [info]Transfer complete: 648 bytes
+2026-03-09 20:31:02.956176 [info]log_init!
+2026-03-09 20:31:02.956181 [info]log_have init!
+2026-03-09 20:31:02.956187 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:02.956192 [info]adjust timer once
+2026-03-09 20:31:03.940073 [info]timer tick
+2026-03-09 20:31:07.997983 [info]log read once!
+2026-03-09 20:31:07.998127 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:07.998150 [info]adjust timer once
+2026-03-09 20:31:07.998173 [info]log process!
+2026-03-09 20:31:07.998258 [info]log process_read
+2026-03-09 20:31:07.998266 [info]log parse_line
+2026-03-09 20:31:07.998274 [info]log parse_request_line
+2026-03-09 20:31:07.998281 [info]log have parse_request_line
+2026-03-09 20:31:07.998287 [info]log parse_line
+2026-03-09 20:31:07.998293 [info]log parse_request_headers
+2026-03-09 20:31:07.998299 [info]log have parse_request_headers
+2026-03-09 20:31:07.998305 [info]log parse_line
+2026-03-09 20:31:07.998310 [info]log parse_request_headers
+2026-03-09 20:31:07.998316 [info]log have parse_request_headers
+2026-03-09 20:31:07.998322 [info]log parse_line
+2026-03-09 20:31:07.998328 [info]log parse_request_headers
+2026-03-09 20:31:07.998339 [info]log have parse_request_headers
+2026-03-09 20:31:07.998345 [info]log parse_line
+2026-03-09 20:31:07.998351 [info]log parse_request_headers
+2026-03-09 20:31:07.998376 [info]log have parse_request_headers
+2026-03-09 20:31:07.998382 [info]log parse_line
+2026-03-09 20:31:07.998388 [info]log parse_request_headers
+2026-03-09 20:31:07.998403 [info]log have parse_request_headers
+2026-03-09 20:31:07.998409 [info]log parse_line
+2026-03-09 20:31:07.998415 [info]log parse_request_headers
+2026-03-09 20:31:07.998429 [info]log have parse_request_headers
+2026-03-09 20:31:07.998435 [info]log parse_line
+2026-03-09 20:31:07.998441 [info]log parse_request_headers
+2026-03-09 20:31:07.998455 [info]log have parse_request_headers
+2026-03-09 20:31:07.998461 [info]log parse_line
+2026-03-09 20:31:07.998467 [info]log parse_request_headers
+2026-03-09 20:31:07.998481 [info]log have parse_request_headers
+2026-03-09 20:31:07.998487 [info]log parse_line
+2026-03-09 20:31:07.998493 [info]log parse_request_headers
+2026-03-09 20:31:07.998501 [info]log have parse_request_headers
+2026-03-09 20:31:07.998507 [info]log parse_line
+2026-03-09 20:31:07.998522 [info]log parse_request_headers
+2026-03-09 20:31:07.998534 [info]log have parse_request_headers
+2026-03-09 20:31:07.998539 [info]log parse_line
+2026-03-09 20:31:07.998544 [info]log parse_request_headers
+2026-03-09 20:31:07.998557 [info]log have parse_request_headers
+2026-03-09 20:31:07.998562 [info]log parse_line
+2026-03-09 20:31:07.998567 [info]log parse_request_headers
+2026-03-09 20:31:07.998580 [info]log have parse_request_headers
+2026-03-09 20:31:07.998585 [info]log parse_line
+2026-03-09 20:31:07.998590 [info]log parse_request_headers
+2026-03-09 20:31:07.998602 [info]log have parse_request_headers
+2026-03-09 20:31:07.998607 [info]log parse_line
+2026-03-09 20:31:07.998612 [info]log parse_request_headers
+2026-03-09 20:31:07.998624 [info]log have parse_request_headers
+2026-03-09 20:31:07.998629 [info]log parse_line
+2026-03-09 20:31:07.998634 [info]log parse_request_headers
+2026-03-09 20:31:07.998646 [info]log have parse_request_headers
+2026-03-09 20:31:07.998651 [info]log parse_line
+2026-03-09 20:31:07.998656 [info]log parse_request_headers
+2026-03-09 20:31:07.998668 [info]log have parse_request_headers
+2026-03-09 20:31:07.998673 [info]log parse_line
+2026-03-09 20:31:07.998678 [info]log parse_request_headers
+2026-03-09 20:31:07.998690 [info]log have parse_request_headers
+2026-03-09 20:31:07.998695 [info]log parse_line
+2026-03-09 20:31:07.998700 [info]log parse_request_headers
+2026-03-09 20:31:07.998712 [info]log have parse_request_headers
+2026-03-09 20:31:07.998717 [info]log parse_line
+2026-03-09 20:31:07.998722 [info]log parse_request_headers
+2026-03-09 20:31:07.998734 [info]log have parse_request_headers
+2026-03-09 20:31:07.998739 [info]log parse_line
+2026-03-09 20:31:07.998744 [info]log parse_request_headers
+2026-03-09 20:31:07.998756 [info]log have parse_request_headers
+2026-03-09 20:31:07.998761 [info]log parse_line
+2026-03-09 20:31:07.998766 [info]log parse_request_headers
+2026-03-09 20:31:07.998770 [info]log do_request
+2026-03-09 20:31:07.998775 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:31:07.998793 [info]log process_write
+2026-03-09 20:31:07.998798 [info]BAD_REQUEST
+2026-03-09 20:31:07.998804 [info]log have process_write
+2026-03-09 20:31:07.998826 [info]log have process!
+2026-03-09 20:31:07.998848 [info]write: total=0, header=115, file=586
+2026-03-09 20:31:07.998895 [info]writev=115, total_sent=115
+2026-03-09 20:31:07.998903 [info]Progress: 115/0 bytes (inf%)
+2026-03-09 20:31:07.998909 [info]File offset: 0, remaining: -115
+2026-03-09 20:31:07.998914 [info]Transfer complete: 115 bytes
+2026-03-09 20:31:07.998920 [info]log_init!
+2026-03-09 20:31:07.998924 [info]log_have init!
+2026-03-09 20:31:07.998929 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:07.998934 [info]adjust timer once
+2026-03-09 20:31:08.940200 [info]timer tick
+2026-03-09 20:31:13.940292 [info]timer tick
+2026-03-09 20:31:17.549625 [info]log read once!
+2026-03-09 20:31:17.549714 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:17.549741 [info]adjust timer once
+2026-03-09 20:31:17.549773 [info]log process!
+2026-03-09 20:31:17.549838 [info]log process_read
+2026-03-09 20:31:17.549846 [info]log parse_line
+2026-03-09 20:31:17.549852 [info]log parse_request_line
+2026-03-09 20:31:17.549859 [info]log have parse_request_line
+2026-03-09 20:31:17.549865 [info]log parse_line
+2026-03-09 20:31:17.549871 [info]log parse_request_headers
+2026-03-09 20:31:17.549877 [info]log have parse_request_headers
+2026-03-09 20:31:17.549883 [info]log parse_line
+2026-03-09 20:31:17.549889 [info]log parse_request_headers
+2026-03-09 20:31:17.549895 [info]log have parse_request_headers
+2026-03-09 20:31:17.549901 [info]log parse_line
+2026-03-09 20:31:17.549907 [info]log parse_request_headers
+2026-03-09 20:31:17.549913 [info]log have parse_request_headers
+2026-03-09 20:31:17.549919 [info]log parse_line
+2026-03-09 20:31:17.549924 [info]log parse_request_headers
+2026-03-09 20:31:17.549957 [info]log have parse_request_headers
+2026-03-09 20:31:17.549964 [info]log parse_line
+2026-03-09 20:31:17.549980 [info]log parse_request_headers
+2026-03-09 20:31:17.549994 [info]log have parse_request_headers
+2026-03-09 20:31:17.549999 [info]log parse_line
+2026-03-09 20:31:17.550004 [info]log parse_request_headers
+2026-03-09 20:31:17.550017 [info]log have parse_request_headers
+2026-03-09 20:31:17.550022 [info]log parse_line
+2026-03-09 20:31:17.550027 [info]log parse_request_headers
+2026-03-09 20:31:17.550033 [info]log have parse_request_headers
+2026-03-09 20:31:17.550067 [info]log parse_line
+2026-03-09 20:31:17.550082 [info]log parse_request_headers
+2026-03-09 20:31:17.550095 [info]log have parse_request_headers
+2026-03-09 20:31:17.550100 [info]log parse_line
+2026-03-09 20:31:17.550105 [info]log parse_request_headers
+2026-03-09 20:31:17.550117 [info]log have parse_request_headers
+2026-03-09 20:31:17.550122 [info]log parse_line
+2026-03-09 20:31:17.550127 [info]log parse_request_headers
+2026-03-09 20:31:17.550139 [info]log have parse_request_headers
+2026-03-09 20:31:17.550144 [info]log parse_line
+2026-03-09 20:31:17.550149 [info]log parse_request_headers
+2026-03-09 20:31:17.550161 [info]log have parse_request_headers
+2026-03-09 20:31:17.550166 [info]log parse_line
+2026-03-09 20:31:17.550171 [info]log parse_request_headers
+2026-03-09 20:31:17.550183 [info]log have parse_request_headers
+2026-03-09 20:31:17.550188 [info]log parse_line
+2026-03-09 20:31:17.550193 [info]log parse_request_headers
+2026-03-09 20:31:17.550206 [info]log have parse_request_headers
+2026-03-09 20:31:17.550211 [info]log parse_line
+2026-03-09 20:31:17.550216 [info]log parse_request_headers
+2026-03-09 20:31:17.550228 [info]log have parse_request_headers
+2026-03-09 20:31:17.550233 [info]log parse_line
+2026-03-09 20:31:17.550238 [info]log parse_request_headers
+2026-03-09 20:31:17.550251 [info]log have parse_request_headers
+2026-03-09 20:31:17.550256 [info]log parse_line
+2026-03-09 20:31:17.550261 [info]log parse_request_headers
+2026-03-09 20:31:17.550273 [info]log have parse_request_headers
+2026-03-09 20:31:17.550278 [info]log parse_line
+2026-03-09 20:31:17.550283 [info]log parse_request_headers
+2026-03-09 20:31:17.550296 [info]log have parse_request_headers
+2026-03-09 20:31:17.550301 [info]log parse_line
+2026-03-09 20:31:17.550305 [info]log parse_request_headers
+2026-03-09 20:31:17.550318 [info]log have parse_request_headers
+2026-03-09 20:31:17.550323 [info]log parse_line
+2026-03-09 20:31:17.550328 [info]log parse_request_headers
+2026-03-09 20:31:17.550341 [info]log have parse_request_headers
+2026-03-09 20:31:17.550346 [info]log parse_line
+2026-03-09 20:31:17.550351 [info]log parse_request_headers
+2026-03-09 20:31:17.550364 [info]log have parse_request_headers
+2026-03-09 20:31:17.550369 [info]log parse_line
+2026-03-09 20:31:17.550373 [info]log parse_request_headers
+2026-03-09 20:31:17.550378 [info]log do_request
+2026-03-09 20:31:17.550383 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:31:17.550408 [info]File size: 714 bytes
+2026-03-09 20:31:17.550413 [info]log have do_request
+2026-03-09 20:31:17.550417 [info]log process_write
+2026-03-09 20:31:17.550422 [info]FILE_REQUEST
+2026-03-09 20:31:17.550436 [info]log have process!
+2026-03-09 20:31:17.550448 [info]write: total=776, header=62, file=714
+2026-03-09 20:31:17.559523 [info]writev=776, total_sent=776
+2026-03-09 20:31:17.559590 [info]Progress: 776/776 bytes (100.0%)
+2026-03-09 20:31:17.559603 [info]File offset: 714, remaining: 0
+2026-03-09 20:31:17.559608 [info]Transfer complete: 776 bytes
+2026-03-09 20:31:17.559632 [info]log_init!
+2026-03-09 20:31:17.559638 [info]log_have init!
+2026-03-09 20:31:17.559643 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:17.559648 [info]adjust timer once
+2026-03-09 20:31:18.940385 [info]timer tick
+2026-03-09 20:31:19.452399 [info]log read once!
+2026-03-09 20:31:19.452481 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:19.452504 [info]adjust timer once
+2026-03-09 20:31:19.452530 [info]log process!
+2026-03-09 20:31:19.452637 [info]log process_read
+2026-03-09 20:31:19.452645 [info]log parse_line
+2026-03-09 20:31:19.452659 [info]log parse_request_line
+2026-03-09 20:31:19.452666 [info]log have parse_request_line
+2026-03-09 20:31:19.452670 [info]log parse_line
+2026-03-09 20:31:19.452675 [info]log parse_request_headers
+2026-03-09 20:31:19.452680 [info]log have parse_request_headers
+2026-03-09 20:31:19.452685 [info]log parse_line
+2026-03-09 20:31:19.452689 [info]log parse_request_headers
+2026-03-09 20:31:19.452694 [info]log have parse_request_headers
+2026-03-09 20:31:19.452699 [info]log parse_line
+2026-03-09 20:31:19.452703 [info]log parse_request_headers
+2026-03-09 20:31:19.452708 [info]log have parse_request_headers
+2026-03-09 20:31:19.452713 [info]log parse_line
+2026-03-09 20:31:19.452718 [info]log parse_request_headers
+2026-03-09 20:31:19.452746 [info]log have parse_request_headers
+2026-03-09 20:31:19.452751 [info]log parse_line
+2026-03-09 20:31:19.452756 [info]log parse_request_headers
+2026-03-09 20:31:19.452770 [info]log have parse_request_headers
+2026-03-09 20:31:19.452775 [info]log parse_line
+2026-03-09 20:31:19.452780 [info]log parse_request_headers
+2026-03-09 20:31:19.452792 [info]log have parse_request_headers
+2026-03-09 20:31:19.452797 [info]log parse_line
+2026-03-09 20:31:19.452802 [info]log parse_request_headers
+2026-03-09 20:31:19.452814 [info]log have parse_request_headers
+2026-03-09 20:31:19.452828 [info]log parse_line
+2026-03-09 20:31:19.452838 [info]log parse_request_headers
+2026-03-09 20:31:19.452851 [info]log have parse_request_headers
+2026-03-09 20:31:19.452856 [info]log parse_line
+2026-03-09 20:31:19.452861 [info]log parse_request_headers
+2026-03-09 20:31:19.452874 [info]log have parse_request_headers
+2026-03-09 20:31:19.452879 [info]log parse_line
+2026-03-09 20:31:19.452883 [info]log parse_request_headers
+2026-03-09 20:31:19.452896 [info]log have parse_request_headers
+2026-03-09 20:31:19.452901 [info]log parse_line
+2026-03-09 20:31:19.452906 [info]log parse_request_headers
+2026-03-09 20:31:19.452919 [info]log have parse_request_headers
+2026-03-09 20:31:19.452924 [info]log parse_line
+2026-03-09 20:31:19.452929 [info]log parse_request_headers
+2026-03-09 20:31:19.452941 [info]log have parse_request_headers
+2026-03-09 20:31:19.452946 [info]log parse_line
+2026-03-09 20:31:19.452951 [info]log parse_request_headers
+2026-03-09 20:31:19.452964 [info]log have parse_request_headers
+2026-03-09 20:31:19.452969 [info]log parse_line
+2026-03-09 20:31:19.452974 [info]log parse_request_headers
+2026-03-09 20:31:19.452986 [info]log have parse_request_headers
+2026-03-09 20:31:19.452991 [info]log parse_line
+2026-03-09 20:31:19.452996 [info]log parse_request_headers
+2026-03-09 20:31:19.453007 [info]log have parse_request_headers
+2026-03-09 20:31:19.453012 [info]log parse_line
+2026-03-09 20:31:19.453017 [info]log parse_request_headers
+2026-03-09 20:31:19.453030 [info]log have parse_request_headers
+2026-03-09 20:31:19.453035 [info]log parse_line
+2026-03-09 20:31:19.453039 [info]log parse_request_headers
+2026-03-09 20:31:19.453053 [info]log have parse_request_headers
+2026-03-09 20:31:19.453058 [info]log parse_line
+2026-03-09 20:31:19.453063 [info]log parse_request_headers
+2026-03-09 20:31:19.453076 [info]log have parse_request_headers
+2026-03-09 20:31:19.453081 [info]log parse_line
+2026-03-09 20:31:19.453085 [info]log parse_request_headers
+2026-03-09 20:31:19.453098 [info]log have parse_request_headers
+2026-03-09 20:31:19.453103 [info]log parse_line
+2026-03-09 20:31:19.453108 [info]log parse_request_headers
+2026-03-09 20:31:19.453120 [info]log have parse_request_headers
+2026-03-09 20:31:19.453125 [info]log parse_line
+2026-03-09 20:31:19.453130 [info]log parse_request_headers
+2026-03-09 20:31:19.453134 [info]log do_request
+2026-03-09 20:31:19.453139 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:31:19.453157 [info]log process_write
+2026-03-09 20:31:19.453162 [info]BAD_REQUEST
+2026-03-09 20:31:19.453168 [info]log have process_write
+2026-03-09 20:31:19.453180 [info]log have process!
+2026-03-09 20:31:19.453192 [info]write: total=0, header=115, file=714
+2026-03-09 20:31:19.453236 [info]writev=115, total_sent=115
+2026-03-09 20:31:19.453260 [info]Progress: 115/0 bytes (inf%)
+2026-03-09 20:31:19.453267 [info]File offset: 0, remaining: -115
+2026-03-09 20:31:19.453272 [info]Transfer complete: 115 bytes
+2026-03-09 20:31:19.453277 [info]log_init!
+2026-03-09 20:31:19.453282 [info]log_have init!
+2026-03-09 20:31:19.453287 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:19.453292 [info]adjust timer once
+2026-03-09 20:31:23.940433 [info]timer tick
+2026-03-09 20:31:28.940532 [info]timer tick
+2026-03-09 20:31:33.940651 [info]timer tick
+2026-03-09 20:31:38.940769 [info]timer tick
+2026-03-09 20:31:43.940842 [info]timer tick
+2026-03-09 20:31:48.940938 [info]timer tick
+2026-03-09 20:31:53.941046 [info]timer tick
+2026-03-09 20:31:55.369961 [info]log read once!
+2026-03-09 20:31:55.370079 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:55.370104 [info]adjust timer once
+2026-03-09 20:31:55.370183 [info]log process!
+2026-03-09 20:31:55.370255 [info]log process_read
+2026-03-09 20:31:55.370264 [info]log parse_line
+2026-03-09 20:31:55.370270 [info]log parse_request_line
+2026-03-09 20:31:55.370278 [info]log have parse_request_line
+2026-03-09 20:31:55.370284 [info]log parse_line
+2026-03-09 20:31:55.370290 [info]log parse_request_headers
+2026-03-09 20:31:55.370296 [info]log have parse_request_headers
+2026-03-09 20:31:55.370302 [info]log parse_line
+2026-03-09 20:31:55.370308 [info]log parse_request_headers
+2026-03-09 20:31:55.370313 [info]log have parse_request_headers
+2026-03-09 20:31:55.370319 [info]log parse_line
+2026-03-09 20:31:55.370325 [info]log parse_request_headers
+2026-03-09 20:31:55.370331 [info]log have parse_request_headers
+2026-03-09 20:31:55.370337 [info]log parse_line
+2026-03-09 20:31:55.370343 [info]log parse_request_headers
+2026-03-09 20:31:55.370371 [info]log have parse_request_headers
+2026-03-09 20:31:55.370378 [info]log parse_line
+2026-03-09 20:31:55.370384 [info]log parse_request_headers
+2026-03-09 20:31:55.370398 [info]log have parse_request_headers
+2026-03-09 20:31:55.370404 [info]log parse_line
+2026-03-09 20:31:55.370410 [info]log parse_request_headers
+2026-03-09 20:31:55.370425 [info]log have parse_request_headers
+2026-03-09 20:31:55.370431 [info]log parse_line
+2026-03-09 20:31:55.370437 [info]log parse_request_headers
+2026-03-09 20:31:55.370455 [info]log have parse_request_headers
+2026-03-09 20:31:55.370461 [info]log parse_line
+2026-03-09 20:31:55.370467 [info]log parse_request_headers
+2026-03-09 20:31:55.370481 [info]log have parse_request_headers
+2026-03-09 20:31:55.370487 [info]log parse_line
+2026-03-09 20:31:55.370493 [info]log parse_request_headers
+2026-03-09 20:31:55.370507 [info]log have parse_request_headers
+2026-03-09 20:31:55.370513 [info]log parse_line
+2026-03-09 20:31:55.370519 [info]log parse_request_headers
+2026-03-09 20:31:55.370533 [info]log have parse_request_headers
+2026-03-09 20:31:55.370539 [info]log parse_line
+2026-03-09 20:31:55.370545 [info]log parse_request_headers
+2026-03-09 20:31:55.370559 [info]log have parse_request_headers
+2026-03-09 20:31:55.370565 [info]log parse_line
+2026-03-09 20:31:55.370571 [info]log parse_request_headers
+2026-03-09 20:31:55.370585 [info]log have parse_request_headers
+2026-03-09 20:31:55.370591 [info]log parse_line
+2026-03-09 20:31:55.370597 [info]log parse_request_headers
+2026-03-09 20:31:55.370611 [info]log have parse_request_headers
+2026-03-09 20:31:55.370618 [info]log parse_line
+2026-03-09 20:31:55.370624 [info]log parse_request_headers
+2026-03-09 20:31:55.370638 [info]log have parse_request_headers
+2026-03-09 20:31:55.370645 [info]log parse_line
+2026-03-09 20:31:55.370651 [info]log parse_request_headers
+2026-03-09 20:31:55.370664 [info]log have parse_request_headers
+2026-03-09 20:31:55.370671 [info]log parse_line
+2026-03-09 20:31:55.370677 [info]log parse_request_headers
+2026-03-09 20:31:55.370690 [info]log have parse_request_headers
+2026-03-09 20:31:55.370697 [info]log parse_line
+2026-03-09 20:31:55.370702 [info]log parse_request_headers
+2026-03-09 20:31:55.370716 [info]log have parse_request_headers
+2026-03-09 20:31:55.370722 [info]log parse_line
+2026-03-09 20:31:55.370736 [info]log parse_request_headers
+2026-03-09 20:31:55.370749 [info]log have parse_request_headers
+2026-03-09 20:31:55.370754 [info]log parse_line
+2026-03-09 20:31:55.370759 [info]log parse_request_headers
+2026-03-09 20:31:55.370772 [info]log have parse_request_headers
+2026-03-09 20:31:55.370777 [info]log parse_line
+2026-03-09 20:31:55.370782 [info]log parse_request_headers
+2026-03-09 20:31:55.370795 [info]log have parse_request_headers
+2026-03-09 20:31:55.370801 [info]log parse_line
+2026-03-09 20:31:55.370805 [info]log parse_request_headers
+2026-03-09 20:31:55.370810 [info]log do_request
+2026-03-09 20:31:55.370815 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:31:55.370823 [info]log process_write
+2026-03-09 20:31:55.370828 [info]BAD_REQUEST
+2026-03-09 20:31:55.370833 [info]log have process_write
+2026-03-09 20:31:55.370846 [info]log have process!
+2026-03-09 20:31:55.370856 [info]write: total=0, header=115, file=714
+2026-03-09 20:31:55.370903 [info]writev=115, total_sent=115
+2026-03-09 20:31:55.370910 [info]Progress: 115/0 bytes (inf%)
+2026-03-09 20:31:55.370916 [info]File offset: 0, remaining: -115
+2026-03-09 20:31:55.370921 [info]Transfer complete: 115 bytes
+2026-03-09 20:31:55.370927 [info]log_init!
+2026-03-09 20:31:55.370932 [info]log_have init!
+2026-03-09 20:31:55.370937 [info]deal with the client(127.0.0.1)
+2026-03-09 20:31:55.370941 [info]adjust timer once
+2026-03-09 20:31:58.941171 [info]timer tick
+2026-03-09 20:32:03.941314 [info]timer tick
+2026-03-09 20:32:08.941439 [info]timer tick
+2026-03-09 20:32:13.941534 [info]timer tick
+2026-03-09 20:32:18.941601 [info]timer tick
+2026-03-09 20:32:23.941690 [info]timer tick
+2026-03-09 20:32:28.941780 [info]timer tick
+2026-03-09 20:32:33.941850 [info]timer tick
+2026-03-09 20:32:38.941931 [info]timer tick
+2026-03-09 20:32:43.942014 [info]timer tick
+2026-03-09 20:32:48.942125 [info]timer tick
+2026-03-09 20:32:53.942212 [info]timer tick
+2026-03-09 20:32:58.942256 [info]timer tick
+2026-03-09 20:33:03.942341 [info]timer tick
+2026-03-09 20:33:08.942461 [info]timer tick
+2026-03-09 20:33:13.942563 [info]timer tick
+2026-03-09 20:33:18.942610 [info]timer tick
+2026-03-09 20:33:23.942708 [info]timer tick
+2026-03-09 20:33:28.942797 [info]timer tick
+2026-03-09 20:33:33.692024 [info]close fd 17
+2026-03-09 20:33:33.692188 [info]close fd 18
+2026-03-09 20:33:33.943022 [info]timer tick
+2026-03-09 20:33:38.943089 [info]timer tick
+2026-03-09 20:33:43.943189 [info]timer tick
+2026-03-09 20:33:48.943251 [info]timer tick
+2026-03-09 20:33:53.943340 [info]timer tick
+2026-03-09 20:33:58.943482 [info]timer tick
+2026-03-09 20:34:03.943596 [info]timer tick
+2026-03-09 20:34:08.943714 [info]timer tick
+2026-03-09 20:34:10.358150 [info]log read once!
+2026-03-09 20:34:10.358262 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:10.358298 [info]adjust timer once
+2026-03-09 20:34:10.358326 [info]log process!
+2026-03-09 20:34:10.358423 [info]log process_read
+2026-03-09 20:34:10.358433 [info]log parse_line
+2026-03-09 20:34:10.358440 [info]log parse_request_line
+2026-03-09 20:34:10.358448 [info]log have parse_request_line
+2026-03-09 20:34:10.358455 [info]log parse_line
+2026-03-09 20:34:10.358463 [info]log parse_request_headers
+2026-03-09 20:34:10.358473 [info]log have parse_request_headers
+2026-03-09 20:34:10.358480 [info]log parse_line
+2026-03-09 20:34:10.358486 [info]log parse_request_headers
+2026-03-09 20:34:10.358493 [info]log have parse_request_headers
+2026-03-09 20:34:10.358499 [info]log parse_line
+2026-03-09 20:34:10.358505 [info]log parse_request_headers
+2026-03-09 20:34:10.358543 [info]log have parse_request_headers
+2026-03-09 20:34:10.358552 [info]log parse_line
+2026-03-09 20:34:10.358559 [info]log parse_request_headers
+2026-03-09 20:34:10.358585 [info]log have parse_request_headers
+2026-03-09 20:34:10.358594 [info]log parse_line
+2026-03-09 20:34:10.358601 [info]log parse_request_headers
+2026-03-09 20:34:10.358621 [info]log have parse_request_headers
+2026-03-09 20:34:10.358629 [info]log parse_line
+2026-03-09 20:34:10.358652 [info]log parse_request_headers
+2026-03-09 20:34:10.358669 [info]log have parse_request_headers
+2026-03-09 20:34:10.358674 [info]log parse_line
+2026-03-09 20:34:10.358679 [info]log parse_request_headers
+2026-03-09 20:34:10.358693 [info]log have parse_request_headers
+2026-03-09 20:34:10.358698 [info]log parse_line
+2026-03-09 20:34:10.358703 [info]log parse_request_headers
+2026-03-09 20:34:10.358712 [info]log have parse_request_headers
+2026-03-09 20:34:10.358717 [info]log parse_line
+2026-03-09 20:34:10.358722 [info]log parse_request_headers
+2026-03-09 20:34:10.358735 [info]log have parse_request_headers
+2026-03-09 20:34:10.358740 [info]log parse_line
+2026-03-09 20:34:10.358745 [info]log parse_request_headers
+2026-03-09 20:34:10.358759 [info]log have parse_request_headers
+2026-03-09 20:34:10.358766 [info]log parse_line
+2026-03-09 20:34:10.358773 [info]log parse_request_headers
+2026-03-09 20:34:10.358787 [info]log have parse_request_headers
+2026-03-09 20:34:10.358793 [info]log parse_line
+2026-03-09 20:34:10.358798 [info]log parse_request_headers
+2026-03-09 20:34:10.358811 [info]log have parse_request_headers
+2026-03-09 20:34:10.358816 [info]log parse_line
+2026-03-09 20:34:10.358821 [info]log parse_request_headers
+2026-03-09 20:34:10.358829 [info]log have parse_request_headers
+2026-03-09 20:34:10.358834 [info]log parse_line
+2026-03-09 20:34:10.358839 [info]log parse_request_headers
+2026-03-09 20:34:10.358853 [info]log have parse_request_headers
+2026-03-09 20:34:10.358860 [info]log parse_line
+2026-03-09 20:34:10.358867 [info]log parse_request_headers
+2026-03-09 20:34:10.358884 [info]log have parse_request_headers
+2026-03-09 20:34:10.358891 [info]log parse_line
+2026-03-09 20:34:10.358898 [info]log parse_request_headers
+2026-03-09 20:34:10.358904 [info]log do_request
+2026-03-09 20:34:10.358911 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:10.358943 [info]File size: 580 bytes
+2026-03-09 20:34:10.358951 [info]log have do_request
+2026-03-09 20:34:10.358958 [info]log process_write
+2026-03-09 20:34:10.358963 [info]FILE_REQUEST
+2026-03-09 20:34:10.358983 [info]log have process!
+2026-03-09 20:34:10.359002 [info]write: total=642, header=62, file=580
+2026-03-09 20:34:10.359051 [info]writev=642, total_sent=642
+2026-03-09 20:34:10.359057 [info]Progress: 642/642 bytes (100.0%)
+2026-03-09 20:34:10.359065 [info]File offset: 580, remaining: 0
+2026-03-09 20:34:10.359074 [info]Transfer complete: 642 bytes
+2026-03-09 20:34:10.359092 [info]log_init!
+2026-03-09 20:34:10.359098 [info]log_have init!
+2026-03-09 20:34:10.359106 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:10.359113 [info]adjust timer once
+2026-03-09 20:34:13.943830 [info]timer tick
+2026-03-09 20:34:15.607513 [info]log read once!
+2026-03-09 20:34:15.607595 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:15.607616 [info]adjust timer once
+2026-03-09 20:34:15.607641 [info]log process!
+2026-03-09 20:34:15.607701 [info]log process_read
+2026-03-09 20:34:15.607707 [info]log parse_line
+2026-03-09 20:34:15.607713 [info]log parse_request_line
+2026-03-09 20:34:15.607719 [info]log have parse_request_line
+2026-03-09 20:34:15.607723 [info]log parse_line
+2026-03-09 20:34:15.607728 [info]log parse_request_headers
+2026-03-09 20:34:15.607733 [info]log have parse_request_headers
+2026-03-09 20:34:15.607737 [info]log parse_line
+2026-03-09 20:34:15.607742 [info]log parse_request_headers
+2026-03-09 20:34:15.607747 [info]log have parse_request_headers
+2026-03-09 20:34:15.607751 [info]log parse_line
+2026-03-09 20:34:15.607756 [info]log parse_request_headers
+2026-03-09 20:34:15.607761 [info]log have parse_request_headers
+2026-03-09 20:34:15.607765 [info]log parse_line
+2026-03-09 20:34:15.607770 [info]log parse_request_headers
+2026-03-09 20:34:15.607804 [info]log have parse_request_headers
+2026-03-09 20:34:15.607810 [info]log parse_line
+2026-03-09 20:34:15.607815 [info]log parse_request_headers
+2026-03-09 20:34:15.607838 [info]log have parse_request_headers
+2026-03-09 20:34:15.607845 [info]log parse_line
+2026-03-09 20:34:15.607850 [info]log parse_request_headers
+2026-03-09 20:34:15.607877 [info]log have parse_request_headers
+2026-03-09 20:34:15.607884 [info]log parse_line
+2026-03-09 20:34:15.607889 [info]log parse_request_headers
+2026-03-09 20:34:15.607907 [info]log have parse_request_headers
+2026-03-09 20:34:15.607912 [info]log parse_line
+2026-03-09 20:34:15.607918 [info]log parse_request_headers
+2026-03-09 20:34:15.607933 [info]log have parse_request_headers
+2026-03-09 20:34:15.607939 [info]log parse_line
+2026-03-09 20:34:15.607944 [info]log parse_request_headers
+2026-03-09 20:34:15.607960 [info]log have parse_request_headers
+2026-03-09 20:34:15.607966 [info]log parse_line
+2026-03-09 20:34:15.607972 [info]log parse_request_headers
+2026-03-09 20:34:15.607989 [info]log have parse_request_headers
+2026-03-09 20:34:15.607995 [info]log parse_line
+2026-03-09 20:34:15.608003 [info]log parse_request_headers
+2026-03-09 20:34:15.608021 [info]log have parse_request_headers
+2026-03-09 20:34:15.608026 [info]log parse_line
+2026-03-09 20:34:15.608031 [info]log parse_request_headers
+2026-03-09 20:34:15.608043 [info]log have parse_request_headers
+2026-03-09 20:34:15.608049 [info]log parse_line
+2026-03-09 20:34:15.608055 [info]log parse_request_headers
+2026-03-09 20:34:15.608073 [info]log have parse_request_headers
+2026-03-09 20:34:15.608080 [info]log parse_line
+2026-03-09 20:34:15.608086 [info]log parse_request_headers
+2026-03-09 20:34:15.608100 [info]log have parse_request_headers
+2026-03-09 20:34:15.608105 [info]log parse_line
+2026-03-09 20:34:15.608110 [info]log parse_request_headers
+2026-03-09 20:34:15.608122 [info]log have parse_request_headers
+2026-03-09 20:34:15.608127 [info]log parse_line
+2026-03-09 20:34:15.608132 [info]log parse_request_headers
+2026-03-09 20:34:15.608144 [info]log have parse_request_headers
+2026-03-09 20:34:15.608149 [info]log parse_line
+2026-03-09 20:34:15.608154 [info]log parse_request_headers
+2026-03-09 20:34:15.608166 [info]log have parse_request_headers
+2026-03-09 20:34:15.608171 [info]log parse_line
+2026-03-09 20:34:15.608176 [info]log parse_request_headers
+2026-03-09 20:34:15.608189 [info]log have parse_request_headers
+2026-03-09 20:34:15.608194 [info]log parse_line
+2026-03-09 20:34:15.608202 [info]log parse_request_headers
+2026-03-09 20:34:15.608215 [info]log have parse_request_headers
+2026-03-09 20:34:15.608221 [info]log parse_line
+2026-03-09 20:34:15.608227 [info]log parse_request_headers
+2026-03-09 20:34:15.608244 [info]log have parse_request_headers
+2026-03-09 20:34:15.608250 [info]log parse_line
+2026-03-09 20:34:15.608256 [info]log parse_request_headers
+2026-03-09 20:34:15.608262 [info]log do_request
+2026-03-09 20:34:15.608268 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:15.608278 [info]log process_write
+2026-03-09 20:34:15.608283 [info]BAD_REQUEST
+2026-03-09 20:34:15.608289 [info]log have process_write
+2026-03-09 20:34:15.608303 [info]log have process!
+2026-03-09 20:34:15.608316 [info]write: total=0, header=115, file=580
+2026-03-09 20:34:15.608365 [info]writev=115, total_sent=115
+2026-03-09 20:34:15.608373 [info]Progress: 115/0 bytes (inf%)
+2026-03-09 20:34:15.608380 [info]File offset: 0, remaining: -115
+2026-03-09 20:34:15.608386 [info]Transfer complete: 115 bytes
+2026-03-09 20:34:15.608393 [info]log_init!
+2026-03-09 20:34:15.608400 [info]log_have init!
+2026-03-09 20:34:15.608406 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:15.608412 [info]adjust timer once
+2026-03-09 20:34:18.943934 [info]timer tick
+2026-03-09 20:34:19.092978 [info]log read once!
+2026-03-09 20:34:19.093063 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:19.093085 [info]adjust timer once
+2026-03-09 20:34:19.093107 [info]log process!
+2026-03-09 20:34:19.093171 [info]log process_read
+2026-03-09 20:34:19.093177 [info]log parse_line
+2026-03-09 20:34:19.093183 [info]log parse_request_line
+2026-03-09 20:34:19.093189 [info]log have parse_request_line
+2026-03-09 20:34:19.093193 [info]log parse_line
+2026-03-09 20:34:19.093198 [info]log parse_request_headers
+2026-03-09 20:34:19.093203 [info]log have parse_request_headers
+2026-03-09 20:34:19.093216 [info]log parse_line
+2026-03-09 20:34:19.093221 [info]log parse_request_headers
+2026-03-09 20:34:19.093226 [info]log have parse_request_headers
+2026-03-09 20:34:19.093231 [info]log parse_line
+2026-03-09 20:34:19.093235 [info]log parse_request_headers
+2026-03-09 20:34:19.093240 [info]log have parse_request_headers
+2026-03-09 20:34:19.093245 [info]log parse_line
+2026-03-09 20:34:19.093249 [info]log parse_request_headers
+2026-03-09 20:34:19.093278 [info]log have parse_request_headers
+2026-03-09 20:34:19.093283 [info]log parse_line
+2026-03-09 20:34:19.093288 [info]log parse_request_headers
+2026-03-09 20:34:19.093305 [info]log have parse_request_headers
+2026-03-09 20:34:19.093311 [info]log parse_line
+2026-03-09 20:34:19.093315 [info]log parse_request_headers
+2026-03-09 20:34:19.093329 [info]log have parse_request_headers
+2026-03-09 20:34:19.093334 [info]log parse_line
+2026-03-09 20:34:19.093339 [info]log parse_request_headers
+2026-03-09 20:34:19.093351 [info]log have parse_request_headers
+2026-03-09 20:34:19.093356 [info]log parse_line
+2026-03-09 20:34:19.093361 [info]log parse_request_headers
+2026-03-09 20:34:19.093373 [info]log have parse_request_headers
+2026-03-09 20:34:19.093379 [info]log parse_line
+2026-03-09 20:34:19.093383 [info]log parse_request_headers
+2026-03-09 20:34:19.093396 [info]log have parse_request_headers
+2026-03-09 20:34:19.093401 [info]log parse_line
+2026-03-09 20:34:19.093405 [info]log parse_request_headers
+2026-03-09 20:34:19.093418 [info]log have parse_request_headers
+2026-03-09 20:34:19.093423 [info]log parse_line
+2026-03-09 20:34:19.093427 [info]log parse_request_headers
+2026-03-09 20:34:19.093440 [info]log have parse_request_headers
+2026-03-09 20:34:19.093445 [info]log parse_line
+2026-03-09 20:34:19.093450 [info]log parse_request_headers
+2026-03-09 20:34:19.093462 [info]log have parse_request_headers
+2026-03-09 20:34:19.093467 [info]log parse_line
+2026-03-09 20:34:19.093472 [info]log parse_request_headers
+2026-03-09 20:34:19.093485 [info]log have parse_request_headers
+2026-03-09 20:34:19.093490 [info]log parse_line
+2026-03-09 20:34:19.093494 [info]log parse_request_headers
+2026-03-09 20:34:19.093507 [info]log have parse_request_headers
+2026-03-09 20:34:19.093512 [info]log parse_line
+2026-03-09 20:34:19.093517 [info]log parse_request_headers
+2026-03-09 20:34:19.093529 [info]log have parse_request_headers
+2026-03-09 20:34:19.093535 [info]log parse_line
+2026-03-09 20:34:19.093539 [info]log parse_request_headers
+2026-03-09 20:34:19.093552 [info]log have parse_request_headers
+2026-03-09 20:34:19.093557 [info]log parse_line
+2026-03-09 20:34:19.093562 [info]log parse_request_headers
+2026-03-09 20:34:19.093573 [info]log have parse_request_headers
+2026-03-09 20:34:19.093579 [info]log parse_line
+2026-03-09 20:34:19.093583 [info]log parse_request_headers
+2026-03-09 20:34:19.093599 [info]log have parse_request_headers
+2026-03-09 20:34:19.093605 [info]log parse_line
+2026-03-09 20:34:19.093609 [info]log parse_request_headers
+2026-03-09 20:34:19.093621 [info]log have parse_request_headers
+2026-03-09 20:34:19.093626 [info]log parse_line
+2026-03-09 20:34:19.093631 [info]log parse_request_headers
+2026-03-09 20:34:19.093644 [info]log have parse_request_headers
+2026-03-09 20:34:19.093649 [info]log parse_line
+2026-03-09 20:34:19.093653 [info]log parse_request_headers
+2026-03-09 20:34:19.093658 [info]log do_request
+2026-03-09 20:34:19.093663 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:19.093692 [info]File size: 714 bytes
+2026-03-09 20:34:19.093697 [info]log have do_request
+2026-03-09 20:34:19.093702 [info]log process_write
+2026-03-09 20:34:19.093707 [info]FILE_REQUEST
+2026-03-09 20:34:19.093721 [info]log have process!
+2026-03-09 20:34:19.093741 [info]write: total=776, header=62, file=714
+2026-03-09 20:34:19.093788 [info]writev=776, total_sent=776
+2026-03-09 20:34:19.093796 [info]Progress: 776/776 bytes (100.0%)
+2026-03-09 20:34:19.093803 [info]File offset: 714, remaining: 0
+2026-03-09 20:34:19.093808 [info]Transfer complete: 776 bytes
+2026-03-09 20:34:19.093838 [info]log_init!
+2026-03-09 20:34:19.093843 [info]log_have init!
+2026-03-09 20:34:19.093848 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:19.093853 [info]adjust timer once
+2026-03-09 20:34:23.944046 [info]timer tick
+2026-03-09 20:34:25.798397 [info]log read once!
+2026-03-09 20:34:25.798477 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:25.798526 [info]adjust timer once
+2026-03-09 20:34:25.798550 [info]log process!
+2026-03-09 20:34:25.798572 [info]log process_read
+2026-03-09 20:34:25.798579 [info]log parse_line
+2026-03-09 20:34:25.798584 [info]log parse_request_line
+2026-03-09 20:34:25.798590 [info]log have parse_request_line
+2026-03-09 20:34:25.798595 [info]log parse_line
+2026-03-09 20:34:25.798600 [info]log parse_request_headers
+2026-03-09 20:34:25.798605 [info]log have parse_request_headers
+2026-03-09 20:34:25.798609 [info]log parse_line
+2026-03-09 20:34:25.798614 [info]log parse_request_headers
+2026-03-09 20:34:25.798619 [info]log have parse_request_headers
+2026-03-09 20:34:25.798624 [info]log parse_line
+2026-03-09 20:34:25.798628 [info]log parse_request_headers
+2026-03-09 20:34:25.798634 [info]log have parse_request_headers
+2026-03-09 20:34:25.798638 [info]log parse_line
+2026-03-09 20:34:25.798643 [info]log parse_request_headers
+2026-03-09 20:34:25.798685 [info]log have parse_request_headers
+2026-03-09 20:34:25.798691 [info]log parse_line
+2026-03-09 20:34:25.798696 [info]log parse_request_headers
+2026-03-09 20:34:25.798714 [info]log have parse_request_headers
+2026-03-09 20:34:25.798720 [info]log parse_line
+2026-03-09 20:34:25.798724 [info]log parse_request_headers
+2026-03-09 20:34:25.798732 [info]log have parse_request_headers
+2026-03-09 20:34:25.798737 [info]log parse_line
+2026-03-09 20:34:25.798742 [info]log parse_request_headers
+2026-03-09 20:34:25.798755 [info]log have parse_request_headers
+2026-03-09 20:34:25.798760 [info]log parse_line
+2026-03-09 20:34:25.798765 [info]log parse_request_headers
+2026-03-09 20:34:25.798778 [info]log have parse_request_headers
+2026-03-09 20:34:25.798783 [info]log parse_line
+2026-03-09 20:34:25.798787 [info]log parse_request_headers
+2026-03-09 20:34:25.798800 [info]log have parse_request_headers
+2026-03-09 20:34:25.798805 [info]log parse_line
+2026-03-09 20:34:25.798810 [info]log parse_request_headers
+2026-03-09 20:34:25.798823 [info]log have parse_request_headers
+2026-03-09 20:34:25.798828 [info]log parse_line
+2026-03-09 20:34:25.798833 [info]log parse_request_headers
+2026-03-09 20:34:25.798845 [info]log have parse_request_headers
+2026-03-09 20:34:25.798851 [info]log parse_line
+2026-03-09 20:34:25.798856 [info]log parse_request_headers
+2026-03-09 20:34:25.798864 [info]log have parse_request_headers
+2026-03-09 20:34:25.798868 [info]log parse_line
+2026-03-09 20:34:25.798873 [info]log parse_request_headers
+2026-03-09 20:34:25.798886 [info]log have parse_request_headers
+2026-03-09 20:34:25.798892 [info]log parse_line
+2026-03-09 20:34:25.798896 [info]log parse_request_headers
+2026-03-09 20:34:25.798903 [info]log have parse_request_headers
+2026-03-09 20:34:25.798908 [info]log parse_line
+2026-03-09 20:34:25.798913 [info]log parse_request_headers
+2026-03-09 20:34:25.798926 [info]log have parse_request_headers
+2026-03-09 20:34:25.798931 [info]log parse_line
+2026-03-09 20:34:25.798936 [info]log parse_request_headers
+2026-03-09 20:34:25.798953 [info]log have parse_request_headers
+2026-03-09 20:34:25.798958 [info]log parse_line
+2026-03-09 20:34:25.798963 [info]log parse_request_headers
+2026-03-09 20:34:25.798976 [info]log have parse_request_headers
+2026-03-09 20:34:25.798981 [info]log parse_line
+2026-03-09 20:34:25.798986 [info]log parse_request_headers
+2026-03-09 20:34:25.798998 [info]log have parse_request_headers
+2026-03-09 20:34:25.799004 [info]log parse_line
+2026-03-09 20:34:25.799008 [info]log parse_request_headers
+2026-03-09 20:34:25.799021 [info]log have parse_request_headers
+2026-03-09 20:34:25.799026 [info]log parse_line
+2026-03-09 20:34:25.799031 [info]log parse_request_headers
+2026-03-09 20:34:25.799043 [info]log have parse_request_headers
+2026-03-09 20:34:25.799061 [info]log parse_line
+2026-03-09 20:34:25.799065 [info]log parse_request_headers
+2026-03-09 20:34:25.799070 [info]log parse_content
+2026-03-09 20:34:25.799075 [info]log do_request
+2026-03-09 20:34:25.799080 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:25.799084 [info]into cgi = 1
+2026-03-09 20:34:25.799090 [info]MQC
+2026-03-09 20:34:25.799095 [info]123456
+2026-03-09 20:34:25.802784 [info]File size: 715 bytes
+2026-03-09 20:34:25.802835 [info]log have do_request
+2026-03-09 20:34:25.802848 [info]log process_write
+2026-03-09 20:34:25.802858 [info]FILE_REQUEST
+2026-03-09 20:34:25.802888 [info]log have process!
+2026-03-09 20:34:25.802905 [info]write: total=777, header=62, file=715
+2026-03-09 20:34:25.802960 [info]writev=777, total_sent=777
+2026-03-09 20:34:25.802978 [info]Progress: 777/777 bytes (100.0%)
+2026-03-09 20:34:25.802987 [info]File offset: 715, remaining: 0
+2026-03-09 20:34:25.802992 [info]Transfer complete: 777 bytes
+2026-03-09 20:34:25.803009 [info]log_init!
+2026-03-09 20:34:25.803014 [info]log_have init!
+2026-03-09 20:34:25.803020 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:25.803025 [info]adjust timer once
+2026-03-09 20:34:28.944186 [info]timer tick
+2026-03-09 20:34:32.309926 [info]log read once!
+2026-03-09 20:34:32.310012 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:32.310035 [info]adjust timer once
+2026-03-09 20:34:32.310062 [info]log process!
+2026-03-09 20:34:32.310116 [info]log process_read
+2026-03-09 20:34:32.310124 [info]log parse_line
+2026-03-09 20:34:32.310129 [info]log parse_request_line
+2026-03-09 20:34:32.310135 [info]log have parse_request_line
+2026-03-09 20:34:32.310140 [info]log parse_line
+2026-03-09 20:34:32.310145 [info]log parse_request_headers
+2026-03-09 20:34:32.310150 [info]log have parse_request_headers
+2026-03-09 20:34:32.310154 [info]log parse_line
+2026-03-09 20:34:32.310159 [info]log parse_request_headers
+2026-03-09 20:34:32.310163 [info]log have parse_request_headers
+2026-03-09 20:34:32.310168 [info]log parse_line
+2026-03-09 20:34:32.310173 [info]log parse_request_headers
+2026-03-09 20:34:32.310178 [info]log have parse_request_headers
+2026-03-09 20:34:32.310182 [info]log parse_line
+2026-03-09 20:34:32.310187 [info]log parse_request_headers
+2026-03-09 20:34:32.310218 [info]log have parse_request_headers
+2026-03-09 20:34:32.310223 [info]log parse_line
+2026-03-09 20:34:32.310228 [info]log parse_request_headers
+2026-03-09 20:34:32.310264 [info]log have parse_request_headers
+2026-03-09 20:34:32.310270 [info]log parse_line
+2026-03-09 20:34:32.310274 [info]log parse_request_headers
+2026-03-09 20:34:32.310287 [info]log have parse_request_headers
+2026-03-09 20:34:32.310292 [info]log parse_line
+2026-03-09 20:34:32.310297 [info]log parse_request_headers
+2026-03-09 20:34:32.310309 [info]log have parse_request_headers
+2026-03-09 20:34:32.310315 [info]log parse_line
+2026-03-09 20:34:32.310319 [info]log parse_request_headers
+2026-03-09 20:34:32.310332 [info]log have parse_request_headers
+2026-03-09 20:34:32.310365 [info]log parse_line
+2026-03-09 20:34:32.310371 [info]log parse_request_headers
+2026-03-09 20:34:32.310384 [info]log have parse_request_headers
+2026-03-09 20:34:32.310389 [info]log parse_line
+2026-03-09 20:34:32.310394 [info]log parse_request_headers
+2026-03-09 20:34:32.310406 [info]log have parse_request_headers
+2026-03-09 20:34:32.310411 [info]log parse_line
+2026-03-09 20:34:32.310416 [info]log parse_request_headers
+2026-03-09 20:34:32.310428 [info]log have parse_request_headers
+2026-03-09 20:34:32.310434 [info]log parse_line
+2026-03-09 20:34:32.310438 [info]log parse_request_headers
+2026-03-09 20:34:32.310451 [info]log have parse_request_headers
+2026-03-09 20:34:32.310456 [info]log parse_line
+2026-03-09 20:34:32.310461 [info]log parse_request_headers
+2026-03-09 20:34:32.310473 [info]log have parse_request_headers
+2026-03-09 20:34:32.310478 [info]log parse_line
+2026-03-09 20:34:32.310507 [info]log parse_request_headers
+2026-03-09 20:34:32.310519 [info]log have parse_request_headers
+2026-03-09 20:34:32.310540 [info]log parse_line
+2026-03-09 20:34:32.310548 [info]log parse_request_headers
+2026-03-09 20:34:32.310562 [info]log have parse_request_headers
+2026-03-09 20:34:32.310568 [info]log parse_line
+2026-03-09 20:34:32.310572 [info]log parse_request_headers
+2026-03-09 20:34:32.310585 [info]log have parse_request_headers
+2026-03-09 20:34:32.310590 [info]log parse_line
+2026-03-09 20:34:32.310595 [info]log parse_request_headers
+2026-03-09 20:34:32.310607 [info]log have parse_request_headers
+2026-03-09 20:34:32.310612 [info]log parse_line
+2026-03-09 20:34:32.310617 [info]log parse_request_headers
+2026-03-09 20:34:32.310629 [info]log have parse_request_headers
+2026-03-09 20:34:32.310634 [info]log parse_line
+2026-03-09 20:34:32.310639 [info]log parse_request_headers
+2026-03-09 20:34:32.310645 [info]log have parse_request_headers
+2026-03-09 20:34:32.310650 [info]log parse_line
+2026-03-09 20:34:32.310655 [info]log parse_request_headers
+2026-03-09 20:34:32.310667 [info]log have parse_request_headers
+2026-03-09 20:34:32.310672 [info]log parse_line
+2026-03-09 20:34:32.310677 [info]log parse_request_headers
+2026-03-09 20:34:32.310847 [info]log parse_content
+2026-03-09 20:34:32.310856 [info]log do_request
+2026-03-09 20:34:32.310862 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:32.310867 [info]into cgi = 1
+2026-03-09 20:34:32.310874 [info]MQC
+2026-03-09 20:34:32.310881 [info]123456
+2026-03-09 20:34:32.310959 [info]File size: 725 bytes
+2026-03-09 20:34:32.310980 [info]log have do_request
+2026-03-09 20:34:32.310995 [info]log process_write
+2026-03-09 20:34:32.311001 [info]FILE_REQUEST
+2026-03-09 20:34:32.311018 [info]log have process!
+2026-03-09 20:34:32.311028 [info]write: total=787, header=62, file=725
+2026-03-09 20:34:32.320160 [info]writev=787, total_sent=787
+2026-03-09 20:34:32.320234 [info]Progress: 787/787 bytes (100.0%)
+2026-03-09 20:34:32.320251 [info]File offset: 725, remaining: 0
+2026-03-09 20:34:32.320261 [info]Transfer complete: 787 bytes
+2026-03-09 20:34:32.320294 [info]log_init!
+2026-03-09 20:34:32.320304 [info]log_have init!
+2026-03-09 20:34:32.320314 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:32.320324 [info]adjust timer once
+2026-03-09 20:34:33.944292 [info]timer tick
+2026-03-09 20:34:34.513929 [info]log read once!
+2026-03-09 20:34:34.513990 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:34.514012 [info]adjust timer once
+2026-03-09 20:34:34.514068 [info]log process!
+2026-03-09 20:34:34.514095 [info]log process_read
+2026-03-09 20:34:34.514102 [info]log parse_line
+2026-03-09 20:34:34.514107 [info]log parse_request_line
+2026-03-09 20:34:34.514112 [info]log have parse_request_line
+2026-03-09 20:34:34.514117 [info]log parse_line
+2026-03-09 20:34:34.514122 [info]log parse_request_headers
+2026-03-09 20:34:34.514127 [info]log have parse_request_headers
+2026-03-09 20:34:34.514132 [info]log parse_line
+2026-03-09 20:34:34.514136 [info]log parse_request_headers
+2026-03-09 20:34:34.514141 [info]log have parse_request_headers
+2026-03-09 20:34:34.514146 [info]log parse_line
+2026-03-09 20:34:34.514150 [info]log parse_request_headers
+2026-03-09 20:34:34.514155 [info]log have parse_request_headers
+2026-03-09 20:34:34.514160 [info]log parse_line
+2026-03-09 20:34:34.514165 [info]log parse_request_headers
+2026-03-09 20:34:34.514191 [info]log have parse_request_headers
+2026-03-09 20:34:34.514196 [info]log parse_line
+2026-03-09 20:34:34.514201 [info]log parse_request_headers
+2026-03-09 20:34:34.514215 [info]log have parse_request_headers
+2026-03-09 20:34:34.514221 [info]log parse_line
+2026-03-09 20:34:34.514225 [info]log parse_request_headers
+2026-03-09 20:34:34.514238 [info]log have parse_request_headers
+2026-03-09 20:34:34.514244 [info]log parse_line
+2026-03-09 20:34:34.514248 [info]log parse_request_headers
+2026-03-09 20:34:34.514261 [info]log have parse_request_headers
+2026-03-09 20:34:34.514266 [info]log parse_line
+2026-03-09 20:34:34.514271 [info]log parse_request_headers
+2026-03-09 20:34:34.514283 [info]log have parse_request_headers
+2026-03-09 20:34:34.514298 [info]log parse_line
+2026-03-09 20:34:34.514303 [info]log parse_request_headers
+2026-03-09 20:34:34.514316 [info]log have parse_request_headers
+2026-03-09 20:34:34.514321 [info]log parse_line
+2026-03-09 20:34:34.514326 [info]log parse_request_headers
+2026-03-09 20:34:34.514339 [info]log have parse_request_headers
+2026-03-09 20:34:34.514344 [info]log parse_line
+2026-03-09 20:34:34.514349 [info]log parse_request_headers
+2026-03-09 20:34:34.514361 [info]log have parse_request_headers
+2026-03-09 20:34:34.514367 [info]log parse_line
+2026-03-09 20:34:34.514372 [info]log parse_request_headers
+2026-03-09 20:34:34.514384 [info]log have parse_request_headers
+2026-03-09 20:34:34.514389 [info]log parse_line
+2026-03-09 20:34:34.514394 [info]log parse_request_headers
+2026-03-09 20:34:34.514408 [info]log have parse_request_headers
+2026-03-09 20:34:34.514413 [info]log parse_line
+2026-03-09 20:34:34.514418 [info]log parse_request_headers
+2026-03-09 20:34:34.514431 [info]log have parse_request_headers
+2026-03-09 20:34:34.514436 [info]log parse_line
+2026-03-09 20:34:34.514440 [info]log parse_request_headers
+2026-03-09 20:34:34.514453 [info]log have parse_request_headers
+2026-03-09 20:34:34.514458 [info]log parse_line
+2026-03-09 20:34:34.514463 [info]log parse_request_headers
+2026-03-09 20:34:34.514475 [info]log have parse_request_headers
+2026-03-09 20:34:34.514481 [info]log parse_line
+2026-03-09 20:34:34.514485 [info]log parse_request_headers
+2026-03-09 20:34:34.514498 [info]log have parse_request_headers
+2026-03-09 20:34:34.514503 [info]log parse_line
+2026-03-09 20:34:34.514508 [info]log parse_request_headers
+2026-03-09 20:34:34.514520 [info]log have parse_request_headers
+2026-03-09 20:34:34.514526 [info]log parse_line
+2026-03-09 20:34:34.514530 [info]log parse_request_headers
+2026-03-09 20:34:34.514543 [info]log have parse_request_headers
+2026-03-09 20:34:34.514548 [info]log parse_line
+2026-03-09 20:34:34.514553 [info]log parse_request_headers
+2026-03-09 20:34:34.514568 [info]log have parse_request_headers
+2026-03-09 20:34:34.514574 [info]log parse_line
+2026-03-09 20:34:34.514579 [info]log parse_request_headers
+2026-03-09 20:34:34.514584 [info]log do_request
+2026-03-09 20:34:34.514589 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:34.514605 [info]log process_write
+2026-03-09 20:34:34.514610 [info]BAD_REQUEST
+2026-03-09 20:34:34.514616 [info]log have process_write
+2026-03-09 20:34:34.514629 [info]log have process!
+2026-03-09 20:34:34.514641 [info]write: total=0, header=115, file=725
+2026-03-09 20:34:34.514685 [info]writev=115, total_sent=115
+2026-03-09 20:34:34.514692 [info]Progress: 115/0 bytes (inf%)
+2026-03-09 20:34:34.514697 [info]File offset: 0, remaining: -115
+2026-03-09 20:34:34.514702 [info]Transfer complete: 115 bytes
+2026-03-09 20:34:34.514708 [info]log_init!
+2026-03-09 20:34:34.514713 [info]log_have init!
+2026-03-09 20:34:34.514718 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:34.514723 [info]adjust timer once
+2026-03-09 20:34:36.542541 [info]log read once!
+2026-03-09 20:34:36.542617 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:36.542639 [info]adjust timer once
+2026-03-09 20:34:36.542666 [info]log process!
+2026-03-09 20:34:36.542684 [info]log process_read
+2026-03-09 20:34:36.542691 [info]log parse_line
+2026-03-09 20:34:36.542696 [info]log parse_request_line
+2026-03-09 20:34:36.542702 [info]log have parse_request_line
+2026-03-09 20:34:36.542707 [info]log parse_line
+2026-03-09 20:34:36.542712 [info]log parse_request_headers
+2026-03-09 20:34:36.542716 [info]log have parse_request_headers
+2026-03-09 20:34:36.542721 [info]log parse_line
+2026-03-09 20:34:36.542726 [info]log parse_request_headers
+2026-03-09 20:34:36.542730 [info]log have parse_request_headers
+2026-03-09 20:34:36.542735 [info]log parse_line
+2026-03-09 20:34:36.542740 [info]log parse_request_headers
+2026-03-09 20:34:36.542745 [info]log have parse_request_headers
+2026-03-09 20:34:36.542750 [info]log parse_line
+2026-03-09 20:34:36.542756 [info]log parse_request_headers
+2026-03-09 20:34:36.542822 [info]log have parse_request_headers
+2026-03-09 20:34:36.542846 [info]log parse_line
+2026-03-09 20:34:36.542858 [info]log parse_request_headers
+2026-03-09 20:34:36.542887 [info]log have parse_request_headers
+2026-03-09 20:34:36.542897 [info]log parse_line
+2026-03-09 20:34:36.542907 [info]log parse_request_headers
+2026-03-09 20:34:36.542931 [info]log have parse_request_headers
+2026-03-09 20:34:36.542941 [info]log parse_line
+2026-03-09 20:34:36.542951 [info]log parse_request_headers
+2026-03-09 20:34:36.542963 [info]log have parse_request_headers
+2026-03-09 20:34:36.542972 [info]log parse_line
+2026-03-09 20:34:36.542981 [info]log parse_request_headers
+2026-03-09 20:34:36.542993 [info]log have parse_request_headers
+2026-03-09 20:34:36.543002 [info]log parse_line
+2026-03-09 20:34:36.543012 [info]log parse_request_headers
+2026-03-09 20:34:36.543035 [info]log have parse_request_headers
+2026-03-09 20:34:36.543045 [info]log parse_line
+2026-03-09 20:34:36.543055 [info]log parse_request_headers
+2026-03-09 20:34:36.543070 [info]log have parse_request_headers
+2026-03-09 20:34:36.543079 [info]log parse_line
+2026-03-09 20:34:36.543089 [info]log parse_request_headers
+2026-03-09 20:34:36.543113 [info]log have parse_request_headers
+2026-03-09 20:34:36.543123 [info]log parse_line
+2026-03-09 20:34:36.543133 [info]log parse_request_headers
+2026-03-09 20:34:36.543216 [info]log have parse_request_headers
+2026-03-09 20:34:36.543238 [info]log parse_line
+2026-03-09 20:34:36.543249 [info]log parse_request_headers
+2026-03-09 20:34:36.543273 [info]log have parse_request_headers
+2026-03-09 20:34:36.543284 [info]log parse_line
+2026-03-09 20:34:36.543293 [info]log parse_request_headers
+2026-03-09 20:34:36.543317 [info]log have parse_request_headers
+2026-03-09 20:34:36.543328 [info]log parse_line
+2026-03-09 20:34:36.543337 [info]log parse_request_headers
+2026-03-09 20:34:36.543361 [info]log have parse_request_headers
+2026-03-09 20:34:36.543371 [info]log parse_line
+2026-03-09 20:34:36.543380 [info]log parse_request_headers
+2026-03-09 20:34:36.543404 [info]log have parse_request_headers
+2026-03-09 20:34:36.543414 [info]log parse_line
+2026-03-09 20:34:36.543423 [info]log parse_request_headers
+2026-03-09 20:34:36.543447 [info]log have parse_request_headers
+2026-03-09 20:34:36.543457 [info]log parse_line
+2026-03-09 20:34:36.543467 [info]log parse_request_headers
+2026-03-09 20:34:36.543490 [info]log have parse_request_headers
+2026-03-09 20:34:36.543501 [info]log parse_line
+2026-03-09 20:34:36.543510 [info]log parse_request_headers
+2026-03-09 20:34:36.543534 [info]log have parse_request_headers
+2026-03-09 20:34:36.543544 [info]log parse_line
+2026-03-09 20:34:36.543553 [info]log parse_request_headers
+2026-03-09 20:34:36.543577 [info]log have parse_request_headers
+2026-03-09 20:34:36.543588 [info]log parse_line
+2026-03-09 20:34:36.543597 [info]log parse_request_headers
+2026-03-09 20:34:36.543606 [info]log do_request
+2026-03-09 20:34:36.543616 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:36.543630 [info]log process_write
+2026-03-09 20:34:36.543639 [info]BAD_REQUEST
+2026-03-09 20:34:36.543649 [info]log have process_write
+2026-03-09 20:34:36.543673 [info]log have process!
+2026-03-09 20:34:36.543680 [info]write: total=0, header=115, file=725
+2026-03-09 20:34:36.543722 [info]writev=115, total_sent=115
+2026-03-09 20:34:36.543730 [info]Progress: 115/0 bytes (inf%)
+2026-03-09 20:34:36.543735 [info]File offset: 0, remaining: -115
+2026-03-09 20:34:36.543740 [info]Transfer complete: 115 bytes
+2026-03-09 20:34:36.543746 [info]log_init!
+2026-03-09 20:34:36.543751 [info]log_have init!
+2026-03-09 20:34:36.543756 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:36.543761 [info]adjust timer once
+2026-03-09 20:34:38.540880 [info]log read once!
+2026-03-09 20:34:38.540969 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:38.540992 [info]adjust timer once
+2026-03-09 20:34:38.541051 [info]log process!
+2026-03-09 20:34:38.541080 [info]log process_read
+2026-03-09 20:34:38.541108 [info]log parse_line
+2026-03-09 20:34:38.541119 [info]log parse_request_line
+2026-03-09 20:34:38.541130 [info]log have parse_request_line
+2026-03-09 20:34:38.541140 [info]log parse_line
+2026-03-09 20:34:38.541149 [info]log parse_request_headers
+2026-03-09 20:34:38.541159 [info]log have parse_request_headers
+2026-03-09 20:34:38.541168 [info]log parse_line
+2026-03-09 20:34:38.541178 [info]log parse_request_headers
+2026-03-09 20:34:38.541187 [info]log have parse_request_headers
+2026-03-09 20:34:38.541196 [info]log parse_line
+2026-03-09 20:34:38.541205 [info]log parse_request_headers
+2026-03-09 20:34:38.541215 [info]log have parse_request_headers
+2026-03-09 20:34:38.541224 [info]log parse_line
+2026-03-09 20:34:38.541234 [info]log parse_request_headers
+2026-03-09 20:34:38.541287 [info]log have parse_request_headers
+2026-03-09 20:34:38.541312 [info]log parse_line
+2026-03-09 20:34:38.541323 [info]log parse_request_headers
+2026-03-09 20:34:38.541349 [info]log have parse_request_headers
+2026-03-09 20:34:38.541359 [info]log parse_line
+2026-03-09 20:34:38.541368 [info]log parse_request_headers
+2026-03-09 20:34:38.541393 [info]log have parse_request_headers
+2026-03-09 20:34:38.541403 [info]log parse_line
+2026-03-09 20:34:38.541415 [info]log parse_request_headers
+2026-03-09 20:34:38.541449 [info]log have parse_request_headers
+2026-03-09 20:34:38.541464 [info]log parse_line
+2026-03-09 20:34:38.541476 [info]log parse_request_headers
+2026-03-09 20:34:38.541502 [info]log have parse_request_headers
+2026-03-09 20:34:38.541512 [info]log parse_line
+2026-03-09 20:34:38.541522 [info]log parse_request_headers
+2026-03-09 20:34:38.541546 [info]log have parse_request_headers
+2026-03-09 20:34:38.541557 [info]log parse_line
+2026-03-09 20:34:38.541566 [info]log parse_request_headers
+2026-03-09 20:34:38.541594 [info]log have parse_request_headers
+2026-03-09 20:34:38.541599 [info]log parse_line
+2026-03-09 20:34:38.541604 [info]log parse_request_headers
+2026-03-09 20:34:38.541617 [info]log have parse_request_headers
+2026-03-09 20:34:38.541622 [info]log parse_line
+2026-03-09 20:34:38.541627 [info]log parse_request_headers
+2026-03-09 20:34:38.541640 [info]log have parse_request_headers
+2026-03-09 20:34:38.541645 [info]log parse_line
+2026-03-09 20:34:38.541650 [info]log parse_request_headers
+2026-03-09 20:34:38.541663 [info]log have parse_request_headers
+2026-03-09 20:34:38.541668 [info]log parse_line
+2026-03-09 20:34:38.541673 [info]log parse_request_headers
+2026-03-09 20:34:38.541686 [info]log have parse_request_headers
+2026-03-09 20:34:38.541691 [info]log parse_line
+2026-03-09 20:34:38.541696 [info]log parse_request_headers
+2026-03-09 20:34:38.541709 [info]log have parse_request_headers
+2026-03-09 20:34:38.541714 [info]log parse_line
+2026-03-09 20:34:38.541719 [info]log parse_request_headers
+2026-03-09 20:34:38.541731 [info]log have parse_request_headers
+2026-03-09 20:34:38.541737 [info]log parse_line
+2026-03-09 20:34:38.541741 [info]log parse_request_headers
+2026-03-09 20:34:38.541755 [info]log have parse_request_headers
+2026-03-09 20:34:38.541760 [info]log parse_line
+2026-03-09 20:34:38.541765 [info]log parse_request_headers
+2026-03-09 20:34:38.541777 [info]log have parse_request_headers
+2026-03-09 20:34:38.541782 [info]log parse_line
+2026-03-09 20:34:38.541787 [info]log parse_request_headers
+2026-03-09 20:34:38.541800 [info]log have parse_request_headers
+2026-03-09 20:34:38.541805 [info]log parse_line
+2026-03-09 20:34:38.541810 [info]log parse_request_headers
+2026-03-09 20:34:38.541822 [info]log have parse_request_headers
+2026-03-09 20:34:38.541828 [info]log parse_line
+2026-03-09 20:34:38.541832 [info]log parse_request_headers
+2026-03-09 20:34:38.541837 [info]log do_request
+2026-03-09 20:34:38.541842 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:38.541872 [info]File size: 377 bytes
+2026-03-09 20:34:38.541878 [info]log have do_request
+2026-03-09 20:34:38.541882 [info]log process_write
+2026-03-09 20:34:38.541887 [info]FILE_REQUEST
+2026-03-09 20:34:38.541901 [info]log have process!
+2026-03-09 20:34:38.541911 [info]write: total=439, header=62, file=377
+2026-03-09 20:34:38.552327 [info]writev=439, total_sent=439
+2026-03-09 20:34:38.552390 [info]Progress: 439/439 bytes (100.0%)
+2026-03-09 20:34:38.552400 [info]File offset: 377, remaining: 0
+2026-03-09 20:34:38.552405 [info]Transfer complete: 439 bytes
+2026-03-09 20:34:38.552434 [info]log_init!
+2026-03-09 20:34:38.552440 [info]log_have init!
+2026-03-09 20:34:38.552446 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:38.552451 [info]adjust timer once
+2026-03-09 20:34:38.592467 [info]log read once!
+2026-03-09 20:34:38.592585 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:38.592613 [info]adjust timer once
+2026-03-09 20:34:38.592648 [info]log process!
+2026-03-09 20:34:38.592673 [info]log process_read
+2026-03-09 20:34:38.592682 [info]log parse_line
+2026-03-09 20:34:38.592689 [info]log parse_request_line
+2026-03-09 20:34:38.592697 [info]log have parse_request_line
+2026-03-09 20:34:38.592703 [info]log parse_line
+2026-03-09 20:34:38.592709 [info]log parse_request_headers
+2026-03-09 20:34:38.592716 [info]log have parse_request_headers
+2026-03-09 20:34:38.592723 [info]log parse_line
+2026-03-09 20:34:38.592729 [info]log parse_request_headers
+2026-03-09 20:34:38.592735 [info]log have parse_request_headers
+2026-03-09 20:34:38.592742 [info]log parse_line
+2026-03-09 20:34:38.592748 [info]log parse_request_headers
+2026-03-09 20:34:38.592808 [info]log have parse_request_headers
+2026-03-09 20:34:38.592823 [info]log parse_line
+2026-03-09 20:34:38.592831 [info]log parse_request_headers
+2026-03-09 20:34:38.592866 [info]log have parse_request_headers
+2026-03-09 20:34:38.592875 [info]log parse_line
+2026-03-09 20:34:38.592882 [info]log parse_request_headers
+2026-03-09 20:34:38.592907 [info]log have parse_request_headers
+2026-03-09 20:34:38.592915 [info]log parse_line
+2026-03-09 20:34:38.592921 [info]log parse_request_headers
+2026-03-09 20:34:38.592931 [info]log have parse_request_headers
+2026-03-09 20:34:38.592937 [info]log parse_line
+2026-03-09 20:34:38.592943 [info]log parse_request_headers
+2026-03-09 20:34:38.592964 [info]log have parse_request_headers
+2026-03-09 20:34:38.593294 [info]log parse_line
+2026-03-09 20:34:38.593308 [info]log parse_request_headers
+2026-03-09 20:34:38.593332 [info]log have parse_request_headers
+2026-03-09 20:34:38.593340 [info]log parse_line
+2026-03-09 20:34:38.593347 [info]log parse_request_headers
+2026-03-09 20:34:38.593363 [info]log have parse_request_headers
+2026-03-09 20:34:38.593368 [info]log parse_line
+2026-03-09 20:34:38.593373 [info]log parse_request_headers
+2026-03-09 20:34:38.593390 [info]log have parse_request_headers
+2026-03-09 20:34:38.593395 [info]log parse_line
+2026-03-09 20:34:38.593400 [info]log parse_request_headers
+2026-03-09 20:34:38.593413 [info]log have parse_request_headers
+2026-03-09 20:34:38.593419 [info]log parse_line
+2026-03-09 20:34:38.593424 [info]log parse_request_headers
+2026-03-09 20:34:38.593432 [info]log have parse_request_headers
+2026-03-09 20:34:38.593439 [info]log parse_line
+2026-03-09 20:34:38.593445 [info]log parse_request_headers
+2026-03-09 20:34:38.593455 [info]log have parse_request_headers
+2026-03-09 20:34:38.593461 [info]log parse_line
+2026-03-09 20:34:38.593467 [info]log parse_request_headers
+2026-03-09 20:34:38.593484 [info]log have parse_request_headers
+2026-03-09 20:34:38.593491 [info]log parse_line
+2026-03-09 20:34:38.593496 [info]log parse_request_headers
+2026-03-09 20:34:38.593502 [info]log do_request
+2026-03-09 20:34:38.593508 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:38.593550 [info]File size: 1187095 bytes
+2026-03-09 20:34:38.593557 [info]log have do_request
+2026-03-09 20:34:38.593562 [info]log process_write
+2026-03-09 20:34:38.593567 [info]FILE_REQUEST
+2026-03-09 20:34:38.593584 [info]log have process!
+2026-03-09 20:34:38.593599 [info]write: total=1187161, header=66, file=1187095
+2026-03-09 20:34:38.595883 [info]writev=1187161, total_sent=1187161
+2026-03-09 20:34:38.595954 [info]Progress: 1187161/1187161 bytes (100.0%)
+2026-03-09 20:34:38.595980 [info]File offset: 1187095, remaining: 0
+2026-03-09 20:34:38.595987 [info]Transfer complete: 1187161 bytes
+2026-03-09 20:34:38.596084 [info]log_init!
+2026-03-09 20:34:38.596092 [info]log_have init!
+2026-03-09 20:34:38.596100 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:38.596107 [info]adjust timer once
+2026-03-09 20:34:38.944428 [info]timer tick
+2026-03-09 20:34:41.284477 [info]log read once!
+2026-03-09 20:34:41.284597 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:41.284623 [info]adjust timer once
+2026-03-09 20:34:41.284652 [info]log process!
+2026-03-09 20:34:41.284675 [info]log process_read
+2026-03-09 20:34:41.284682 [info]log parse_line
+2026-03-09 20:34:41.284689 [info]log parse_request_line
+2026-03-09 20:34:41.284696 [info]log have parse_request_line
+2026-03-09 20:34:41.284702 [info]log parse_line
+2026-03-09 20:34:41.284708 [info]log parse_request_headers
+2026-03-09 20:34:41.284714 [info]log have parse_request_headers
+2026-03-09 20:34:41.284719 [info]log parse_line
+2026-03-09 20:34:41.284726 [info]log parse_request_headers
+2026-03-09 20:34:41.284732 [info]log have parse_request_headers
+2026-03-09 20:34:41.284737 [info]log parse_line
+2026-03-09 20:34:41.284743 [info]log parse_request_headers
+2026-03-09 20:34:41.284750 [info]log have parse_request_headers
+2026-03-09 20:34:41.284755 [info]log parse_line
+2026-03-09 20:34:41.284761 [info]log parse_request_headers
+2026-03-09 20:34:41.284798 [info]log have parse_request_headers
+2026-03-09 20:34:41.284804 [info]log parse_line
+2026-03-09 20:34:41.284811 [info]log parse_request_headers
+2026-03-09 20:34:41.284829 [info]log have parse_request_headers
+2026-03-09 20:34:41.284835 [info]log parse_line
+2026-03-09 20:34:41.284842 [info]log parse_request_headers
+2026-03-09 20:34:41.284852 [info]log have parse_request_headers
+2026-03-09 20:34:41.284857 [info]log parse_line
+2026-03-09 20:34:41.284863 [info]log parse_request_headers
+2026-03-09 20:34:41.284877 [info]log have parse_request_headers
+2026-03-09 20:34:41.284884 [info]log parse_line
+2026-03-09 20:34:41.284889 [info]log parse_request_headers
+2026-03-09 20:34:41.284904 [info]log have parse_request_headers
+2026-03-09 20:34:41.284910 [info]log parse_line
+2026-03-09 20:34:41.284916 [info]log parse_request_headers
+2026-03-09 20:34:41.284930 [info]log have parse_request_headers
+2026-03-09 20:34:41.284936 [info]log parse_line
+2026-03-09 20:34:41.284942 [info]log parse_request_headers
+2026-03-09 20:34:41.284955 [info]log have parse_request_headers
+2026-03-09 20:34:41.284962 [info]log parse_line
+2026-03-09 20:34:41.284968 [info]log parse_request_headers
+2026-03-09 20:34:41.284976 [info]log have parse_request_headers
+2026-03-09 20:34:41.284981 [info]log parse_line
+2026-03-09 20:34:41.284987 [info]log parse_request_headers
+2026-03-09 20:34:41.285001 [info]log have parse_request_headers
+2026-03-09 20:34:41.285008 [info]log parse_line
+2026-03-09 20:34:41.285014 [info]log parse_request_headers
+2026-03-09 20:34:41.285027 [info]log have parse_request_headers
+2026-03-09 20:34:41.285034 [info]log parse_line
+2026-03-09 20:34:41.285040 [info]log parse_request_headers
+2026-03-09 20:34:41.285054 [info]log have parse_request_headers
+2026-03-09 20:34:41.285060 [info]log parse_line
+2026-03-09 20:34:41.285066 [info]log parse_request_headers
+2026-03-09 20:34:41.285080 [info]log have parse_request_headers
+2026-03-09 20:34:41.285086 [info]log parse_line
+2026-03-09 20:34:41.285092 [info]log parse_request_headers
+2026-03-09 20:34:41.285105 [info]log have parse_request_headers
+2026-03-09 20:34:41.285112 [info]log parse_line
+2026-03-09 20:34:41.285117 [info]log parse_request_headers
+2026-03-09 20:34:41.285131 [info]log have parse_request_headers
+2026-03-09 20:34:41.285137 [info]log parse_line
+2026-03-09 20:34:41.285143 [info]log parse_request_headers
+2026-03-09 20:34:41.285157 [info]log have parse_request_headers
+2026-03-09 20:34:41.285163 [info]log parse_line
+2026-03-09 20:34:41.285169 [info]log parse_request_headers
+2026-03-09 20:34:41.285182 [info]log have parse_request_headers
+2026-03-09 20:34:41.285189 [info]log parse_line
+2026-03-09 20:34:41.285207 [info]log parse_request_headers
+2026-03-09 20:34:41.285220 [info]log have parse_request_headers
+2026-03-09 20:34:41.285225 [info]log parse_line
+2026-03-09 20:34:41.285229 [info]log parse_request_headers
+2026-03-09 20:34:41.285234 [info]log do_request
+2026-03-09 20:34:41.285239 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:41.285269 [info]File size: 385 bytes
+2026-03-09 20:34:41.285274 [info]log have do_request
+2026-03-09 20:34:41.285279 [info]log process_write
+2026-03-09 20:34:41.285283 [info]FILE_REQUEST
+2026-03-09 20:34:41.285298 [info]log have process!
+2026-03-09 20:34:41.285317 [info]write: total=447, header=62, file=385
+2026-03-09 20:34:41.286238 [info]writev=447, total_sent=447
+2026-03-09 20:34:41.286261 [info]Progress: 447/447 bytes (100.0%)
+2026-03-09 20:34:41.286271 [info]File offset: 385, remaining: 0
+2026-03-09 20:34:41.286276 [info]Transfer complete: 447 bytes
+2026-03-09 20:34:41.286296 [info]log_init!
+2026-03-09 20:34:41.286301 [info]log_have init!
+2026-03-09 20:34:41.286306 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:41.286311 [info]adjust timer once
+2026-03-09 20:34:41.330709 [info]log read once!
+2026-03-09 20:34:41.330791 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:41.330814 [info]adjust timer once
+2026-03-09 20:34:41.330837 [info]log process!
+2026-03-09 20:34:41.330855 [info]log process_read
+2026-03-09 20:34:41.330861 [info]log parse_line
+2026-03-09 20:34:41.330866 [info]log parse_request_line
+2026-03-09 20:34:41.330872 [info]log have parse_request_line
+2026-03-09 20:34:41.330877 [info]log parse_line
+2026-03-09 20:34:41.330882 [info]log parse_request_headers
+2026-03-09 20:34:41.330887 [info]log have parse_request_headers
+2026-03-09 20:34:41.330892 [info]log parse_line
+2026-03-09 20:34:41.330897 [info]log parse_request_headers
+2026-03-09 20:34:41.330901 [info]log have parse_request_headers
+2026-03-09 20:34:41.330906 [info]log parse_line
+2026-03-09 20:34:41.330911 [info]log parse_request_headers
+2026-03-09 20:34:41.330947 [info]log have parse_request_headers
+2026-03-09 20:34:41.330953 [info]log parse_line
+2026-03-09 20:34:41.330958 [info]log parse_request_headers
+2026-03-09 20:34:41.330976 [info]log have parse_request_headers
+2026-03-09 20:34:41.330981 [info]log parse_line
+2026-03-09 20:34:41.330986 [info]log parse_request_headers
+2026-03-09 20:34:41.331000 [info]log have parse_request_headers
+2026-03-09 20:34:41.331005 [info]log parse_line
+2026-03-09 20:34:41.331010 [info]log parse_request_headers
+2026-03-09 20:34:41.331027 [info]log have parse_request_headers
+2026-03-09 20:34:41.331033 [info]log parse_line
+2026-03-09 20:34:41.331038 [info]log parse_request_headers
+2026-03-09 20:34:41.331051 [info]log have parse_request_headers
+2026-03-09 20:34:41.331056 [info]log parse_line
+2026-03-09 20:34:41.331061 [info]log parse_request_headers
+2026-03-09 20:34:41.331068 [info]log have parse_request_headers
+2026-03-09 20:34:41.331073 [info]log parse_line
+2026-03-09 20:34:41.331078 [info]log parse_request_headers
+2026-03-09 20:34:41.331090 [info]log have parse_request_headers
+2026-03-09 20:34:41.331096 [info]log parse_line
+2026-03-09 20:34:41.331101 [info]log parse_request_headers
+2026-03-09 20:34:41.331108 [info]log have parse_request_headers
+2026-03-09 20:34:41.331113 [info]log parse_line
+2026-03-09 20:34:41.331118 [info]log parse_request_headers
+2026-03-09 20:34:41.331131 [info]log have parse_request_headers
+2026-03-09 20:34:41.331136 [info]log parse_line
+2026-03-09 20:34:41.331141 [info]log parse_request_headers
+2026-03-09 20:34:41.331154 [info]log have parse_request_headers
+2026-03-09 20:34:41.331159 [info]log parse_line
+2026-03-09 20:34:41.331164 [info]log parse_request_headers
+2026-03-09 20:34:41.331171 [info]log have parse_request_headers
+2026-03-09 20:34:41.331176 [info]log parse_line
+2026-03-09 20:34:41.331181 [info]log parse_request_headers
+2026-03-09 20:34:41.331194 [info]log have parse_request_headers
+2026-03-09 20:34:41.331199 [info]log parse_line
+2026-03-09 20:34:41.331204 [info]log parse_request_headers
+2026-03-09 20:34:41.331229 [info]log have parse_request_headers
+2026-03-09 20:34:41.331235 [info]log parse_line
+2026-03-09 20:34:41.331240 [info]log parse_request_headers
+2026-03-09 20:34:41.331244 [info]log do_request
+2026-03-09 20:34:41.331249 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:41.331284 [info]File size: 7887637 bytes
+2026-03-09 20:34:41.331289 [info]log have do_request
+2026-03-09 20:34:41.331294 [info]log process_write
+2026-03-09 20:34:41.331299 [info]FILE_REQUEST
+2026-03-09 20:34:41.331313 [info]log have process!
+2026-03-09 20:34:41.331330 [info]write: total=7887703, header=66, file=7887637
+2026-03-09 20:34:41.338280 [info]writev=4518327, total_sent=4518327
+2026-03-09 20:34:41.338370 [info]Progress: 4518327/7887703 bytes (57.3%)
+2026-03-09 20:34:41.338382 [info]File offset: 4518261, remaining: 3369376
+2026-03-09 20:34:41.341844 [info]writev=2815769, total_sent=7334096
+2026-03-09 20:34:41.341912 [info]Progress: 7334096/7887703 bytes (93.0%)
+2026-03-09 20:34:41.341923 [info]File offset: 7334030, remaining: 553607
+2026-03-09 20:34:41.341933 [info]writev=-1, total_sent=7334095
+2026-03-09 20:34:41.341939 [info]EAGAIN after 7334096 bytes
+2026-03-09 20:34:41.341948 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:41.341954 [info]adjust timer once
+2026-03-09 20:34:41.355044 [info]write: total=553607, header=66, file=7887637
+2026-03-09 20:34:41.356445 [info]writev=553607, total_sent=553607
+2026-03-09 20:34:41.356493 [info]Progress: 553607/553607 bytes (100.0%)
+2026-03-09 20:34:41.356504 [info]File offset: 7887637, remaining: 0
+2026-03-09 20:34:41.356509 [info]Transfer complete: 553607 bytes
+2026-03-09 20:34:41.356934 [info]log_init!
+2026-03-09 20:34:41.356952 [info]log_have init!
+2026-03-09 20:34:41.356959 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:41.356967 [info]adjust timer once
+2026-03-09 20:34:43.944514 [info]timer tick
+2026-03-09 20:34:46.212502 [info]log read once!
+2026-03-09 20:34:46.212585 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:46.212640 [info]adjust timer once
+2026-03-09 20:34:46.212664 [info]log process!
+2026-03-09 20:34:46.212682 [info]log process_read
+2026-03-09 20:34:46.212689 [info]log parse_line
+2026-03-09 20:34:46.212694 [info]log parse_request_line
+2026-03-09 20:34:46.212700 [info]log have parse_request_line
+2026-03-09 20:34:46.212705 [info]log parse_line
+2026-03-09 20:34:46.212710 [info]log parse_request_headers
+2026-03-09 20:34:46.212714 [info]log have parse_request_headers
+2026-03-09 20:34:46.212719 [info]log parse_line
+2026-03-09 20:34:46.212724 [info]log parse_request_headers
+2026-03-09 20:34:46.212728 [info]log have parse_request_headers
+2026-03-09 20:34:46.212733 [info]log parse_line
+2026-03-09 20:34:46.212738 [info]log parse_request_headers
+2026-03-09 20:34:46.212743 [info]log have parse_request_headers
+2026-03-09 20:34:46.212748 [info]log parse_line
+2026-03-09 20:34:46.212752 [info]log parse_request_headers
+2026-03-09 20:34:46.212785 [info]log have parse_request_headers
+2026-03-09 20:34:46.212790 [info]log parse_line
+2026-03-09 20:34:46.212795 [info]log parse_request_headers
+2026-03-09 20:34:46.212812 [info]log have parse_request_headers
+2026-03-09 20:34:46.212817 [info]log parse_line
+2026-03-09 20:34:46.212822 [info]log parse_request_headers
+2026-03-09 20:34:46.212831 [info]log have parse_request_headers
+2026-03-09 20:34:46.212835 [info]log parse_line
+2026-03-09 20:34:46.212840 [info]log parse_request_headers
+2026-03-09 20:34:46.212853 [info]log have parse_request_headers
+2026-03-09 20:34:46.212858 [info]log parse_line
+2026-03-09 20:34:46.212863 [info]log parse_request_headers
+2026-03-09 20:34:46.212875 [info]log have parse_request_headers
+2026-03-09 20:34:46.212880 [info]log parse_line
+2026-03-09 20:34:46.212885 [info]log parse_request_headers
+2026-03-09 20:34:46.212897 [info]log have parse_request_headers
+2026-03-09 20:34:46.212909 [info]log parse_line
+2026-03-09 20:34:46.212914 [info]log parse_request_headers
+2026-03-09 20:34:46.212927 [info]log have parse_request_headers
+2026-03-09 20:34:46.212944 [info]log parse_line
+2026-03-09 20:34:46.212949 [info]log parse_request_headers
+2026-03-09 20:34:46.212962 [info]log have parse_request_headers
+2026-03-09 20:34:46.212967 [info]log parse_line
+2026-03-09 20:34:46.212972 [info]log parse_request_headers
+2026-03-09 20:34:46.212985 [info]log have parse_request_headers
+2026-03-09 20:34:46.212990 [info]log parse_line
+2026-03-09 20:34:46.212995 [info]log parse_request_headers
+2026-03-09 20:34:46.213008 [info]log have parse_request_headers
+2026-03-09 20:34:46.213013 [info]log parse_line
+2026-03-09 20:34:46.213017 [info]log parse_request_headers
+2026-03-09 20:34:46.213030 [info]log have parse_request_headers
+2026-03-09 20:34:46.213035 [info]log parse_line
+2026-03-09 20:34:46.213040 [info]log parse_request_headers
+2026-03-09 20:34:46.213046 [info]log have parse_request_headers
+2026-03-09 20:34:46.213051 [info]log parse_line
+2026-03-09 20:34:46.213055 [info]log parse_request_headers
+2026-03-09 20:34:46.213061 [info]log have parse_request_headers
+2026-03-09 20:34:46.213066 [info]log parse_line
+2026-03-09 20:34:46.213071 [info]log parse_request_headers
+2026-03-09 20:34:46.213077 [info]log have parse_request_headers
+2026-03-09 20:34:46.213081 [info]log parse_line
+2026-03-09 20:34:46.213086 [info]log parse_request_headers
+2026-03-09 20:34:46.213098 [info]log have parse_request_headers
+2026-03-09 20:34:46.213103 [info]log parse_line
+2026-03-09 20:34:46.213108 [info]log parse_request_headers
+2026-03-09 20:34:46.213115 [info]log have parse_request_headers
+2026-03-09 20:34:46.213119 [info]log parse_line
+2026-03-09 20:34:46.213124 [info]log parse_request_headers
+2026-03-09 20:34:46.213136 [info]log have parse_request_headers
+2026-03-09 20:34:46.213141 [info]log parse_line
+2026-03-09 20:34:46.213146 [info]log parse_request_headers
+2026-03-09 20:34:46.213150 [info]log do_request
+2026-03-09 20:34:46.213155 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:46.213187 [info]File size: 360 bytes
+2026-03-09 20:34:46.213192 [info]log have do_request
+2026-03-09 20:34:46.213197 [info]log process_write
+2026-03-09 20:34:46.213201 [info]FILE_REQUEST
+2026-03-09 20:34:46.213215 [info]log have process!
+2026-03-09 20:34:46.213225 [info]write: total=422, header=62, file=360
+2026-03-09 20:34:46.213329 [info]writev=422, total_sent=422
+2026-03-09 20:34:46.213337 [info]Progress: 422/422 bytes (100.0%)
+2026-03-09 20:34:46.213345 [info]File offset: 360, remaining: 0
+2026-03-09 20:34:46.213350 [info]Transfer complete: 422 bytes
+2026-03-09 20:34:46.213372 [info]log_init!
+2026-03-09 20:34:46.213377 [info]log_have init!
+2026-03-09 20:34:46.213382 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:46.213387 [info]adjust timer once
+2026-03-09 20:34:46.249078 [info]log read once!
+2026-03-09 20:34:46.249168 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:46.249201 [info]adjust timer once
+2026-03-09 20:34:46.249236 [info]log process!
+2026-03-09 20:34:46.249259 [info]log process_read
+2026-03-09 20:34:46.249266 [info]log parse_line
+2026-03-09 20:34:46.249273 [info]log parse_request_line
+2026-03-09 20:34:46.249279 [info]log have parse_request_line
+2026-03-09 20:34:46.249285 [info]log parse_line
+2026-03-09 20:34:46.249290 [info]log parse_request_headers
+2026-03-09 20:34:46.249296 [info]log have parse_request_headers
+2026-03-09 20:34:46.249302 [info]log parse_line
+2026-03-09 20:34:46.249308 [info]log parse_request_headers
+2026-03-09 20:34:46.249314 [info]log have parse_request_headers
+2026-03-09 20:34:46.249319 [info]log parse_line
+2026-03-09 20:34:46.249324 [info]log parse_request_headers
+2026-03-09 20:34:46.249368 [info]log have parse_request_headers
+2026-03-09 20:34:46.249374 [info]log parse_line
+2026-03-09 20:34:46.249380 [info]log parse_request_headers
+2026-03-09 20:34:46.249403 [info]log have parse_request_headers
+2026-03-09 20:34:46.249409 [info]log parse_line
+2026-03-09 20:34:46.249414 [info]log parse_request_headers
+2026-03-09 20:34:46.249431 [info]log have parse_request_headers
+2026-03-09 20:34:46.249437 [info]log parse_line
+2026-03-09 20:34:46.249458 [info]log parse_request_headers
+2026-03-09 20:34:46.249475 [info]log have parse_request_headers
+2026-03-09 20:34:46.249481 [info]log parse_line
+2026-03-09 20:34:46.249486 [info]log parse_request_headers
+2026-03-09 20:34:46.249496 [info]log have parse_request_headers
+2026-03-09 20:34:46.249501 [info]log parse_line
+2026-03-09 20:34:46.249507 [info]log parse_request_headers
+2026-03-09 20:34:46.249522 [info]log have parse_request_headers
+2026-03-09 20:34:46.249528 [info]log parse_line
+2026-03-09 20:34:46.249534 [info]log parse_request_headers
+2026-03-09 20:34:46.249541 [info]log have parse_request_headers
+2026-03-09 20:34:46.249546 [info]log parse_line
+2026-03-09 20:34:46.249552 [info]log parse_request_headers
+2026-03-09 20:34:46.249567 [info]log have parse_request_headers
+2026-03-09 20:34:46.249573 [info]log parse_line
+2026-03-09 20:34:46.249579 [info]log parse_request_headers
+2026-03-09 20:34:46.249588 [info]log have parse_request_headers
+2026-03-09 20:34:46.249594 [info]log parse_line
+2026-03-09 20:34:46.249599 [info]log parse_request_headers
+2026-03-09 20:34:46.249615 [info]log have parse_request_headers
+2026-03-09 20:34:46.249620 [info]log parse_line
+2026-03-09 20:34:46.249626 [info]log parse_request_headers
+2026-03-09 20:34:46.249642 [info]log have parse_request_headers
+2026-03-09 20:34:46.249649 [info]log parse_line
+2026-03-09 20:34:46.249655 [info]log parse_request_headers
+2026-03-09 20:34:46.249670 [info]log have parse_request_headers
+2026-03-09 20:34:46.249676 [info]log parse_line
+2026-03-09 20:34:46.249682 [info]log parse_request_headers
+2026-03-09 20:34:46.249687 [info]log do_request
+2026-03-09 20:34:46.249694 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:46.249714 [info]log process_write
+2026-03-09 20:34:46.249721 [info]BAD_REQUEST
+2026-03-09 20:34:46.249727 [info]log have process_write
+2026-03-09 20:34:46.249746 [info]log have process!
+2026-03-09 20:34:46.249767 [info]write: total=0, header=115, file=360
+2026-03-09 20:34:46.249825 [info]writev=115, total_sent=115
+2026-03-09 20:34:46.249835 [info]Progress: 115/0 bytes (inf%)
+2026-03-09 20:34:46.249843 [info]File offset: 0, remaining: -115
+2026-03-09 20:34:46.249849 [info]Transfer complete: 115 bytes
+2026-03-09 20:34:46.249856 [info]log_init!
+2026-03-09 20:34:46.249862 [info]log_have init!
+2026-03-09 20:34:46.249868 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:46.249875 [info]adjust timer once
+2026-03-09 20:34:48.944625 [info]timer tick
+2026-03-09 20:34:49.992958 [info]log read once!
+2026-03-09 20:34:49.993044 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:49.993065 [info]adjust timer once
+2026-03-09 20:34:49.993093 [info]log process!
+2026-03-09 20:34:49.993115 [info]log process_read
+2026-03-09 20:34:49.993121 [info]log parse_line
+2026-03-09 20:34:49.993127 [info]log parse_request_line
+2026-03-09 20:34:49.993132 [info]log have parse_request_line
+2026-03-09 20:34:49.993137 [info]log parse_line
+2026-03-09 20:34:49.993142 [info]log parse_request_headers
+2026-03-09 20:34:49.993147 [info]log have parse_request_headers
+2026-03-09 20:34:49.993152 [info]log parse_line
+2026-03-09 20:34:49.993156 [info]log parse_request_headers
+2026-03-09 20:34:49.993161 [info]log have parse_request_headers
+2026-03-09 20:34:49.993166 [info]log parse_line
+2026-03-09 20:34:49.993170 [info]log parse_request_headers
+2026-03-09 20:34:49.993175 [info]log have parse_request_headers
+2026-03-09 20:34:49.993180 [info]log parse_line
+2026-03-09 20:34:49.993185 [info]log parse_request_headers
+2026-03-09 20:34:49.993221 [info]log have parse_request_headers
+2026-03-09 20:34:49.993227 [info]log parse_line
+2026-03-09 20:34:49.993231 [info]log parse_request_headers
+2026-03-09 20:34:49.993238 [info]log have parse_request_headers
+2026-03-09 20:34:49.993243 [info]log parse_line
+2026-03-09 20:34:49.993247 [info]log parse_request_headers
+2026-03-09 20:34:49.993266 [info]log have parse_request_headers
+2026-03-09 20:34:49.993271 [info]log parse_line
+2026-03-09 20:34:49.993276 [info]log parse_request_headers
+2026-03-09 20:34:49.993301 [info]log have parse_request_headers
+2026-03-09 20:34:49.993307 [info]log parse_line
+2026-03-09 20:34:49.993312 [info]log parse_request_headers
+2026-03-09 20:34:49.993325 [info]log have parse_request_headers
+2026-03-09 20:34:49.993330 [info]log parse_line
+2026-03-09 20:34:49.993335 [info]log parse_request_headers
+2026-03-09 20:34:49.993347 [info]log have parse_request_headers
+2026-03-09 20:34:49.993353 [info]log parse_line
+2026-03-09 20:34:49.993357 [info]log parse_request_headers
+2026-03-09 20:34:49.993370 [info]log have parse_request_headers
+2026-03-09 20:34:49.993376 [info]log parse_line
+2026-03-09 20:34:49.993380 [info]log parse_request_headers
+2026-03-09 20:34:49.993387 [info]log have parse_request_headers
+2026-03-09 20:34:49.993391 [info]log parse_line
+2026-03-09 20:34:49.993396 [info]log parse_request_headers
+2026-03-09 20:34:49.993409 [info]log have parse_request_headers
+2026-03-09 20:34:49.993415 [info]log parse_line
+2026-03-09 20:34:49.993420 [info]log parse_request_headers
+2026-03-09 20:34:49.993426 [info]log have parse_request_headers
+2026-03-09 20:34:49.993431 [info]log parse_line
+2026-03-09 20:34:49.993436 [info]log parse_request_headers
+2026-03-09 20:34:49.993442 [info]log have parse_request_headers
+2026-03-09 20:34:49.993447 [info]log parse_line
+2026-03-09 20:34:49.993451 [info]log parse_request_headers
+2026-03-09 20:34:49.993457 [info]log have parse_request_headers
+2026-03-09 20:34:49.993462 [info]log parse_line
+2026-03-09 20:34:49.993467 [info]log parse_request_headers
+2026-03-09 20:34:49.993478 [info]log have parse_request_headers
+2026-03-09 20:34:49.993483 [info]log parse_line
+2026-03-09 20:34:49.993487 [info]log parse_request_headers
+2026-03-09 20:34:49.993494 [info]log have parse_request_headers
+2026-03-09 20:34:49.993498 [info]log parse_line
+2026-03-09 20:34:49.993503 [info]log parse_request_headers
+2026-03-09 20:34:49.993509 [info]log have parse_request_headers
+2026-03-09 20:34:49.993514 [info]log parse_line
+2026-03-09 20:34:49.993519 [info]log parse_request_headers
+2026-03-09 20:34:49.993525 [info]log have parse_request_headers
+2026-03-09 20:34:49.993529 [info]log parse_line
+2026-03-09 20:34:49.993534 [info]log parse_request_headers
+2026-03-09 20:34:49.993540 [info]log have parse_request_headers
+2026-03-09 20:34:49.993545 [info]log parse_line
+2026-03-09 20:34:49.993550 [info]log parse_request_headers
+2026-03-09 20:34:49.993554 [info]log do_request
+2026-03-09 20:34:49.993559 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:49.993590 [info]File size: 360 bytes
+2026-03-09 20:34:49.993595 [info]log have do_request
+2026-03-09 20:34:49.993599 [info]log process_write
+2026-03-09 20:34:49.993604 [info]FILE_REQUEST
+2026-03-09 20:34:49.993618 [info]log have process!
+2026-03-09 20:34:49.993630 [info]write: total=422, header=62, file=360
+2026-03-09 20:34:49.993679 [info]writev=422, total_sent=422
+2026-03-09 20:34:49.993694 [info]Progress: 422/422 bytes (100.0%)
+2026-03-09 20:34:49.993702 [info]File offset: 360, remaining: 0
+2026-03-09 20:34:49.993707 [info]Transfer complete: 422 bytes
+2026-03-09 20:34:49.993730 [info]log_init!
+2026-03-09 20:34:49.993735 [info]log_have init!
+2026-03-09 20:34:49.993740 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:49.993745 [info]adjust timer once
+2026-03-09 20:34:50.032104 [info]log read once!
+2026-03-09 20:34:50.032190 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:50.032214 [info]adjust timer once
+2026-03-09 20:34:50.032242 [info]log process!
+2026-03-09 20:34:50.032262 [info]log process_read
+2026-03-09 20:34:50.032269 [info]log parse_line
+2026-03-09 20:34:50.032276 [info]log parse_request_line
+2026-03-09 20:34:50.032283 [info]log have parse_request_line
+2026-03-09 20:34:50.032288 [info]log parse_line
+2026-03-09 20:34:50.032293 [info]log parse_request_headers
+2026-03-09 20:34:50.032298 [info]log have parse_request_headers
+2026-03-09 20:34:50.032304 [info]log parse_line
+2026-03-09 20:34:50.032312 [info]log parse_request_headers
+2026-03-09 20:34:50.032317 [info]log have parse_request_headers
+2026-03-09 20:34:50.032338 [info]log parse_line
+2026-03-09 20:34:50.032345 [info]log parse_request_headers
+2026-03-09 20:34:50.032393 [info]log have parse_request_headers
+2026-03-09 20:34:50.032401 [info]log parse_line
+2026-03-09 20:34:50.032408 [info]log parse_request_headers
+2026-03-09 20:34:50.032416 [info]log have parse_request_headers
+2026-03-09 20:34:50.032422 [info]log parse_line
+2026-03-09 20:34:50.032428 [info]log parse_request_headers
+2026-03-09 20:34:50.032451 [info]log have parse_request_headers
+2026-03-09 20:34:50.032457 [info]log parse_line
+2026-03-09 20:34:50.032462 [info]log parse_request_headers
+2026-03-09 20:34:50.032481 [info]log have parse_request_headers
+2026-03-09 20:34:50.032487 [info]log parse_line
+2026-03-09 20:34:50.032492 [info]log parse_request_headers
+2026-03-09 20:34:50.032510 [info]log have parse_request_headers
+2026-03-09 20:34:50.032515 [info]log parse_line
+2026-03-09 20:34:50.032522 [info]log parse_request_headers
+2026-03-09 20:34:50.032538 [info]log have parse_request_headers
+2026-03-09 20:34:50.032544 [info]log parse_line
+2026-03-09 20:34:50.032550 [info]log parse_request_headers
+2026-03-09 20:34:50.032567 [info]log have parse_request_headers
+2026-03-09 20:34:50.032573 [info]log parse_line
+2026-03-09 20:34:50.032578 [info]log parse_request_headers
+2026-03-09 20:34:50.032593 [info]log have parse_request_headers
+2026-03-09 20:34:50.032599 [info]log parse_line
+2026-03-09 20:34:50.032604 [info]log parse_request_headers
+2026-03-09 20:34:50.032620 [info]log have parse_request_headers
+2026-03-09 20:34:50.032625 [info]log parse_line
+2026-03-09 20:34:50.032631 [info]log parse_request_headers
+2026-03-09 20:34:50.032646 [info]log have parse_request_headers
+2026-03-09 20:34:50.032652 [info]log parse_line
+2026-03-09 20:34:50.032657 [info]log parse_request_headers
+2026-03-09 20:34:50.032672 [info]log have parse_request_headers
+2026-03-09 20:34:50.032678 [info]log parse_line
+2026-03-09 20:34:50.032684 [info]log parse_request_headers
+2026-03-09 20:34:50.032699 [info]log have parse_request_headers
+2026-03-09 20:34:50.032705 [info]log parse_line
+2026-03-09 20:34:50.032711 [info]log parse_request_headers
+2026-03-09 20:34:50.032716 [info]log do_request
+2026-03-09 20:34:50.032722 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:34:50.032731 [info]log process_write
+2026-03-09 20:34:50.032736 [info]BAD_REQUEST
+2026-03-09 20:34:50.032743 [info]log have process_write
+2026-03-09 20:34:50.032759 [info]log have process!
+2026-03-09 20:34:50.032770 [info]write: total=0, header=115, file=360
+2026-03-09 20:34:50.032814 [info]writev=115, total_sent=115
+2026-03-09 20:34:50.032829 [info]Progress: 115/0 bytes (inf%)
+2026-03-09 20:34:50.032835 [info]File offset: 0, remaining: -115
+2026-03-09 20:34:50.032841 [info]Transfer complete: 115 bytes
+2026-03-09 20:34:50.032847 [info]log_init!
+2026-03-09 20:34:50.032852 [info]log_have init!
+2026-03-09 20:34:50.032857 [info]deal with the client(127.0.0.1)
+2026-03-09 20:34:50.032865 [info]adjust timer once
+2026-03-09 20:34:53.944723 [info]timer tick
+2026-03-09 20:34:58.944817 [info]timer tick
+2026-03-09 20:35:03.944892 [info]timer tick
+2026-03-09 20:35:08.944990 [info]timer tick
+2026-03-09 20:35:10.984278 [info]close fd 17
+2026-03-09 20:35:13.500624 [info]log read once!
+2026-03-09 20:35:13.500710 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:13.500733 [info]adjust timer once
+2026-03-09 20:35:13.500758 [info]log process!
+2026-03-09 20:35:13.500781 [info]log process_read
+2026-03-09 20:35:13.500789 [info]log parse_line
+2026-03-09 20:35:13.500795 [info]log parse_request_line
+2026-03-09 20:35:13.500803 [info]log have parse_request_line
+2026-03-09 20:35:13.500809 [info]log parse_line
+2026-03-09 20:35:13.500815 [info]log parse_request_headers
+2026-03-09 20:35:13.500821 [info]log have parse_request_headers
+2026-03-09 20:35:13.500827 [info]log parse_line
+2026-03-09 20:35:13.500833 [info]log parse_request_headers
+2026-03-09 20:35:13.500839 [info]log have parse_request_headers
+2026-03-09 20:35:13.500846 [info]log parse_line
+2026-03-09 20:35:13.500863 [info]log parse_request_headers
+2026-03-09 20:35:13.500868 [info]log have parse_request_headers
+2026-03-09 20:35:13.500873 [info]log parse_line
+2026-03-09 20:35:13.500878 [info]log parse_request_headers
+2026-03-09 20:35:13.500911 [info]log have parse_request_headers
+2026-03-09 20:35:13.500917 [info]log parse_line
+2026-03-09 20:35:13.500922 [info]log parse_request_headers
+2026-03-09 20:35:13.500940 [info]log have parse_request_headers
+2026-03-09 20:35:13.500947 [info]log parse_line
+2026-03-09 20:35:13.500954 [info]log parse_request_headers
+2026-03-09 20:35:13.500971 [info]log have parse_request_headers
+2026-03-09 20:35:13.500977 [info]log parse_line
+2026-03-09 20:35:13.500982 [info]log parse_request_headers
+2026-03-09 20:35:13.500998 [info]log have parse_request_headers
+2026-03-09 20:35:13.501005 [info]log parse_line
+2026-03-09 20:35:13.501010 [info]log parse_request_headers
+2026-03-09 20:35:13.501027 [info]log have parse_request_headers
+2026-03-09 20:35:13.501033 [info]log parse_line
+2026-03-09 20:35:13.501039 [info]log parse_request_headers
+2026-03-09 20:35:13.501055 [info]log have parse_request_headers
+2026-03-09 20:35:13.501061 [info]log parse_line
+2026-03-09 20:35:13.501065 [info]log parse_request_headers
+2026-03-09 20:35:13.501078 [info]log have parse_request_headers
+2026-03-09 20:35:13.501083 [info]log parse_line
+2026-03-09 20:35:13.501088 [info]log parse_request_headers
+2026-03-09 20:35:13.501095 [info]log have parse_request_headers
+2026-03-09 20:35:13.501099 [info]log parse_line
+2026-03-09 20:35:13.501104 [info]log parse_request_headers
+2026-03-09 20:35:13.501116 [info]log have parse_request_headers
+2026-03-09 20:35:13.501122 [info]log parse_line
+2026-03-09 20:35:13.501126 [info]log parse_request_headers
+2026-03-09 20:35:13.501138 [info]log have parse_request_headers
+2026-03-09 20:35:13.501143 [info]log parse_line
+2026-03-09 20:35:13.501148 [info]log parse_request_headers
+2026-03-09 20:35:13.501161 [info]log have parse_request_headers
+2026-03-09 20:35:13.501166 [info]log parse_line
+2026-03-09 20:35:13.501170 [info]log parse_request_headers
+2026-03-09 20:35:13.501184 [info]log have parse_request_headers
+2026-03-09 20:35:13.501189 [info]log parse_line
+2026-03-09 20:35:13.501193 [info]log parse_request_headers
+2026-03-09 20:35:13.501206 [info]log have parse_request_headers
+2026-03-09 20:35:13.501211 [info]log parse_line
+2026-03-09 20:35:13.501216 [info]log parse_request_headers
+2026-03-09 20:35:13.501228 [info]log have parse_request_headers
+2026-03-09 20:35:13.501233 [info]log parse_line
+2026-03-09 20:35:13.501238 [info]log parse_request_headers
+2026-03-09 20:35:13.501250 [info]log have parse_request_headers
+2026-03-09 20:35:13.501256 [info]log parse_line
+2026-03-09 20:35:13.501260 [info]log parse_request_headers
+2026-03-09 20:35:13.501272 [info]log have parse_request_headers
+2026-03-09 20:35:13.501278 [info]log parse_line
+2026-03-09 20:35:13.501282 [info]log parse_request_headers
+2026-03-09 20:35:13.501295 [info]log have parse_request_headers
+2026-03-09 20:35:13.501300 [info]log parse_line
+2026-03-09 20:35:13.501305 [info]log parse_request_headers
+2026-03-09 20:35:13.501317 [info]log do_request
+2026-03-09 20:35:13.501322 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:35:13.501354 [info]File size: 385 bytes
+2026-03-09 20:35:13.501359 [info]log have do_request
+2026-03-09 20:35:13.501364 [info]log process_write
+2026-03-09 20:35:13.501368 [info]FILE_REQUEST
+2026-03-09 20:35:13.501382 [info]log have process!
+2026-03-09 20:35:13.501394 [info]write: total=447, header=62, file=385
+2026-03-09 20:35:13.501445 [info]writev=447, total_sent=447
+2026-03-09 20:35:13.501453 [info]Progress: 447/447 bytes (100.0%)
+2026-03-09 20:35:13.501460 [info]File offset: 385, remaining: 0
+2026-03-09 20:35:13.501466 [info]Transfer complete: 447 bytes
+2026-03-09 20:35:13.501491 [info]log_init!
+2026-03-09 20:35:13.501496 [info]log_have init!
+2026-03-09 20:35:13.501501 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:13.501506 [info]adjust timer once
+2026-03-09 20:35:13.544558 [info]log read once!
+2026-03-09 20:35:13.544696 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:13.544727 [info]adjust timer once
+2026-03-09 20:35:13.544760 [info]log process!
+2026-03-09 20:35:13.544781 [info]log process_read
+2026-03-09 20:35:13.544789 [info]log parse_line
+2026-03-09 20:35:13.544796 [info]log parse_request_line
+2026-03-09 20:35:13.544803 [info]log have parse_request_line
+2026-03-09 20:35:13.544809 [info]log parse_line
+2026-03-09 20:35:13.544816 [info]log parse_request_headers
+2026-03-09 20:35:13.544822 [info]log have parse_request_headers
+2026-03-09 20:35:13.544829 [info]log parse_line
+2026-03-09 20:35:13.544835 [info]log parse_request_headers
+2026-03-09 20:35:13.544842 [info]log have parse_request_headers
+2026-03-09 20:35:13.544848 [info]log parse_line
+2026-03-09 20:35:13.544854 [info]log parse_request_headers
+2026-03-09 20:35:13.544903 [info]log have parse_request_headers
+2026-03-09 20:35:13.544913 [info]log parse_line
+2026-03-09 20:35:13.544919 [info]log parse_request_headers
+2026-03-09 20:35:13.544944 [info]log have parse_request_headers
+2026-03-09 20:35:13.544951 [info]log parse_line
+2026-03-09 20:35:13.544958 [info]log parse_request_headers
+2026-03-09 20:35:13.544977 [info]log have parse_request_headers
+2026-03-09 20:35:13.544984 [info]log parse_line
+2026-03-09 20:35:13.544990 [info]log parse_request_headers
+2026-03-09 20:35:13.545009 [info]log have parse_request_headers
+2026-03-09 20:35:13.545016 [info]log parse_line
+2026-03-09 20:35:13.545022 [info]log parse_request_headers
+2026-03-09 20:35:13.545040 [info]log have parse_request_headers
+2026-03-09 20:35:13.545047 [info]log parse_line
+2026-03-09 20:35:13.545053 [info]log parse_request_headers
+2026-03-09 20:35:13.545071 [info]log have parse_request_headers
+2026-03-09 20:35:13.545078 [info]log parse_line
+2026-03-09 20:35:13.545085 [info]log parse_request_headers
+2026-03-09 20:35:13.545104 [info]log have parse_request_headers
+2026-03-09 20:35:13.545111 [info]log parse_line
+2026-03-09 20:35:13.545117 [info]log parse_request_headers
+2026-03-09 20:35:13.545139 [info]log have parse_request_headers
+2026-03-09 20:35:13.545146 [info]log parse_line
+2026-03-09 20:35:13.545153 [info]log parse_request_headers
+2026-03-09 20:35:13.545162 [info]log have parse_request_headers
+2026-03-09 20:35:13.545167 [info]log parse_line
+2026-03-09 20:35:13.545172 [info]log parse_request_headers
+2026-03-09 20:35:13.545187 [info]log have parse_request_headers
+2026-03-09 20:35:13.545195 [info]log parse_line
+2026-03-09 20:35:13.545201 [info]log parse_request_headers
+2026-03-09 20:35:13.545221 [info]log have parse_request_headers
+2026-03-09 20:35:13.545233 [info]log parse_line
+2026-03-09 20:35:13.545238 [info]log parse_request_headers
+2026-03-09 20:35:13.545252 [info]log have parse_request_headers
+2026-03-09 20:35:13.545257 [info]log parse_line
+2026-03-09 20:35:13.545262 [info]log parse_request_headers
+2026-03-09 20:35:13.545277 [info]log have parse_request_headers
+2026-03-09 20:35:13.545282 [info]log parse_line
+2026-03-09 20:35:13.545288 [info]log parse_request_headers
+2026-03-09 20:35:13.545293 [info]log do_request
+2026-03-09 20:35:13.545299 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:35:13.545332 [info]File size: 7887637 bytes
+2026-03-09 20:35:13.545338 [info]log have do_request
+2026-03-09 20:35:13.545342 [info]log process_write
+2026-03-09 20:35:13.545347 [info]FILE_REQUEST
+2026-03-09 20:35:13.545361 [info]log have process!
+2026-03-09 20:35:13.545374 [info]write: total=7887703, header=66, file=7887637
+2026-03-09 20:35:13.547744 [info]writev=6613783, total_sent=6613783
+2026-03-09 20:35:13.547791 [info]Progress: 6613783/7887703 bytes (83.8%)
+2026-03-09 20:35:13.547802 [info]File offset: 6613717, remaining: 1273920
+2026-03-09 20:35:13.547809 [info]writev=-1, total_sent=6613782
+2026-03-09 20:35:13.547814 [info]EAGAIN after 6613783 bytes
+2026-03-09 20:35:13.547822 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:13.547827 [info]adjust timer once
+2026-03-09 20:35:13.551861 [info]write: total=1273920, header=66, file=7887637
+2026-03-09 20:35:13.552448 [info]writev=1273920, total_sent=1273920
+2026-03-09 20:35:13.552490 [info]Progress: 1273920/1273920 bytes (100.0%)
+2026-03-09 20:35:13.552504 [info]File offset: 7887637, remaining: 0
+2026-03-09 20:35:13.552510 [info]Transfer complete: 1273920 bytes
+2026-03-09 20:35:13.553954 [info]log_init!
+2026-03-09 20:35:13.553990 [info]log_have init!
+2026-03-09 20:35:13.553998 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:13.554006 [info]adjust timer once
+2026-03-09 20:35:13.945119 [info]timer tick
+2026-03-09 20:35:15.131487 [info]log read once!
+2026-03-09 20:35:15.131572 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:15.131596 [info]adjust timer once
+2026-03-09 20:35:15.131618 [info]log process!
+2026-03-09 20:35:15.131636 [info]log process_read
+2026-03-09 20:35:15.131643 [info]log parse_line
+2026-03-09 20:35:15.131648 [info]log parse_request_line
+2026-03-09 20:35:15.131654 [info]log have parse_request_line
+2026-03-09 20:35:15.131659 [info]log parse_line
+2026-03-09 20:35:15.131664 [info]log parse_request_headers
+2026-03-09 20:35:15.131668 [info]log have parse_request_headers
+2026-03-09 20:35:15.131673 [info]log parse_line
+2026-03-09 20:35:15.131678 [info]log parse_request_headers
+2026-03-09 20:35:15.131682 [info]log have parse_request_headers
+2026-03-09 20:35:15.131687 [info]log parse_line
+2026-03-09 20:35:15.131691 [info]log parse_request_headers
+2026-03-09 20:35:15.131697 [info]log have parse_request_headers
+2026-03-09 20:35:15.131701 [info]log parse_line
+2026-03-09 20:35:15.131706 [info]log parse_request_headers
+2026-03-09 20:35:15.131737 [info]log have parse_request_headers
+2026-03-09 20:35:15.131742 [info]log parse_line
+2026-03-09 20:35:15.131747 [info]log parse_request_headers
+2026-03-09 20:35:15.131753 [info]log have parse_request_headers
+2026-03-09 20:35:15.131758 [info]log parse_line
+2026-03-09 20:35:15.131763 [info]log parse_request_headers
+2026-03-09 20:35:15.131779 [info]log have parse_request_headers
+2026-03-09 20:35:15.131785 [info]log parse_line
+2026-03-09 20:35:15.131792 [info]log parse_request_headers
+2026-03-09 20:35:15.131810 [info]log have parse_request_headers
+2026-03-09 20:35:15.131817 [info]log parse_line
+2026-03-09 20:35:15.131823 [info]log parse_request_headers
+2026-03-09 20:35:15.131839 [info]log have parse_request_headers
+2026-03-09 20:35:15.131844 [info]log parse_line
+2026-03-09 20:35:15.131848 [info]log parse_request_headers
+2026-03-09 20:35:15.131855 [info]log have parse_request_headers
+2026-03-09 20:35:15.131860 [info]log parse_line
+2026-03-09 20:35:15.131865 [info]log parse_request_headers
+2026-03-09 20:35:15.131877 [info]log have parse_request_headers
+2026-03-09 20:35:15.131882 [info]log parse_line
+2026-03-09 20:35:15.131887 [info]log parse_request_headers
+2026-03-09 20:35:15.131900 [info]log have parse_request_headers
+2026-03-09 20:35:15.131907 [info]log parse_line
+2026-03-09 20:35:15.131914 [info]log parse_request_headers
+2026-03-09 20:35:15.131925 [info]log have parse_request_headers
+2026-03-09 20:35:15.131930 [info]log parse_line
+2026-03-09 20:35:15.131935 [info]log parse_request_headers
+2026-03-09 20:35:15.131942 [info]log have parse_request_headers
+2026-03-09 20:35:15.131947 [info]log parse_line
+2026-03-09 20:35:15.131951 [info]log parse_request_headers
+2026-03-09 20:35:15.131957 [info]log have parse_request_headers
+2026-03-09 20:35:15.131962 [info]log parse_line
+2026-03-09 20:35:15.131967 [info]log parse_request_headers
+2026-03-09 20:35:15.131980 [info]log have parse_request_headers
+2026-03-09 20:35:15.131985 [info]log parse_line
+2026-03-09 20:35:15.131989 [info]log parse_request_headers
+2026-03-09 20:35:15.132002 [info]log have parse_request_headers
+2026-03-09 20:35:15.132007 [info]log parse_line
+2026-03-09 20:35:15.132012 [info]log parse_request_headers
+2026-03-09 20:35:15.132024 [info]log have parse_request_headers
+2026-03-09 20:35:15.132029 [info]log parse_line
+2026-03-09 20:35:15.132035 [info]log parse_request_headers
+2026-03-09 20:35:15.132048 [info]log have parse_request_headers
+2026-03-09 20:35:15.132053 [info]log parse_line
+2026-03-09 20:35:15.132071 [info]log parse_request_headers
+2026-03-09 20:35:15.132084 [info]log have parse_request_headers
+2026-03-09 20:35:15.132089 [info]log parse_line
+2026-03-09 20:35:15.132094 [info]log parse_request_headers
+2026-03-09 20:35:15.132100 [info]log have parse_request_headers
+2026-03-09 20:35:15.132105 [info]log parse_line
+2026-03-09 20:35:15.132109 [info]log parse_request_headers
+2026-03-09 20:35:15.132114 [info]log do_request
+2026-03-09 20:35:15.132119 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:35:15.132149 [info]File size: 360 bytes
+2026-03-09 20:35:15.132154 [info]log have do_request
+2026-03-09 20:35:15.132159 [info]log process_write
+2026-03-09 20:35:15.132164 [info]FILE_REQUEST
+2026-03-09 20:35:15.132177 [info]log have process!
+2026-03-09 20:35:15.132188 [info]write: total=422, header=62, file=360
+2026-03-09 20:35:15.132251 [info]writev=422, total_sent=422
+2026-03-09 20:35:15.132265 [info]Progress: 422/422 bytes (100.0%)
+2026-03-09 20:35:15.132274 [info]File offset: 360, remaining: 0
+2026-03-09 20:35:15.132279 [info]Transfer complete: 422 bytes
+2026-03-09 20:35:15.132297 [info]log_init!
+2026-03-09 20:35:15.132302 [info]log_have init!
+2026-03-09 20:35:15.132307 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:15.132312 [info]adjust timer once
+2026-03-09 20:35:15.168424 [info]log read once!
+2026-03-09 20:35:15.168513 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:15.168538 [info]adjust timer once
+2026-03-09 20:35:15.168566 [info]log process!
+2026-03-09 20:35:15.168589 [info]log process_read
+2026-03-09 20:35:15.168595 [info]log parse_line
+2026-03-09 20:35:15.168601 [info]log parse_request_line
+2026-03-09 20:35:15.168608 [info]log have parse_request_line
+2026-03-09 20:35:15.168612 [info]log parse_line
+2026-03-09 20:35:15.168617 [info]log parse_request_headers
+2026-03-09 20:35:15.168622 [info]log have parse_request_headers
+2026-03-09 20:35:15.168627 [info]log parse_line
+2026-03-09 20:35:15.168632 [info]log parse_request_headers
+2026-03-09 20:35:15.168637 [info]log have parse_request_headers
+2026-03-09 20:35:15.168642 [info]log parse_line
+2026-03-09 20:35:15.168647 [info]log parse_request_headers
+2026-03-09 20:35:15.168683 [info]log have parse_request_headers
+2026-03-09 20:35:15.168689 [info]log parse_line
+2026-03-09 20:35:15.168694 [info]log parse_request_headers
+2026-03-09 20:35:15.168701 [info]log have parse_request_headers
+2026-03-09 20:35:15.168705 [info]log parse_line
+2026-03-09 20:35:15.168710 [info]log parse_request_headers
+2026-03-09 20:35:15.168729 [info]log have parse_request_headers
+2026-03-09 20:35:15.168734 [info]log parse_line
+2026-03-09 20:35:15.168739 [info]log parse_request_headers
+2026-03-09 20:35:15.168753 [info]log have parse_request_headers
+2026-03-09 20:35:15.168759 [info]log parse_line
+2026-03-09 20:35:15.168764 [info]log parse_request_headers
+2026-03-09 20:35:15.168772 [info]log have parse_request_headers
+2026-03-09 20:35:15.168777 [info]log parse_line
+2026-03-09 20:35:15.168782 [info]log parse_request_headers
+2026-03-09 20:35:15.168796 [info]log have parse_request_headers
+2026-03-09 20:35:15.168802 [info]log parse_line
+2026-03-09 20:35:15.168807 [info]log parse_request_headers
+2026-03-09 20:35:15.168814 [info]log have parse_request_headers
+2026-03-09 20:35:15.168819 [info]log parse_line
+2026-03-09 20:35:15.168823 [info]log parse_request_headers
+2026-03-09 20:35:15.168836 [info]log have parse_request_headers
+2026-03-09 20:35:15.168842 [info]log parse_line
+2026-03-09 20:35:15.168846 [info]log parse_request_headers
+2026-03-09 20:35:15.168862 [info]log have parse_request_headers
+2026-03-09 20:35:15.168869 [info]log parse_line
+2026-03-09 20:35:15.168876 [info]log parse_request_headers
+2026-03-09 20:35:15.168893 [info]log have parse_request_headers
+2026-03-09 20:35:15.168900 [info]log parse_line
+2026-03-09 20:35:15.168906 [info]log parse_request_headers
+2026-03-09 20:35:15.168927 [info]log have parse_request_headers
+2026-03-09 20:35:15.168932 [info]log parse_line
+2026-03-09 20:35:15.168938 [info]log parse_request_headers
+2026-03-09 20:35:15.168965 [info]log have parse_request_headers
+2026-03-09 20:35:15.168971 [info]log parse_line
+2026-03-09 20:35:15.168975 [info]log parse_request_headers
+2026-03-09 20:35:15.168980 [info]log do_request
+2026-03-09 20:35:15.168985 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:35:15.169018 [info]File size: 590529 bytes
+2026-03-09 20:35:15.169023 [info]log have do_request
+2026-03-09 20:35:15.169028 [info]log process_write
+2026-03-09 20:35:15.169033 [info]FILE_REQUEST
+2026-03-09 20:35:15.169047 [info]log have process!
+2026-03-09 20:35:15.169069 [info]write: total=590594, header=65, file=590529
+2026-03-09 20:35:15.179310 [info]writev=590594, total_sent=590594
+2026-03-09 20:35:15.179391 [info]Progress: 590594/590594 bytes (100.0%)
+2026-03-09 20:35:15.179406 [info]File offset: 590529, remaining: 0
+2026-03-09 20:35:15.179413 [info]Transfer complete: 590594 bytes
+2026-03-09 20:35:15.179476 [info]log_init!
+2026-03-09 20:35:15.179485 [info]log_have init!
+2026-03-09 20:35:15.179493 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:15.179500 [info]adjust timer once
+2026-03-09 20:35:18.447875 [info]log read once!
+2026-03-09 20:35:18.447944 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:18.447963 [info]adjust timer once
+2026-03-09 20:35:18.447986 [info]log process!
+2026-03-09 20:35:18.448010 [info]log process_read
+2026-03-09 20:35:18.448017 [info]log parse_line
+2026-03-09 20:35:18.448022 [info]log parse_request_line
+2026-03-09 20:35:18.448028 [info]log have parse_request_line
+2026-03-09 20:35:18.448033 [info]log parse_line
+2026-03-09 20:35:18.448037 [info]log parse_request_headers
+2026-03-09 20:35:18.448042 [info]log have parse_request_headers
+2026-03-09 20:35:18.448047 [info]log parse_line
+2026-03-09 20:35:18.448051 [info]log parse_request_headers
+2026-03-09 20:35:18.448056 [info]log have parse_request_headers
+2026-03-09 20:35:18.448061 [info]log parse_line
+2026-03-09 20:35:18.448065 [info]log parse_request_headers
+2026-03-09 20:35:18.448070 [info]log have parse_request_headers
+2026-03-09 20:35:18.448075 [info]log parse_line
+2026-03-09 20:35:18.448080 [info]log parse_request_headers
+2026-03-09 20:35:18.448111 [info]log have parse_request_headers
+2026-03-09 20:35:18.448116 [info]log parse_line
+2026-03-09 20:35:18.448121 [info]log parse_request_headers
+2026-03-09 20:35:18.448138 [info]log have parse_request_headers
+2026-03-09 20:35:18.448143 [info]log parse_line
+2026-03-09 20:35:18.448148 [info]log parse_request_headers
+2026-03-09 20:35:18.448161 [info]log have parse_request_headers
+2026-03-09 20:35:18.448166 [info]log parse_line
+2026-03-09 20:35:18.448171 [info]log parse_request_headers
+2026-03-09 20:35:18.448184 [info]log have parse_request_headers
+2026-03-09 20:35:18.448189 [info]log parse_line
+2026-03-09 20:35:18.448193 [info]log parse_request_headers
+2026-03-09 20:35:18.448206 [info]log have parse_request_headers
+2026-03-09 20:35:18.448211 [info]log parse_line
+2026-03-09 20:35:18.448216 [info]log parse_request_headers
+2026-03-09 20:35:18.448228 [info]log have parse_request_headers
+2026-03-09 20:35:18.448233 [info]log parse_line
+2026-03-09 20:35:18.448238 [info]log parse_request_headers
+2026-03-09 20:35:18.448250 [info]log have parse_request_headers
+2026-03-09 20:35:18.448255 [info]log parse_line
+2026-03-09 20:35:18.448260 [info]log parse_request_headers
+2026-03-09 20:35:18.448272 [info]log have parse_request_headers
+2026-03-09 20:35:18.448278 [info]log parse_line
+2026-03-09 20:35:18.448282 [info]log parse_request_headers
+2026-03-09 20:35:18.448295 [info]log have parse_request_headers
+2026-03-09 20:35:18.448300 [info]log parse_line
+2026-03-09 20:35:18.448305 [info]log parse_request_headers
+2026-03-09 20:35:18.448318 [info]log have parse_request_headers
+2026-03-09 20:35:18.448323 [info]log parse_line
+2026-03-09 20:35:18.448327 [info]log parse_request_headers
+2026-03-09 20:35:18.448340 [info]log have parse_request_headers
+2026-03-09 20:35:18.448345 [info]log parse_line
+2026-03-09 20:35:18.448350 [info]log parse_request_headers
+2026-03-09 20:35:18.448362 [info]log have parse_request_headers
+2026-03-09 20:35:18.448380 [info]log parse_line
+2026-03-09 20:35:18.448385 [info]log parse_request_headers
+2026-03-09 20:35:18.448398 [info]log have parse_request_headers
+2026-03-09 20:35:18.448403 [info]log parse_line
+2026-03-09 20:35:18.448408 [info]log parse_request_headers
+2026-03-09 20:35:18.448415 [info]log have parse_request_headers
+2026-03-09 20:35:18.448420 [info]log parse_line
+2026-03-09 20:35:18.448424 [info]log parse_request_headers
+2026-03-09 20:35:18.448437 [info]log have parse_request_headers
+2026-03-09 20:35:18.448442 [info]log parse_line
+2026-03-09 20:35:18.448446 [info]log parse_request_headers
+2026-03-09 20:35:18.448459 [info]log have parse_request_headers
+2026-03-09 20:35:18.448464 [info]log parse_line
+2026-03-09 20:35:18.448469 [info]log parse_request_headers
+2026-03-09 20:35:18.448481 [info]log have parse_request_headers
+2026-03-09 20:35:18.448486 [info]log parse_line
+2026-03-09 20:35:18.448491 [info]log parse_request_headers
+2026-03-09 20:35:18.448495 [info]log do_request
+2026-03-09 20:35:18.448500 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:35:18.448528 [info]File size: 377 bytes
+2026-03-09 20:35:18.448533 [info]log have do_request
+2026-03-09 20:35:18.448538 [info]log process_write
+2026-03-09 20:35:18.448542 [info]FILE_REQUEST
+2026-03-09 20:35:18.448556 [info]log have process!
+2026-03-09 20:35:18.448569 [info]write: total=439, header=62, file=377
+2026-03-09 20:35:18.448620 [info]writev=439, total_sent=439
+2026-03-09 20:35:18.448635 [info]Progress: 439/439 bytes (100.0%)
+2026-03-09 20:35:18.448644 [info]File offset: 377, remaining: 0
+2026-03-09 20:35:18.448649 [info]Transfer complete: 439 bytes
+2026-03-09 20:35:18.448670 [info]log_init!
+2026-03-09 20:35:18.448675 [info]log_have init!
+2026-03-09 20:35:18.448680 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:18.448685 [info]adjust timer once
+2026-03-09 20:35:18.489736 [info]log read once!
+2026-03-09 20:35:18.489803 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:18.489826 [info]adjust timer once
+2026-03-09 20:35:18.489854 [info]log process!
+2026-03-09 20:35:18.489873 [info]log process_read
+2026-03-09 20:35:18.489881 [info]log parse_line
+2026-03-09 20:35:18.489888 [info]log parse_request_line
+2026-03-09 20:35:18.489895 [info]log have parse_request_line
+2026-03-09 20:35:18.489902 [info]log parse_line
+2026-03-09 20:35:18.489908 [info]log parse_request_headers
+2026-03-09 20:35:18.489914 [info]log have parse_request_headers
+2026-03-09 20:35:18.489920 [info]log parse_line
+2026-03-09 20:35:18.489926 [info]log parse_request_headers
+2026-03-09 20:35:18.489933 [info]log have parse_request_headers
+2026-03-09 20:35:18.489939 [info]log parse_line
+2026-03-09 20:35:18.489945 [info]log parse_request_headers
+2026-03-09 20:35:18.489983 [info]log have parse_request_headers
+2026-03-09 20:35:18.489990 [info]log parse_line
+2026-03-09 20:35:18.489997 [info]log parse_request_headers
+2026-03-09 20:35:18.490020 [info]log have parse_request_headers
+2026-03-09 20:35:18.490027 [info]log parse_line
+2026-03-09 20:35:18.490033 [info]log parse_request_headers
+2026-03-09 20:35:18.490064 [info]log have parse_request_headers
+2026-03-09 20:35:18.490080 [info]log parse_line
+2026-03-09 20:35:18.490087 [info]log parse_request_headers
+2026-03-09 20:35:18.490095 [info]log have parse_request_headers
+2026-03-09 20:35:18.490101 [info]log parse_line
+2026-03-09 20:35:18.490107 [info]log parse_request_headers
+2026-03-09 20:35:18.490115 [info]log have parse_request_headers
+2026-03-09 20:35:18.490121 [info]log parse_line
+2026-03-09 20:35:18.490127 [info]log parse_request_headers
+2026-03-09 20:35:18.490135 [info]log have parse_request_headers
+2026-03-09 20:35:18.490141 [info]log parse_line
+2026-03-09 20:35:18.490147 [info]log parse_request_headers
+2026-03-09 20:35:18.490163 [info]log have parse_request_headers
+2026-03-09 20:35:18.490170 [info]log parse_line
+2026-03-09 20:35:18.490176 [info]log parse_request_headers
+2026-03-09 20:35:18.490193 [info]log have parse_request_headers
+2026-03-09 20:35:18.490211 [info]log parse_line
+2026-03-09 20:35:18.490218 [info]log parse_request_headers
+2026-03-09 20:35:18.490235 [info]log have parse_request_headers
+2026-03-09 20:35:18.490241 [info]log parse_line
+2026-03-09 20:35:18.490247 [info]log parse_request_headers
+2026-03-09 20:35:18.490264 [info]log have parse_request_headers
+2026-03-09 20:35:18.490270 [info]log parse_line
+2026-03-09 20:35:18.490276 [info]log parse_request_headers
+2026-03-09 20:35:18.490292 [info]log have parse_request_headers
+2026-03-09 20:35:18.490298 [info]log parse_line
+2026-03-09 20:35:18.490305 [info]log parse_request_headers
+2026-03-09 20:35:18.490321 [info]log have parse_request_headers
+2026-03-09 20:35:18.490327 [info]log parse_line
+2026-03-09 20:35:18.490333 [info]log parse_request_headers
+2026-03-09 20:35:18.490339 [info]log do_request
+2026-03-09 20:35:18.490345 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:35:18.490374 [info]File size: 1187095 bytes
+2026-03-09 20:35:18.490380 [info]log have do_request
+2026-03-09 20:35:18.490387 [info]log process_write
+2026-03-09 20:35:18.490393 [info]FILE_REQUEST
+2026-03-09 20:35:18.490411 [info]log have process!
+2026-03-09 20:35:18.490472 [info]write: total=1187161, header=66, file=1187095
+2026-03-09 20:35:18.490960 [info]writev=1187161, total_sent=1187161
+2026-03-09 20:35:18.490988 [info]Progress: 1187161/1187161 bytes (100.0%)
+2026-03-09 20:35:18.491003 [info]File offset: 1187095, remaining: 0
+2026-03-09 20:35:18.491008 [info]Transfer complete: 1187161 bytes
+2026-03-09 20:35:18.491240 [info]log_init!
+2026-03-09 20:35:18.491258 [info]log_have init!
+2026-03-09 20:35:18.491264 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:18.491269 [info]adjust timer once
+2026-03-09 20:35:18.945205 [info]timer tick
+2026-03-09 20:35:23.945280 [info]timer tick
+2026-03-09 20:35:28.945344 [info]timer tick
+2026-03-09 20:35:29.495871 [info]log read once!
+2026-03-09 20:35:29.495956 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:29.495979 [info]adjust timer once
+2026-03-09 20:35:29.496004 [info]log process!
+2026-03-09 20:35:29.496025 [info]log process_read
+2026-03-09 20:35:29.496033 [info]log parse_line
+2026-03-09 20:35:29.496039 [info]log parse_request_line
+2026-03-09 20:35:29.496046 [info]log have parse_request_line
+2026-03-09 20:35:29.496052 [info]log parse_line
+2026-03-09 20:35:29.496058 [info]log parse_request_headers
+2026-03-09 20:35:29.496064 [info]log have parse_request_headers
+2026-03-09 20:35:29.496070 [info]log parse_line
+2026-03-09 20:35:29.496076 [info]log parse_request_headers
+2026-03-09 20:35:29.496081 [info]log have parse_request_headers
+2026-03-09 20:35:29.496087 [info]log parse_line
+2026-03-09 20:35:29.496093 [info]log parse_request_headers
+2026-03-09 20:35:29.496100 [info]log have parse_request_headers
+2026-03-09 20:35:29.496106 [info]log parse_line
+2026-03-09 20:35:29.496111 [info]log parse_request_headers
+2026-03-09 20:35:29.496148 [info]log have parse_request_headers
+2026-03-09 20:35:29.496155 [info]log parse_line
+2026-03-09 20:35:29.496161 [info]log parse_request_headers
+2026-03-09 20:35:29.496182 [info]log have parse_request_headers
+2026-03-09 20:35:29.496189 [info]log parse_line
+2026-03-09 20:35:29.496197 [info]log parse_request_headers
+2026-03-09 20:35:29.496207 [info]log have parse_request_headers
+2026-03-09 20:35:29.496213 [info]log parse_line
+2026-03-09 20:35:29.496219 [info]log parse_request_headers
+2026-03-09 20:35:29.496234 [info]log have parse_request_headers
+2026-03-09 20:35:29.496240 [info]log parse_line
+2026-03-09 20:35:29.496246 [info]log parse_request_headers
+2026-03-09 20:35:29.496260 [info]log have parse_request_headers
+2026-03-09 20:35:29.496266 [info]log parse_line
+2026-03-09 20:35:29.496272 [info]log parse_request_headers
+2026-03-09 20:35:29.496280 [info]log have parse_request_headers
+2026-03-09 20:35:29.496285 [info]log parse_line
+2026-03-09 20:35:29.496291 [info]log parse_request_headers
+2026-03-09 20:35:29.496305 [info]log have parse_request_headers
+2026-03-09 20:35:29.496311 [info]log parse_line
+2026-03-09 20:35:29.496330 [info]log parse_request_headers
+2026-03-09 20:35:29.496343 [info]log have parse_request_headers
+2026-03-09 20:35:29.496348 [info]log parse_line
+2026-03-09 20:35:29.496353 [info]log parse_request_headers
+2026-03-09 20:35:29.496365 [info]log have parse_request_headers
+2026-03-09 20:35:29.496370 [info]log parse_line
+2026-03-09 20:35:29.496375 [info]log parse_request_headers
+2026-03-09 20:35:29.496388 [info]log have parse_request_headers
+2026-03-09 20:35:29.496393 [info]log parse_line
+2026-03-09 20:35:29.496398 [info]log parse_request_headers
+2026-03-09 20:35:29.496411 [info]log have parse_request_headers
+2026-03-09 20:35:29.496416 [info]log parse_line
+2026-03-09 20:35:29.496420 [info]log parse_request_headers
+2026-03-09 20:35:29.496427 [info]log have parse_request_headers
+2026-03-09 20:35:29.496432 [info]log parse_line
+2026-03-09 20:35:29.496436 [info]log parse_request_headers
+2026-03-09 20:35:29.496449 [info]log have parse_request_headers
+2026-03-09 20:35:29.496454 [info]log parse_line
+2026-03-09 20:35:29.496458 [info]log parse_request_headers
+2026-03-09 20:35:29.496471 [info]log have parse_request_headers
+2026-03-09 20:35:29.496476 [info]log parse_line
+2026-03-09 20:35:29.496481 [info]log parse_request_headers
+2026-03-09 20:35:29.496493 [info]log have parse_request_headers
+2026-03-09 20:35:29.496498 [info]log parse_line
+2026-03-09 20:35:29.496503 [info]log parse_request_headers
+2026-03-09 20:35:29.496515 [info]log have parse_request_headers
+2026-03-09 20:35:29.496520 [info]log parse_line
+2026-03-09 20:35:29.496525 [info]log parse_request_headers
+2026-03-09 20:35:29.496537 [info]log have parse_request_headers
+2026-03-09 20:35:29.496543 [info]log parse_line
+2026-03-09 20:35:29.496547 [info]log parse_request_headers
+2026-03-09 20:35:29.496552 [info]log do_request
+2026-03-09 20:35:29.496557 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:35:29.496589 [info]File size: 715 bytes
+2026-03-09 20:35:29.496594 [info]log have do_request
+2026-03-09 20:35:29.496599 [info]log process_write
+2026-03-09 20:35:29.496603 [info]FILE_REQUEST
+2026-03-09 20:35:29.496617 [info]log have process!
+2026-03-09 20:35:29.496629 [info]write: total=777, header=62, file=715
+2026-03-09 20:35:29.496673 [info]writev=777, total_sent=777
+2026-03-09 20:35:29.496682 [info]Progress: 777/777 bytes (100.0%)
+2026-03-09 20:35:29.496690 [info]File offset: 715, remaining: 0
+2026-03-09 20:35:29.496695 [info]Transfer complete: 777 bytes
+2026-03-09 20:35:29.496714 [info]log_init!
+2026-03-09 20:35:29.496719 [info]log_have init!
+2026-03-09 20:35:29.496724 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:29.496729 [info]adjust timer once
+2026-03-09 20:35:32.178617 [info]log read once!
+2026-03-09 20:35:32.178709 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:32.178737 [info]adjust timer once
+2026-03-09 20:35:32.178775 [info]log process!
+2026-03-09 20:35:32.178802 [info]log process_read
+2026-03-09 20:35:32.178811 [info]log parse_line
+2026-03-09 20:35:32.178819 [info]log parse_request_line
+2026-03-09 20:35:32.178827 [info]log have parse_request_line
+2026-03-09 20:35:32.178834 [info]log parse_line
+2026-03-09 20:35:32.178841 [info]log parse_request_headers
+2026-03-09 20:35:32.178848 [info]log have parse_request_headers
+2026-03-09 20:35:32.178855 [info]log parse_line
+2026-03-09 20:35:32.178862 [info]log parse_request_headers
+2026-03-09 20:35:32.178869 [info]log have parse_request_headers
+2026-03-09 20:35:32.178876 [info]log parse_line
+2026-03-09 20:35:32.178883 [info]log parse_request_headers
+2026-03-09 20:35:32.178892 [info]log have parse_request_headers
+2026-03-09 20:35:32.178899 [info]log parse_line
+2026-03-09 20:35:32.178906 [info]log parse_request_headers
+2026-03-09 20:35:32.178956 [info]log have parse_request_headers
+2026-03-09 20:35:32.178966 [info]log parse_line
+2026-03-09 20:35:32.178973 [info]log parse_request_headers
+2026-03-09 20:35:32.179001 [info]log have parse_request_headers
+2026-03-09 20:35:32.179011 [info]log parse_line
+2026-03-09 20:35:32.179018 [info]log parse_request_headers
+2026-03-09 20:35:32.179054 [info]log have parse_request_headers
+2026-03-09 20:35:32.179063 [info]log parse_line
+2026-03-09 20:35:32.179069 [info]log parse_request_headers
+2026-03-09 20:35:32.179088 [info]log have parse_request_headers
+2026-03-09 20:35:32.179095 [info]log parse_line
+2026-03-09 20:35:32.179101 [info]log parse_request_headers
+2026-03-09 20:35:32.179119 [info]log have parse_request_headers
+2026-03-09 20:35:32.179125 [info]log parse_line
+2026-03-09 20:35:32.179131 [info]log parse_request_headers
+2026-03-09 20:35:32.179147 [info]log have parse_request_headers
+2026-03-09 20:35:32.179153 [info]log parse_line
+2026-03-09 20:35:32.179159 [info]log parse_request_headers
+2026-03-09 20:35:32.179174 [info]log have parse_request_headers
+2026-03-09 20:35:32.179181 [info]log parse_line
+2026-03-09 20:35:32.179187 [info]log parse_request_headers
+2026-03-09 20:35:32.179204 [info]log have parse_request_headers
+2026-03-09 20:35:32.179211 [info]log parse_line
+2026-03-09 20:35:32.179217 [info]log parse_request_headers
+2026-03-09 20:35:32.179234 [info]log have parse_request_headers
+2026-03-09 20:35:32.179240 [info]log parse_line
+2026-03-09 20:35:32.179246 [info]log parse_request_headers
+2026-03-09 20:35:32.179263 [info]log have parse_request_headers
+2026-03-09 20:35:32.179270 [info]log parse_line
+2026-03-09 20:35:32.179276 [info]log parse_request_headers
+2026-03-09 20:35:32.179302 [info]log have parse_request_headers
+2026-03-09 20:35:32.179310 [info]log parse_line
+2026-03-09 20:35:32.179316 [info]log parse_request_headers
+2026-03-09 20:35:32.179334 [info]log have parse_request_headers
+2026-03-09 20:35:32.179341 [info]log parse_line
+2026-03-09 20:35:32.179347 [info]log parse_request_headers
+2026-03-09 20:35:32.179364 [info]log have parse_request_headers
+2026-03-09 20:35:32.179371 [info]log parse_line
+2026-03-09 20:35:32.179377 [info]log parse_request_headers
+2026-03-09 20:35:32.179394 [info]log have parse_request_headers
+2026-03-09 20:35:32.179400 [info]log parse_line
+2026-03-09 20:35:32.179406 [info]log parse_request_headers
+2026-03-09 20:35:32.179422 [info]log have parse_request_headers
+2026-03-09 20:35:32.179428 [info]log parse_line
+2026-03-09 20:35:32.179434 [info]log parse_request_headers
+2026-03-09 20:35:32.179453 [info]log have parse_request_headers
+2026-03-09 20:35:32.179459 [info]log parse_line
+2026-03-09 20:35:32.179466 [info]log parse_request_headers
+2026-03-09 20:35:32.179484 [info]log have parse_request_headers
+2026-03-09 20:35:32.179491 [info]log parse_line
+2026-03-09 20:35:32.179496 [info]log parse_request_headers
+2026-03-09 20:35:32.179502 [info]log do_request
+2026-03-09 20:35:32.179508 [info]do_request: final path=/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/source
+2026-03-09 20:35:32.179548 [info]File size: 715 bytes
+2026-03-09 20:35:32.179558 [info]log have do_request
+2026-03-09 20:35:32.179565 [info]log process_write
+2026-03-09 20:35:32.179571 [info]FILE_REQUEST
+2026-03-09 20:35:32.179594 [info]log have process!
+2026-03-09 20:35:32.179609 [info]write: total=777, header=62, file=715
+2026-03-09 20:35:32.179664 [info]writev=777, total_sent=777
+2026-03-09 20:35:32.179679 [info]Progress: 777/777 bytes (100.0%)
+2026-03-09 20:35:32.179688 [info]File offset: 715, remaining: 0
+2026-03-09 20:35:32.179693 [info]Transfer complete: 777 bytes
+2026-03-09 20:35:32.179714 [info]log_init!
+2026-03-09 20:35:32.179719 [info]log_have init!
+2026-03-09 20:35:32.179724 [info]deal with the client(127.0.0.1)
+2026-03-09 20:35:32.179729 [info]adjust timer once
+2026-03-09 20:35:33.945465 [info]timer tick
+2026-03-09 20:35:38.945545 [info]timer tick
