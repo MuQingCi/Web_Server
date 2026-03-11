@@ -1,4 +1,4 @@
-<img src="[https://github.com/MuQingCi/Web_Server/blob/master/Test.gif]" 
+<img src="https://github.com/MuQingCi/Web_Server/blob/master/Test.gif" 
      alt="项目演示动图" 
      width="600" 
      height="auto" 
