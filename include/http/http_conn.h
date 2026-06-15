@@ -120,7 +120,7 @@ private:
     int m_start_line;
 
     char m_write_buff[WRITE_BUFF_SIZE];
-    char m_write_idx;
+    int m_write_idx;
 
     CHECK_STATE m_check_state;
     METHOD m_method;
