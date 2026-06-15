@@ -1,3 +1,0 @@
-/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/build/CMakeFiles/TinyWebServer.dir
-/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/build/CMakeFiles/edit_cache.dir
-/home/lanxiyuan/Project_Cpp/Server/Tiny_Web_Server/build/CMakeFiles/rebuild_cache.dir
