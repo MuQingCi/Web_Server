@@ -161,6 +161,7 @@ void WebServer::timer(int connfd, struct sockaddr_in client_address)
     //初始化client_data数据
     users_timer[connfd].client_addr = client_address;
     users_timer[connfd].sockfd = connfd;
+    users_timer[connfd].http_conn_ptr = &users[connfd];
 
     heap_timer* timer = new heap_timer(TIMESLOT);
     timer->user_data = &users_timer[connfd];
@@ -175,25 +176,33 @@ void WebServer::timer(int connfd, struct sockaddr_in client_address)
 
 void WebServer::adjust_timer(heap_timer* timer)
 {
-    utils.m_time_heap->del_timer(timer);
-
+    if(!timer) return;
+    timer->cb_func = cb_func;  // 确保回调函数指针有效
     time_t cur = time(NULL);
-    timer->expire = cur + 3 * TIMESLOT;
-
-    utils.m_time_heap->add_timer(timer);
-
+    utils.m_time_heap->adjust_timer(timer, cur + 3 * TIMESLOT);
     LOG_INFO("%s", "adjust timer once");
 }
 
 void WebServer::deal_timer(heap_timer* timer, int sockfd)
 {
-    timer->cb_func(timer->user_data);
-    if(timer)
+    // 仅当连接尚未关闭时才处理
+    if(users_timer[sockfd].sockfd != -1)
     {
-        utils.m_time_heap->del_timer(timer);
-        delete timer;
+        // 关闭连接（close_conn 内部会 remove_fd + close + m_user_count--）
+        users[sockfd].close_conn(true);
+        
+        // 标记 sockfd 为已关闭，防止重复处理
+        users_timer[sockfd].sockfd = -1;
+        users_timer[sockfd].http_conn_ptr = nullptr;
+        
+        // 惰性删除定时器：cb_func = nullptr
+        // tick() 遇到 cb_func==nullptr 的定时器会直接弹出并释放，不调用回调
+        if(timer)
+        {
+            timer->cb_func = nullptr;
+        }
     }
-    LOG_INFO("close fd %d", users_timer[sockfd].sockfd);
+    LOG_INFO("close fd %d", sockfd);
 }
 
 bool WebServer::deal_client_data()
@@ -267,7 +276,8 @@ bool WebServer::deal_with_signal(bool& timeout, bool& stop_server)
                 }
                 case SIGTERM:
                 {
-                    stop_server = true;
+                    stop_server = false;
+                    break;
                 }
             }
         }
@@ -287,20 +297,26 @@ void WebServer::deal_with_read(int sockfd)
             adjust_timer(timer);
         }
 
-        m_pool->append(users + sockfd, 0);
-
-        while (true)
+        if(m_pool->append(users + sockfd, 0))
         {
-            if(users[sockfd].improv == 1)
+            while (true)
             {
-                if(users[sockfd].timer_flag == 1)
+                if(users[sockfd].improv == 1)
                 {
-                    deal_timer(timer,sockfd);
-                    users[sockfd].timer_flag = 0;
+                    if(users[sockfd].timer_flag == 1)
+                    {
+                        deal_timer(timer,sockfd);
+                        users[sockfd].timer_flag = 0;
+                    }
+                    users[sockfd].improv = 0;
+                    break;
                 }
-                users[sockfd].improv = 0;
-                break;
             }
+        }
+        else
+        {
+            // 线程池已满，直接关闭连接
+            deal_timer(timer, sockfd);
         }
     }
     else //proactor
@@ -335,20 +351,26 @@ void WebServer::deal_with_write(int sockfd)
             adjust_timer(timer);
         }
 
-        m_pool->append(users + sockfd, 1);
-
-        while (true)
+        if(m_pool->append(users + sockfd, 1))
         {
-            if(users[sockfd].improv == 1)
+            while (true)
             {
-                if(users[sockfd].timer_flag == 1)
+                if(users[sockfd].improv == 1)
                 {
-                    deal_timer(timer,sockfd);
-                    users[sockfd].timer_flag = 0;
+                    if(users[sockfd].timer_flag == 1)
+                    {
+                        deal_timer(timer,sockfd);
+                        users[sockfd].timer_flag = 0;
+                    }
+                    users[sockfd].improv = 0;
+                    break;
                 }
-                users[sockfd].improv = 0;
-                break;
             }
+        }
+        else
+        {
+            // 线程池已满，直接关闭连接
+            deal_timer(timer, sockfd);
         }
     }
     else //proactor
@@ -386,6 +408,11 @@ void WebServer::eventLoop()
         for(int i = 0;i < number; ++i)
         {
             int sockfd = events[i].data.fd;
+            
+            // 如果连接已被主动关闭，跳过
+            if(sockfd != m_listenfd && sockfd != m_pipefd[0] 
+               && users_timer[sockfd].sockfd == -1)
+                continue;
 
             if(sockfd == m_listenfd)
             {

@@ -10,10 +10,9 @@
 #include <sys/unistd.h>
 #include <assert.h>
 
-#include "../http/http_conn.h"
-
 const int BUFFER_SIZE = 1024;
 
+class http_conn;
 class heap_timer;
 
 struct client_data
@@ -22,6 +21,7 @@ struct client_data
     int sockfd;
     char buf[BUFFER_SIZE];
     heap_timer* timer;
+    http_conn* http_conn_ptr;
 };
 
 class heap_timer
